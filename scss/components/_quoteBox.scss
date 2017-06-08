@@ -1,0 +1,97 @@
+.quoteBox{
+	position: relative;
+
+	&--spaceTop{
+		padding-top: 9rem;
+	}
+
+	&__content{
+		position: relative;
+		font-size: 0;
+		text-align: center;
+	}
+
+	&__quote{
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		padding-right: 22rem;
+		padding-left: 2rem;
+		box-sizing: border-box;
+		max-width: 100%;
+		font-size: 2.2rem;
+		line-height: 3.6rem;
+		font-weight: 500;
+		text-align: center;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 3.9rem;
+			height: 2.6rem;
+			position: absolute;
+			top: -3rem;
+			left: -1rem;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: cover;
+			background-image: url(../img/quote.png);
+		}
+
+		@include parent('body', '[dir=rtl]') {
+			padding-left: 22rem;
+			padding-right: 2rem;
+
+			&:before{
+				background-image: url(../img/quote-ar.png);
+				left: auto;
+				right: -1rem;
+			}
+		}
+	}
+
+	&__personOuter{
+		display: inline-block;
+		vertical-align: middle;
+		width: 0;
+	}
+
+	&__person{
+		width: 20rem;
+		margin-left: -20rem;
+		
+		@include parent('body', '[dir=rtl]') {
+			margin-left: auto;
+			margin-right: -20rem;
+		}
+	}
+
+	&__avatar{
+		display: block;
+		width: 84px;
+		height: 84px;
+		border-radius: 42px;
+		box-sizing: border-box;
+		border: 3px solid $c-lightest;
+		box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+		margin: 0 auto;
+		margin-bottom: 2.4rem;
+		overflow: hidden;
+
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__name{
+		font-size: 2rem;
+		line-height: 2.2rem;
+		font-weight: 300;
+
+		strong{
+			font-weight: 500;
+		}
+	}
+}

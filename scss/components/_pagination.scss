@@ -1,0 +1,23 @@
+.pagination {
+	margin-top: 5rem;
+	overflow: hidden;
+
+	&__item {
+
+		&--newer {
+			float: left;
+
+			@include parent('body', '[dir=rtl]') {
+				float: right;
+			}
+		}
+
+		&--older {
+			float: right;
+
+			@include parent('body', '[dir=rtl]') {
+				float: left;
+			}
+		}
+	}
+}

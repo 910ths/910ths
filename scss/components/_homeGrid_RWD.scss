@@ -1,0 +1,107 @@
+@media screen and (max-width: 1119px) {
+
+	.homeGrid{
+
+		&__introBox{
+			padding: 6rem;
+		}
+
+		&__item{
+			width: grid(1,3);
+
+			&--horizontal{
+				width: grid(2,3);
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 879px) {
+
+	.homeGrid{
+
+		&__introBox{
+			padding: 5rem;
+		}
+
+		&__items{
+			margin-top: -2rem;
+			margin-left: -2rem;
+		}
+
+		&__space{
+			padding-top: 2rem;
+			padding-left: 2rem;
+		}
+
+		&__box{
+			&--t{
+				padding-bottom: 2rem;
+			}
+
+			&--b{
+				padding-top: 2rem;
+			}
+
+			&--l{
+				padding-right: 2rem;
+			}
+
+			&--r{
+				padding-left: 2rem;
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 739px) {
+
+	.homeGrid{
+
+		&__item{
+			width: grid(1,2);
+
+			&--horizontal{
+				width: grid(2,2);
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 499px) {
+
+	.homeGrid{
+
+		&__items{
+			margin-top: -1rem;
+			margin-left: -1rem;
+		}
+
+		&__space{
+			padding-top: 1rem;
+			padding-left: 1rem;
+		}
+
+		&__box{
+			&--t{
+				padding-bottom: 1rem;
+			}
+
+			&--b{
+				padding-top: 1rem;
+			}
+
+			&--l{
+				padding-right: 1rem;
+			}
+
+			&--r{
+				padding-left: 1rem;
+			}
+		}
+	}
+
+}

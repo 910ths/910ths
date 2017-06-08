@@ -1,0 +1,28 @@
+@media screen and (max-width: 739px) {
+
+	.workGrid{
+		&__filter{
+			margin-top: 1rem;
+			clear: both;
+			float: left;
+
+			@include parent('body', '[dir=rtl]') {
+				float: right;
+			}
+		}
+		&__item{
+			width: 50%;
+		}
+	}
+
+}
+
+@media screen and (max-width: 499px) {
+
+	.workGrid{
+		&__item{
+			width: 100%;
+		}
+	}
+
+}

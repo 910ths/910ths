@@ -1,0 +1,117 @@
+.videoBanner{
+	position: relative;
+	color: $c-lightest;
+	padding: 9rem 0;
+	overflow: hidden;
+	background-color: $c-mainDark;
+	background: radial-gradient(ellipse, #8dd606 0%,#629e11 100%);
+
+	&__textBox{
+		// max-width: 520px;
+	}
+
+	&__videoImgBox{
+		position: relative;
+
+		&:before{
+			@include aratio(16,9);
+		}
+	}
+
+	&__videoFrame{
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: block;
+		background-color: $c-dark;
+		border-radius: 0.8rem;
+		overflow: hidden;
+		box-shadow: 0 8px 20px rgba(22,49,0,0.4);
+		transition: box-shadow 0.2s ease;
+
+		&.hover,
+		&:focus,
+		&:hover{
+			box-shadow: 0 0 20px 2px rgba(155,239,40,0.6);
+		}
+	}
+
+	&__videoImg{
+		position: absolute;
+		top: -50%;
+		left: -50%;
+		right: -50%;
+		bottom: -50%;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+
+		&--bg{
+			opacity: 0.3;
+		}
+	}
+
+	&__play{
+		@include absCenter(64px, 64px);
+		border-radius: 32px;
+		background-color: $c-lightest;
+		transition: background-color 0.2s ease;
+
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -16px;
+			margin-left: -8px;
+			border-top: 16px solid transparent;
+			border-left: 24px solid $c-main;
+			border-right: 0 solid transparent;
+			border-bottom: 16px solid transparent;
+			transition: border-color 0.2s ease;
+		}
+	}
+
+	&__videoFrame.hover,
+	&__videoFrame:focus,
+	&__videoFrame:hover{
+		.videoBanner__play{
+			background-color: $c-main;
+			&:before{
+				border-left-color: $c-lightest;
+			}
+		}
+	}
+
+	&__popupTpl{
+		display: none;
+	}
+
+	&__popup{
+		position: relative;
+	}
+
+	&__videoBox{
+		position: relative;
+		max-width: 100%;
+		width: 800px;
+		width: 100vw;
+
+		&:before{
+			@include aratio(16,9);
+		}
+	}
+
+	&__video{
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}

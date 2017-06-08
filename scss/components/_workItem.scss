@@ -1,0 +1,108 @@
+.workItem{
+	position: relative;
+	transform: translateZ(0);
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+	transition: box-shadow 0.2s ease;
+
+	&:hover {
+		box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+	}
+
+	&__body{
+		box-sizing: border-box;
+		padding: 3.2rem 3rem;
+		text-align: center;
+	}
+
+	&__cat{
+		display: block;
+		font-size: 1.6rem;
+		line-height: 1.8rem;
+		color: $c-main;
+		margin-bottom: 2rem;
+		text-transform: uppercase;
+	}
+
+	&__title{
+		display: block;
+		font-size: 2.2rem;
+		line-height: 2.2rem;
+		font-weight: 600;
+	}
+
+	&__tags{
+		display: block;
+		font-size: 1.4rem;
+		line-height: 1.6rem;
+		margin-top: 1.2rem;
+		text-transform: uppercase;
+	}
+
+	&__text{
+		display: block;
+		font-size: 1.5rem;
+		line-height: 2rem;
+		margin-top: 2.4rem;
+		font-weight: 300;
+	}
+
+	&__foot{
+		position: relative;
+	}
+
+	&__button{
+		display: block;
+		background-color: $c-border;
+		padding: 12px 10px;
+		color: $c-lightest;
+		text-align: center;
+		font-size: 1.6rem;
+		line-height: 18px;
+		text-transform: uppercase;
+		transition: background-color 0.2s ease;
+	}
+
+	&__buttonText{
+		position: relative;
+		display: block;
+		visibility: hidden;
+		overflow: hidden;
+
+		&:before,
+		&:after{
+			content: attr(data-hover);
+			display: block;
+			position: absolute;
+			visibility: visible;
+			left: 0;
+			width: 100%;
+			transform: translateY(0);
+			transition: transform 0.2s ease;
+		}
+
+		&:before{
+			top: 0;
+		}
+
+		&:after{
+			top: 100%;
+		}
+	}
+
+	&__button{
+		&:focus,
+		&:hover{
+			background-color: $c-main;
+			
+			.workItem__buttonText{
+
+				&:before,
+				&:after{
+					transform: translateY(-100%);
+				}
+			}
+		}
+	}
+}

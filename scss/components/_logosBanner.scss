@@ -1,0 +1,51 @@
+.logosBanner{
+	position: relative;
+	color: $c-lightest;
+	background-color: $c-main;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+
+	@include parent('body', '.event') {
+		margin-top: 10rem;
+	}
+
+	&__top{
+		padding: 5rem 0;
+		text-align: center;
+	}
+
+	&__bot{
+		// border-top: 1px solid #93ff00;
+		// background-color: #569500;
+		border-top: 1px solid rgba(147,255,0,0.4);
+		background-color: rgba(86,149,0,0.6);;
+	}
+
+	&__logosBox{
+		overflow: hidden;
+	}
+
+	&__logos{
+		position: relative;
+		font-size: 0;
+		padding: 5rem 0;
+		margin: 0 -5rem;
+		text-align: center;
+		direction: ltr;
+	}
+
+	&__logo{
+		display: inline-block;
+		vertical-align: middle;
+		box-sizing: border-box;
+		padding: 0 5rem;
+		text-align: center;
+	}
+
+	&__logoImg{
+		display: inline-block;
+		width: auto;
+		height: 50px;
+	}
+}

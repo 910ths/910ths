@@ -1,0 +1,45 @@
+@media screen and (max-width: 739px) {
+
+	.events{
+
+		&__link{
+
+			padding: 2.2rem 2rem;
+			color: $c-dark;
+
+			&:focus,
+			&:hover{
+				transition: color 0.2s ease-out, background-color 0.2s ease-out;
+
+				.events{
+
+					&__inner{
+						transition: none;
+						left: 0;
+
+						@include parent('body', '[dir=rtl]') {
+							left: auto;
+							right: 0;
+						}
+					}
+
+					&__date{
+						transition: color 0.2s ease-out;
+					}
+
+					&__title{
+						transition: border-color 0.2s ease-out;
+					}
+				}
+
+			}
+		}
+
+		&__inner{
+			width: 100%;
+			transition: none;
+		}
+
+	}
+
+}

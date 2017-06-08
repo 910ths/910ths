@@ -1,0 +1,38 @@
+{% assign nav = site.management | where: 'type', 'nav-mobile-header' %}
+{% assign nav = nav[0] %}
+
+{% if nav.published != false %}
+
+	<div class="pageHeader">
+		<div class="pageHeader__bg" style="background-image: url(/img/page-header.jpg);"></div>
+		<div class="pageHeader__menu">
+			<ul>
+				{% for item in nav.items %}
+						
+					{% assign active = false %}
+
+					{% capture link %}{% value item.url %}{% endcapture %}
+					{% assign current = page.url | remove: '/index.html' %}
+
+					{% if link == current %}
+						{% assign active = true %}
+					{% endif %}
+
+					{% if (page.layout == 'news-single') and (link == '/news') %}
+						{% assign active = true %}
+					{% endif %}
+
+					{% if (page.layout == 'events-single') and (link == '/events') %}
+						{% assign active = true %}
+					{% endif %}
+
+					<li class="{% if active == true %}active{% endif %}">
+						<a href="{% path item.url %}" {% target {{ item.is_open_in_new_tab }} %}>{% value item.title %}</a>
+					</li>
+
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+
+{% endif %}

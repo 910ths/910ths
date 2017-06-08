@@ -1,0 +1,22 @@
+@keyframes mouse-wheel{
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	71% {
+		transform: translateY(24%);
+		opacity: 1;
+	}
+	90% {
+		transform: translateY(24%);
+		opacity: 0;
+	}
+	91% {
+		transform: translateY(0);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+};

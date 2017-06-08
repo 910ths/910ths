@@ -1,0 +1,80 @@
+{% for section in site.work-offers-section %}
+	{% if section.title contains page.20_work_offers_section %}
+
+		<section class="workGrid workGrid--spaceTop">
+			<div class="wrapper wrapper--inside">
+
+				{% include settings/filters.html %}
+
+				<div class="workGrid__head">
+					<div class="workGrid__title">
+						{% capture title %}{% value section.header_text %}{% endcapture %}
+						<h2>
+							{{ title | markdownify | remove: '<p>' | remove: '</p>' }}
+						</h2>
+					</div>
+					<div class="workGrid__filter">
+						<label for="workFilter" class="workGrid__filterlabel">{% t work_offers.filter %}:</label>
+						<div class="workGrid__filterSelectBox">
+							<select id="workFilter" class="workGrid__filterSelect">
+								<optgroup label="{% t work_offers.date %}">
+									<option value="date-{{ filter_latest | md5 }}">{{ filter_latest }}</option>
+								</optgroup>
+								<optgroup label="{% t work_offers.type %}">
+									{% for value in filter_types %}
+										<option value="type-{{ value | md5 }}">{{ value }}</option>
+									{% endfor %}
+								</optgroup>
+								<optgroup label="{% t work_offers.category %}">
+									{% for value in filter_categories %}
+										<option value="category-{{ value | md5 }}">{{ value }}</option>
+									{% endfor %}
+								</optgroup>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="workGrid__body">
+					<div class="workGrid__items jsAlignHeight">
+
+						{% assign index = 0 %}
+						{% assign limit = 6 %}
+
+						{% for current in section.20_work_offers %}
+							{% for offer in site.work-offers %}
+								{% if offer.title contains current %}
+
+									{% include settings/offer.html %}
+									{% assign index = index | plus: 1 %}
+
+									<div class="workGrid__item date-{% if index <= limit %}{{ filter_latest | md5 }}{% else %}0{% endif %} type-{{ offer_type | md5 }} category-{{ offer_category | md5 }} {% if index <= limit %}active{% endif %}">
+										<div class="workItem">
+											<div class="workItem__body">
+												<span class="workItem__cat">{{ offer_category }}</span>
+												<h3 class="workItem__title">{% value offer.work_position %}<h3>
+												<span class="workItem__tags">{% value offer.location %}, {{ offer_type }}</span>
+												<p class="workItem__text">{% value offer.information %}</p>
+											</div>
+											<div class="workItem__foot">
+												<a href="{% value offer.button_url %}" class="workItem__button">
+													<span class="workItem__buttonText" data-hover="{% t work_offers.see_details %}">
+														{% t work_offers.see_details %}
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+
+								{% endif %}
+							{% endfor %}
+						{% endfor %}
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+	{% endif %}
+{% endfor %}

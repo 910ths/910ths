@@ -1,0 +1,48 @@
+@media screen and (max-width: 739px) {
+
+	.valuesBox{
+
+		&__item{
+			width: 50%;
+		}
+	}
+
+}
+
+@media screen and (max-width: 499px) {
+
+	.valuesBox{
+
+		&--spaceTop{
+			padding-top: 4rem;
+		}
+
+		&__grid{
+			padding-top: 2rem;
+		}
+
+		&__items{
+			padding-top: 0;
+			margin: 0 -1rem;
+		}
+
+		&__item{
+			// width: 100%;
+			padding: 2rem 1rem;
+		}
+
+		&__text{
+			font-size: 1.4rem;
+			line-height: 2rem;
+
+			h3{
+				font-size: 1.6rem;
+			}
+		}
+
+		&__imgBox{
+			padding-top: 0;
+		}
+	}
+
+}

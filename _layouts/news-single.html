@@ -1,0 +1,42 @@
+---
+layout: news-single
+---
+
+{% include head.html %}
+
+	{% include components/page-header.html %}
+
+	{% assign day   = page.date | date: "%d" %}
+	{% assign month = page.date | date: "m_%m" %}
+	{% assign year  = page.date | date: "%Y" %}
+
+	<div class="contentPage">
+		<div class="wrapper wrapper--inside">
+			<div class="stdCols__cols">
+				<div class="stdCols__col">
+					<div class="contentPage__content">
+						{% capture title %}{% value page.title_text %}{% endcapture %}
+						<h2 class="contentPage__title">
+							{{ title | markdownify | remove: '<p>' | remove: '</p>' }}
+						</h2>
+						<div class="contentPage__date">
+							<strong>{% t news %}</strong> - {% numerals {{ day }} %} {% t months.short.{{month}} %} {% numerals {{ year }} %}</div>
+
+						{% capture description %}{% value page.description %}{% endcapture %}
+						<div class="contentPage__desc textWrap">{{ description | markdownify }}</div>
+					</div>
+				</div>
+				<div class="stdCols__col stdCols__col--left">
+					<div class="contentPage__images">
+						{% for image in page.images %}
+							<img src="{{ image }}" alt="">
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{% include sections/events-and-news.html %}
+
+{% include footer.html %}

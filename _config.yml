@@ -1,0 +1,321 @@
+---
+title: 910ths next
+timezone: Asia/Riyadh
+collections:
+  events:
+    title: 00_Events
+    output: true
+  news:
+    title: 00_News
+    output: true
+  slider:
+    title: 01_Slider
+    output: false
+  products:
+    title: 02_Products
+    output: false
+  products-section:
+    title: 02_Products_section
+    output: false
+  banner:
+    title: 03_Banner
+    output: false
+  video-banner:
+    title: 04_Video_banner
+    output: false
+  steps-section:
+    title: 05_Steps_section
+    output: false
+  partners:
+    title: 06_Partners
+    output: false
+  partners-section:
+    title: 06_Partners_section
+    output: false
+  quote:
+    title: 10_Quote
+    output: false
+  values-section:
+    title: 11_Values_section
+    output: false
+  work-offers:
+    title: 20_Work_offers
+    output: false
+  work-offers-section:
+    title: 20_Work_offers_section
+    output: true
+  work-offers-category:
+    title: 20__Work_offers_category
+    output: false
+  work-offers-type:
+    title: 20__Work_offers_type
+    output: false
+  management:
+    title: 99_Management
+    output: false
+  posts:
+    title: Posts
+    output: true
+  products-aligments:
+    title: Products_aligments
+    output: false
+  products-layouts:
+    title: Products_layouts
+    output: false
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+- scope:
+    path: ''
+    type: events
+  values:
+    layout: events-single
+    title_text: ''
+    arabic_title_text: ''
+    arabic_description: ''
+    start_date: ''
+    end_date: ''
+    location: ''
+    arabic_location: ''
+    lat: ''
+    lng: ''
+    info_text: ''
+    arabic_info_text: ''
+- scope:
+    path: ''
+    type: news
+  values:
+    layout: news-single
+    title_text: ''
+    arabic_title_text: ''
+    excerpt: ''
+    arabic_excerpt: ''
+    arabic_description: ''
+    images: []
+- scope:
+    path: ''
+    type: slider
+  values:
+    header: ''
+    arabic_header: ''
+    arabic_description: ''
+    button: ''
+    arabic_button: ''
+    button_url: ''
+    arabic_button_url: ''
+    background_asset: ''
+- scope:
+    path: ''
+    type: products
+  values:
+    title_text: ''
+    arabic_title_text: ''
+    description: ''
+    arabic_description: ''
+    button_url: ''
+    arabic_button_url: ''
+    background_asset: ''
+    products_layout: ''
+    products_aligment: ''
+    is_dark: false
+- scope:
+    path: ''
+    type: products-section
+  values:
+    header: ''
+    arabic_header: ''
+    text: ''
+    arabic_text: ''
+    02_products:
+    - 
+- scope:
+    path: ''
+    type: banner
+  values:
+    header: ''
+    arabic_header: ''
+    text: ''
+    arabic_text: ''
+    description: ''
+    arabic_description: ''
+    button: ''
+    arabic_button: ''
+    button_url: ''
+    arabic_button_url: ''
+    is_button_active: true
+    video_asset: ''
+    is_video_active: true
+    poster_asset: ''
+- scope:
+    path: ''
+    type: video-banner
+  values:
+    header: ''
+    arabic_header: ''
+    text: ''
+    arabic_text: ''
+    description: ''
+    arabic_description: ''
+    video_image: ''
+    background_asset: ''
+    youtube_video: ''
+    arabic_youtube_video: ''
+- scope:
+    path: ''
+    type: steps-section
+  values:
+    header: ''
+    arabic_header: ''
+    text: ''
+    arabic_text: ''
+    list:
+    - title: ''
+      arabic_title: ''
+      description: ''
+      arabic_description: ''
+      image: ''
+- scope:
+    path: ''
+    type: partners
+  values:
+    image: ''
+    link: ''
+    arabic_link: ''
+    is_open_in_new_tab: false
+- scope:
+    path: ''
+    type: partners-section
+  values:
+    text: ''
+    arabic_text: ''
+    description: ''
+    arabic_description: ''
+    button: ''
+    arabic_button: ''
+    button_url: ''
+    arabic_button_url: ''
+    06_partners:
+    - 
+    background_asset: ''
+    background_hex: ''
+- scope:
+    path: ''
+    type: products-layouts
+  values:
+    value: ''
+- scope:
+    path: ''
+    type: products-aligments
+  values:
+    value: ''
+    value_content: ''
+- scope:
+    path: ''
+    type: quote
+  values:
+    quote: ''
+    arabic_quote: ''
+    avatar_image: ''
+    author: ''
+    arabic_author: ''
+    company_position: ''
+    arabic_company_position: ''
+    company: ''
+    arabic_company: ''
+- scope:
+    path: ''
+    type: values-section
+  values:
+    header_text: ''
+    arabic_header_text: ''
+    list:
+    - image: ''
+      title: ''
+      arabic_title: ''
+      information: ''
+      arabic_information: ''
+- scope:
+    path: ''
+    type: work-offers
+  values:
+    work_position: ''
+    arabic_work_position: ''
+    location: ''
+    arabic_location: ''
+    20__work_offers_category: ''
+    20__work_offers_type: ''
+    information: 
+    arabic_information: ''
+    button_url: ''
+    arabic_button_url: ''
+- scope:
+    path: ''
+    type: work-offers-section
+  values:
+    header_text: ''
+    arabic_header_text: ''
+    20_work_offers:
+    - ''
+- scope:
+    path: ''
+    type: work-offers-category
+  values:
+    value: ''
+    arabic_value: ''
+- scope:
+    path: ''
+    type: work-offers-type
+  values:
+    value: ''
+    arabic_value: ''
+title_suffix: Nine Tenths
+arabic_title_suffix: تسعة أعشار
+esso:
+  base_url: https://esso.910ths.sa
+  client_id: 8
+esso_api:
+  base_url: https://esso-api.910ths.sa/api
+06_partners_section: Default
+google_maps_js_api: AIzaSyCy6hRFVqBgV_JH5DLWLVXqaj4hAdvjdIw
+description: 
+arabic_description: 
+permalink: pretty
+markdown: kramdown
+exclude:
+- Gemfile
+- Gemfile.lock
+- gulpfile.js
+- node_modules
+- npm-debug.log
+- package.json
+- README.md
+- scss
+- js/class
+- js/vendors
+- js/global.js
+- js/isotope.pkgd.min.js
+gems:
+- jekyll-multiple-languages-plugin
+- jekyll/itafroma/collapse_newlines
+- jekyll-sitemap
+- jekyll-paginate-v2
+languages:
+- ar
+- en
+exclude_from_localizations:
+- css
+- font
+- img
+- js
+- scss
+- globals
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: "/page/:num/"

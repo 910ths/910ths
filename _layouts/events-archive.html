@@ -1,0 +1,27 @@
+---
+layout: event-archive
+---
+
+{% include head.html %}
+
+	{% include components/page-header.html %}
+
+	<section class="events events--single">
+		<div class="wrapper wrapper--inside">
+			{% include components/events-header.html %}
+
+			<div class="stdCols__body">
+				<div class="events__items jsShowDelayed">
+					{% for event in paginator.posts %}
+
+						{% include components/events-item.html %}
+
+					{% endfor %}
+				</div>
+			</div>
+
+			{% include components/pagination.html %}
+		</div>
+	</section>
+
+{% include footer.html %}

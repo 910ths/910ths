@@ -1,0 +1,99 @@
+---
+layout: career
+---
+
+{% include head.html %}
+
+	{% include components/page-header.html %}
+
+	<div id="siteRoot" class="siteRoot">
+
+		<section class="stdCols stdCols--spaceTop">
+			<div class="wrapper wrapper--inside">
+				<div class="stdCols__cols stdCols__cols--career">
+					<div class="stdCols__col stdCols__col--career">
+						<div class="stdCols__row">
+							{% capture text %}{% value page.text %}{% endcapture %}
+							<div class="textWrap textWrap--career">{{ text | markdownify }}</div>
+						</div>
+					</div>
+
+					<div class="stdCols__col stdCols__col--career">
+						{% assign index = 0 %}
+
+						{% for item in page.media_list %}
+
+							<div class="stdCols__row">
+								<div class="careerContent">
+
+									{% if item.is_used_images %}
+
+										{% assign size = item.images | size %}
+
+										{% if size == 2 %}
+
+											<div class="careerContent__doublePhotoBox">
+												<div class="careerContent__halfPhoto">
+													<div class="careerContent__photo" style="background-image: url({{ item.images[0] }});"></div>
+												</div>
+												<div class="careerContent__halfPhoto">
+													<div class="careerContent__photo" style="background-image: url({{ item.images[1] }});"></div>
+												</div>
+											</div>
+
+										{% else %}
+
+											<div class="careerContent__singlePhotoBox">
+												<div class="careerContent__photo" style="background-image: url({{ item.images[0] }});"></div>
+											</div>
+
+										{% endif %}
+
+									{% else %}
+
+										{% assign index = index | plus: 1 %}
+
+										<div class="careerContent__videoBox">
+											<div class="careerContent__photo" style="background-image: url({{ item.video_image }});"></div>
+											<a href="#" class="careerContent__play jsPopup" data-popup="videoPopup-{{ index }}"></a>
+										</div>
+
+										<div class="popup" data-popup="videoPopup-{{ index }}">
+											<div class="popup__overlay">
+												<a href="#" class="popup__close"></a>
+												<div class="popup__scroll">
+													<div class="popup__outer">
+														<div class="popup__box">
+															<div class="popup__inner">
+																<div class="videoBanner__popup">
+																	<div class="videoBanner__videoBox">
+																		<div class="videoBanner__video" data-src="{% value item.youtube_video %}"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									{% endif %}
+
+								</div>
+							</div>
+
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{% include sections/work-offers.html %}
+
+		{% include sections/banner.html %}
+
+		{% include sections/partners.html %}
+
+	</div>
+
+{% include footer.html %}

@@ -1,0 +1,29 @@
+---
+layout: text
+---
+
+{% include head.html %}
+
+	<div class="pageHeader">
+		<div class="pageHeader__bg" style="background-image: url(/img/page-header.jpg);"></div>
+		<div class="pageHeader__text">
+			<div class="wrapper wrapper--inside">
+				<h1>{% value page.title %}</h1>
+				<p>{% value page.header %}</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="siteRoot" class="siteRoot">
+
+		<div class="wrapper wrapper--inside">
+			<div class="textWrap textPage__content">
+				{% capture text %}{% value page.text %}{% endcapture %}
+				<h2 class="contentPage__title">
+					{{ text | markdownify }}
+				</h2>
+			</div>
+		</div>
+	</div>
+
+{% include footer.html %}

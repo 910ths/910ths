@@ -1,0 +1,82 @@
+@media screen and (max-width: 879px) {
+
+	.quoteBox{
+
+		&--spaceTop{
+			padding-top: 6rem;
+		}
+
+		&__quote{
+			font-size: 1.8rem;
+			line-height: 3.2rem;
+		}
+	}
+
+}
+
+@media screen and (max-width: 639px) {
+	.quoteBox{
+
+		&__quote{
+			font-size: 1.6rem;
+			line-height: 2.4rem;
+			padding-left: 0;
+			padding-right: 0;
+
+			@include parent('body', '[dir=rtl]') {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+
+		&__personOuter{
+			display: block;
+			width: 100%;
+			padding-top: 2rem;
+		}
+
+		&__person{
+			display: inline-block;
+			width: auto;
+			margin-left: 0;
+			margin-right: 0;
+			font-size: 0;
+			text-align: left;
+
+			@include parent('body', '[dir=rtl]') {
+				margin-left: 0;
+				margin-right: 0;
+				text-align: right;
+			}
+		}
+
+		&__avatar{
+			display: inline-block;
+			vertical-align: middle;
+			margin-bottom: 0;
+			margin-right: 2rem;
+
+			@include parent('body', '[dir=rtl]') {
+				margin-right: auto;
+				margin-left: 2rem;
+			}
+		}
+
+		&__name{
+			display: inline-block;
+			vertical-align: middle;
+			margin: 2rem 0;
+		}
+	}
+}
+
+@media screen and (max-width: 499px) {
+
+	.quoteBox{
+
+		&--spaceTop{
+			padding-top: 4rem;
+		}
+	}
+
+}

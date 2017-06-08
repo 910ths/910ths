@@ -1,0 +1,27 @@
+---
+layout: news-archive
+---
+
+{% include head.html %}
+
+	{% include components/page-header.html %}
+
+	<section class="news news--single">
+		<div class="wrapper wrapper--inside">
+			{% include components/news-header.html %}
+
+			<div class="stdCols__body">
+				<div class="events__items jsShowDelayed">
+					{% for news in paginator.posts %}
+
+						{% include components/news-item.html %}
+
+					{% endfor %}
+				</div>
+			</div>
+
+			{% include components/pagination.html %}
+		</div>
+	</section>
+
+{% include footer.html %}

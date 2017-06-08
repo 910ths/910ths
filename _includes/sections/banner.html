@@ -1,0 +1,67 @@
+{% for section in site.banner %}
+	{% if section.title contains page.03_banner %}
+
+		<section class="stdBanner stdBg">
+			<div class="wrapper wrapper--inside">
+				<div class="stdBanner__box">
+					<div class="stdBanner__bg">
+						{% if section.is_video_active %}
+							<div class="stdBanner__videoBox">
+								<video class="stdBanner__video" autoplay loop>
+									<source src="{{ section.video_asset }}" type="video/mp4">
+									Your browser does not support HTML5 video.
+								</video>
+								<div class="stdBanner__videoMask stdBanner__videoMask--t"></div>
+								<div class="stdBanner__videoMask stdBanner__videoMask--b"></div>
+							</div>
+						{% else %}
+							<div class="stdBanner__imageBox">
+								<img src="{{ section.poster_asset }}" alt="" class="stdBanner__img" />
+							</div>
+						{% endif %}
+					</div>
+					<div class="stdBanner__content">
+						<div class="stdCols">
+							<div class="stdCols__cols">
+
+								<div class="stdCols__col stdCols__col--mid stdCols__col--stdBanner">
+									<div class="stdBanner__imgBox">
+										<img src="{{ section.poster_asset }}" alt="" class="stdBanner__img" />
+									</div>
+								</div>
+
+								<div class="stdCols__col stdCols__col--mid stdCols__col--stdBanner">
+									<div class="stdBanner__textBox">
+										<div class="textBox textBox--side">
+											<span class="textBox__preTitle">{% value section.header %}</span>
+
+											{% capture title %}{% value section.text %}{% endcapture %}
+											<h3 class="textBox__title">
+												{{ title | markdownify | remove: '<p>' | remove: '</p>' }}
+											</h3>
+
+											{% capture text %}{% value section.description %}{% endcapture %}
+											<div class="textBox__text">{{ text | markdownify }}</div>
+
+											{% if section.is_button_active %}
+
+												<div class="textBox__button">
+													<a href="{% path section.button_url %}" class="button">
+														<span class="button__text">{% value section.button %}</span>
+													</a>
+												</div>
+											
+											{% endif %}
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	{% endif %}
+{% endfor %}

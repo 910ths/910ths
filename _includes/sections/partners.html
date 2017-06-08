@@ -1,0 +1,63 @@
+{% for section in site.partners-section %}
+	{% if section.title contains site.06_partners_section %}
+
+		<section class="logosBanner" style="background-color: {{ section.background_hex }}; background-image: url({{ section.background_asset }});">
+			<div class="logosBanner__top globShowOnlyLogged">
+				<div class="wrapper wrapper--inside">
+					<div class="textBox jsShowDelayed">
+						{% capture title %}{% value section.text %}{% endcapture %}
+						<h3 class="textBox__title">
+							{{ title | markdownify | remove: '<p>' | remove: '</p>' }}
+						</h3>
+
+						{% capture description %}{% value section.description %}{% endcapture %}
+						<div class="textBox__text">{{ description | markdownify }}</div>
+						<div class="textBox__button">
+							<a href="{% value section.button_url %}" class="button button--solidLightest">
+								<span class="button__text">{% value section.button %}</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="logosBanner__bot">
+				<div class="wrapper wrapper--inside">
+					<div class="logosBanner__logosBox">
+						<div class="logosBanner__logos jsShowDelayed">
+							{% for current in section.06_partners %}
+								{% for partner in site.partners %}
+									{% if partner.title contains current %}
+								
+										{% capture link %}{% value partner.link %}{% endcapture %}
+
+										<div class="logosBanner__logo">
+											{% if link != empty %}
+
+												{% if partner.is_open_in_new_tab %}
+													<a href="{{ link }}" target="_blank">
+												{% else %}
+													<a href="{{ link }}">
+												{% endif %}
+
+													<img src="{{ partner.image }}" alt="{{ partner.title }}" class="logosBanner__logoImg" />
+												</a>
+
+											{% else %}
+												
+												<img src="{{ partner.image }}" alt="{{ partner.title }}" class="logosBanner__logoImg" />
+
+											{% endif %}
+										</div>
+
+									{% endif %}
+								{% endfor %}
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	{% endif %}
+{% endfor %}

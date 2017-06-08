@@ -1,0 +1,18 @@
+@media screen and (max-width: 739px) {
+
+	.howItWorks{
+		padding: 3rem 0;
+	}
+	
+}
+
+@media screen and (max-width: 499px) {
+
+	.howItWorks{
+
+		&__stepBody{
+			padding: 0 1rem;
+		}
+	}
+	
+}

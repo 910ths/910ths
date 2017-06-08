@@ -1,0 +1,66 @@
+{% for section in site.video-banner %}
+	{% if section.title contains page.04_video_banner %}
+
+	<section class="videoBanner stdBg">
+		<div class="wrapper wrapper--inside">
+			<div class="stdCols">
+				<div class="stdCols__cols">
+
+					<div class="stdCols__col stdCols__col--mid stdCols__col--videoBanner stdCols__col--z1">
+						<div class="videoBanner__textBox">
+							<div class="textBox jsShowDelayed">
+								<span class="textBox__preTitle textBox__preTitle--large">{% value section.header %}</span>
+
+								{% capture title %}{% value section.text %}{% endcapture %}
+								<h3 class="textBox__title textBox__title--large">
+									{{ title | markdownify | remove: '<p>' | remove: '</p>' }}
+								</h3>
+
+								{% capture description %}{% value section.description %}{% endcapture %}
+								<div class="textBox__text">{{ description | markdownify }}</div>
+								<div class="textBox__button">
+									<a href="#" class="button button--lightest jsMultiHover jsPopup" data-popup="videoPopup">
+										<span class="button__text">{% t watch %}</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="stdCols__col stdCols__col--mid stdCols__col--videoBanner stdCols__col--z0">
+						<div class="videoBanner__videoBox">
+							<div class="videoBanner__videoImg videoBanner__videoImg--bg" style="background-image: url({{ section.background_asset }});"></div>
+							<a href="#" class="videoBanner__videoFrame jsMultiHover jsPopup" data-popup="videoPopup">
+								<div class="videoBanner__videoImg" style="background-image: url({{ section.video_image }});">
+									<span class="videoBanner__play"></span>
+								</div>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="popup" data-popup="videoPopup">
+			<div class="popup__overlay">
+				<a href="#" class="popup__close"></a>
+				<div class="popup__scroll">
+					<div class="popup__outer">
+						<div class="popup__box">
+							<div class="popup__inner">
+								<div class="videoBanner__popup">
+									<div class="videoBanner__videoBox">
+										<div class="videoBanner__video" data-src="{% value section.youtube_video %}"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% endif %}
+{% endfor %}

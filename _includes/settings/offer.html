@@ -1,0 +1,16 @@
+{% for item in site.work-offers-category %}
+	{% if item.title contains offer.20__work_offers_category %}
+
+		{% capture offer_category %}{% value item.value %}{% endcapture %}
+
+	{% endif %}
+{% endfor %}
+
+
+{% for item in site.work-offers-type %}
+	{% if item.title contains offer.20__work_offers_type %}
+
+		{% capture offer_type %}{% value item.value %}{% endcapture %}
+
+	{% endif %}
+{% endfor %}

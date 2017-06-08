@@ -1,0 +1,30 @@
+{% for item in site.products-layouts %}
+	{% if item.title contains product.products_layout %}
+
+		{% assign settings_layout = item.value %}
+
+	{% endif %}
+{% endfor %}
+
+
+{% if product.is_dark == true %}
+
+	{% assign settings_lightness = "" %}
+	{% assign settings_button = "button--grid" %}
+
+{% else %}
+
+	{% assign settings_lightness = "homeGrid__box--dark" %}
+	{% assign settings_button = "button--gridDark" %}
+
+{% endif %}
+
+
+{% for item in site.products-aligments %}
+	{% if item.title contains product.products_aligment %}
+
+		{% assign settings_box     = item.value %}
+		{% assign settings_content = item.value_content %}
+
+	{% endif %}
+{% endfor %}

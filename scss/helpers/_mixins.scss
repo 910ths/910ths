@@ -1,0 +1,99 @@
+@mixin clr{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+@mixin vcAfter{
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	width: 0;
+	visibility: hidden;
+}
+
+@function grid($itemUnits, $gridUnits:7){
+	// @return 100% * ( $itemUnits / $gridUnits );
+	$precize: 10000; // 100.00%
+	$tmp: floor( ( $itemUnits / $gridUnits ) * $precize );
+	@if( $tmp % 2 != 0 ){
+		@return percentage( ( $tmp - 1 ) / $precize );
+	}
+	@return percentage( $tmp / $precize );
+}
+
+@mixin gridW($itemUnits, $gridUnits:7){
+	width: grid( $itemUnits, $gridUnits );
+}
+
+@mixin aratio($w, $h){
+	content: '';
+	z-index: -1;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 0;
+	padding-bottom: grid( $h, $w );
+	visibility: hidden;
+}
+
+@mixin absCenter($w, $h){
+	display: block;
+	width: $w;
+	height: $h;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -$h / 2;
+	margin-left: -$w / 2;
+}
+
+@mixin opacity($o){
+	$filterVal: $o*100;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$filterVal});
+	opacity: $o;
+}
+
+@mixin noAnimate{
+	animation: none !important;
+}
+
+@mixin animation($name, $delay, $duration, $iteration-count, $direction, $timing-funtion) {
+	animation-name: $name;
+	animation-delay: $delay;
+	animation-duration: $duration;
+	animation-iteration-count: $iteration-count;
+	animation-direction: $direction;
+	animation-timing-function: $timing-funtion;
+	// animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+}
+
+
+@mixin parent($element, $modifier) {
+
+	$selectors : '' + inspect(&) + '';
+	$selectors : str-slice($selectors, 2, (str-length($selectors) - 2)) + ' ';
+	$parent    : $element + ' ';
+	$check     : str-index($selectors, $parent);
+
+	@if ($check) {
+
+		$selectors : str-insert($selectors, $modifier, ($check + str-length($parent) - 1));
+
+		@at-root #{$selectors} {
+			@content;
+		}
+
+	} @else {
+
+		#{$element}#{$modifier} & {
+			@content;
+		}
+
+	}
+
+}

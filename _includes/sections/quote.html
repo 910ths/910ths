@@ -1,0 +1,29 @@
+{% for section in site.quote %}
+	{% if section.title contains page.10_quote %}
+
+		<section class="quoteBox quoteBox--spaceTop">
+			<div class="wrapper wrapper--inside">
+
+				<div class="quoteBox__content">
+					<div class="quoteBox__quote">
+						<p>“{% value section.quote %}”</p>
+					</div>
+					<div class="quoteBox__personOuter">
+						<div class="quoteBox__person">
+							<div class="quoteBox__avatar">
+								<img src="{{ section.avatar_image }}" alt="avatar" />
+							</div>
+							<div class="quoteBox__name">
+								<p><strong>{% value section.author %}</strong></p>
+								<p>{% value section.company_position %}</p>
+								<p>{% value section.company %}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+	{% endif %}
+{% endfor %}

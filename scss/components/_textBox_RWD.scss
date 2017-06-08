@@ -1,0 +1,105 @@
+@media screen and (max-width: 1259px) {
+
+	.textBox{
+
+		&__title{
+			&--grid{
+				font-size: 2.2rem;
+				line-height: 2.2rem;
+			}
+		}
+
+		&__text{
+			&--grid{
+				font-size: 1.5rem;
+				margin-top: 2.2rem;
+			}
+		}
+
+		&__button{
+			&--grid{
+				margin-top: 2.6rem;
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 879px) {
+
+	.textBox{
+		&__title{
+			font-size: 3rem;
+			line-height: 3.2rem;
+
+			&--large{
+				font-size: 3.4rem;
+				line-height: 3.8rem;
+			}
+
+			&--huge{
+				font-size: 5.4rem;
+				line-height: 5.6rem;
+			}
+		}
+
+		&__text{
+			font-size: 1.5rem;
+			line-height: 2.2rem;
+
+			&--large{
+				font-size: 1.6rem;
+			}
+
+			&--huge{
+				font-size: 2.2rem;
+			}
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 499px) {
+
+	.textBox{
+
+		&__title{
+			font-size: 2.4rem;
+			line-height: 2.6rem;
+
+			&--large{
+				font-size: 2.6rem;
+				line-height: 2.8rem;
+			}
+
+			&--huge{
+				font-size: 3.2rem;
+				line-height: 3.4rem;
+			}
+
+			&--grid{
+				font-size: 2rem;
+				line-height: 2rem;
+			}
+		}
+
+		&__text{
+			font-size: 1.4rem;
+			line-height: 2rem;
+
+			&--large{
+				font-size: 1.5rem;
+			}
+
+			&--huge{
+				font-size: 2rem;
+			}
+
+			&--grid{
+				display: none;
+			}
+		}
+	}
+
+}

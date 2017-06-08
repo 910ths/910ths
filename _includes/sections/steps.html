@@ -1,0 +1,45 @@
+{% for section in site.steps-section %}
+	{% if section.title contains page.05_steps_section %}
+
+		<section class="howItWorks stdBg">
+			<div class="wrapper wrapper--inside">
+
+				<div class="howItWorks__top">
+					<div class="textBox">
+						<span class="textBox__preTitle textBox__preTitle--large textBox__preTitle--mainColor">{% value section.header %}</span>
+
+						{% capture text %}{% value section.text %}{% endcapture %}
+						<h3 class="textBox__title textBox__title--large">
+							{{ text | markdownify | remove: '<p>' | remove: '</p>' }}
+						</h3>
+					</div>
+				</div>
+				<div class="howItWorks__bot">
+					<div class="howItWorks__steps jsShowDelayed">
+						{% assign index = 0 %}
+
+						{% for step in section.list %}
+							
+							{% assign index = index | plus: 1 %}
+
+							<div class="howItWorks__step">
+								<div class="howItWorks__stepHead howItWorks__stepHead--noArrow">
+									<img src="{{ step.image }}" class="howItWorks__stepIcon" />
+								</div>
+								<div class="howItWorks__stepBody">
+									<h4 class="howItWorks__stepTitle" data-prefix="{% numerals {{ index }} %}. ">{% value step.title %}</h4>
+
+									{% capture description %}{% value step.description %}{% endcapture %}
+									<div class="howItWorks__stepText">{{ description | markdownify }}</div>
+								</div>
+							</div>
+
+						{% endfor %}
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+	{% endif %}
+{% endfor %}

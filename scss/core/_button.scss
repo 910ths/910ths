@@ -1,0 +1,94 @@
+.button{
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0.3rem 4rem;
+	font-size: 0;
+	border-radius: 3px;
+	background-color: transparent;
+	border: 1px solid $c-main;
+	color: $c-dark;
+	transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;;
+	font-weight: bold;
+
+	&:focus,
+	&:hover{
+		background-color: $c-main;
+		color: $c-lightest;
+	}
+
+	&:after{
+		@include vcAfter;
+		min-height: 3.6rem;
+	}
+
+	&--grid{
+		border-color: $c-dark;
+
+		&.hover,
+		&:focus,
+		&:hover{
+			background-color: $c-dark;
+			color: $c-main;
+		}
+	}
+
+	&--gridDark{
+		border-color: $c-lightest;
+		color: $c-lightest;
+
+		&.hover,
+		&:focus,
+		&:hover{
+			background-color: $c-lightest;
+			color: $c-mainDark;
+		}
+	}
+
+	&--solid{
+		background-color: $c-main;
+		border-color: $c-main;
+		color: $c-dark;
+
+		&.hover,
+		&:focus,
+		&:hover{
+			background-color: transparent;
+			color: $c-lightest;
+		}
+	}
+
+	&--lightest{
+		border-color: $c-lightest;
+		color: $c-lightest;
+
+		&.hover,
+		&:focus,
+		&:hover{
+			background-color: $c-lightest;
+			color: $c-mainDark;
+		}
+	}
+
+	&--solidLightest{
+		background-color: $c-lightest;
+		border-color: $c-lightest;
+		color: $c-mainDark;
+
+		&.hover,
+		&:focus,
+		&:hover{
+			background-color: transparent;
+			color: $c-lightest;
+		}
+	}
+
+	&__text{
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		font-size: 1.4rem;
+		line-height: 1.8rem;
+		text-transform: uppercase;
+	}
+}

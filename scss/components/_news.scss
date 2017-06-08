@@ -1,0 +1,117 @@
+.news{
+	position: relative;
+
+	&--single {
+		margin: 10rem 0;
+	}
+	
+	&__items{
+		
+	}
+	
+	&__item{
+		display: block;
+		margin-top: 2rem;
+	}
+	
+	&__link{
+		position: relative;
+		display: block;
+		padding: 2rem;
+		border-radius: 0.3rem;
+		color: $c-dark;
+		background-color: transparent;
+		transition: color 0.2s ease-out, background-color 0.2s ease-out;
+
+		&:after{
+			@include clr;
+		}
+
+		&:focus,
+		&:hover{
+			color: $c-lightest;
+			background-color: $c-main;
+
+			.news{
+
+				&__date{
+					color: $c-lightest;
+				}
+
+				&__text{
+					color: $c-lightest;
+				}
+			}
+		}
+	}
+
+	&__imgBox{
+		z-index: 1;
+		position: relative;
+		float: left;
+		width: 0;
+
+		@include parent('body', '[dir=rtl]') {
+			float: right;
+		}
+	}
+
+	&__img{
+		position: relative;
+		left: 0;
+		// bottom: 2rem; // for full height
+		width: 12rem;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		border-radius: 0.3rem;
+
+		@include parent('body', '[dir=rtl]') {
+			left: auto;
+			right: 0;
+		}
+
+		&:before{
+			@include aratio(12, 16);
+		}
+	}
+
+	&__inner{
+		z-index: 0;
+		position: relative;
+		float: left;
+		margin-left: 14rem;
+
+		@include parent('body', '[dir=rtl]') {
+			float: right;
+			margin-left: 0;
+			margin-right: 14rem;
+			text-align: right;
+		}
+	}
+
+	&__date{
+		display: block;
+		color: $c-mainDark;
+		font-size: 1.4rem;
+		line-height: 1.6rem;
+		text-transform: uppercase;
+		transition: color 0.2s ease-out;
+		margin-bottom: 1.2rem;
+	}
+
+	&__title{
+		font-size: 1.8rem;
+		line-height: 2.2rem;
+		font-weight: 500;
+	}
+
+	&__text{
+		color: $c-gray;
+		font-size: 1.4rem;
+		line-height: 2rem;
+		margin-top: 1.2rem;
+		transition: color 0.2s ease-out;
+		overflow: hidden;
+	}
+}

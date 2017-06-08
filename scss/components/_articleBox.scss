@@ -1,0 +1,45 @@
+.articleBox{
+	position: relative;
+
+	&--spaceTop{
+		padding-top: 9rem;
+	}
+
+	&__content{
+		padding-top: 8rem;
+		overflow: hidden;
+	}
+
+	&__items{
+		position: relative;
+		margin: 0 -3.5rem;
+		font-size: 0;
+	}
+
+	&__item{
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		box-sizing: border-box;
+		padding: 3rem 3.5rem;
+	}
+
+	&__itemInner{
+		&--center{
+			text-align: center;
+		}
+	}
+
+	&__img{
+		display: inline-block;
+		max-width: 100%;
+		height: auto;
+		overflow: hidden;
+		border-radius: 5px;
+
+		img{
+			display: block;
+			max-width: 100%;
+		}
+	}
+}

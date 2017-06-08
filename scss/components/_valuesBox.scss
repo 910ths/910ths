@@ -1,0 +1,72 @@
+.valuesBox{
+	position: relative;
+	
+	&--spaceTop{
+		padding-top: 9rem;
+	}
+
+	&__grid{
+		padding-top: 3rem;
+	}
+
+	&__items{
+		font-size: 0;
+		padding-top: 2rem;
+	}
+
+	&__item{
+		display: inline-block;
+		vertical-align: top;
+		width: 33.33%;
+		text-align: center;
+		box-sizing: border-box;
+		padding: 2rem;
+
+		&:hover {
+
+			img {
+				transform: scale(0.8);
+			}
+
+			h3 {
+				transform: translateY(-5px);
+			}
+		}
+	}
+
+	&__imgBox{
+		display: block;
+		height: 10rem;
+		padding-top: 1rem;
+		margin-bottom: 2rem;
+
+		&:after{
+			@include vcAfter;
+		}
+	}
+
+	&__img{
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 100%;
+		max-height: 100%;
+		width: auto;
+		transition: transform 0.2s ease;
+	}
+
+	&__text{
+		display: block;
+		font-size: 1.6rem;
+		line-height: 2.4rem;
+		font-weight: 300;
+		max-width: 280px;
+		margin: 0 auto;
+
+		h3{
+			font-size: 2rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			transition: transform 0.2s ease;
+		}
+	}
+}

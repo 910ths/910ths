@@ -1,0 +1,62 @@
+{% for section in site.products-section %}
+	{% if section.title contains page.02_products_section %}
+
+		<section id="homeGrid" class="homeGrid stdBg">
+			<div class="wrapper wrapper--inside">
+
+				<div class="homeGrid__introBox">
+					<div class="textBox">
+						<span class="textBox__preTitle textBox__preTitle--large textBox__preTitle--mainColor">{% value section.header %}</span>
+
+						{% capture title %}{% value section.text %}{% endcapture %}
+						<h3 class="textBox__title textBox__title--large">{{ title | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
+					</div>
+				</div>
+
+				<div class="homeGrid__items jsShowDelayed" data-random-show="1">
+
+					{% for current in section.02_products %}
+						{% for product in site.products %}
+							{% if product.title contains current %}
+
+								{% include settings/product.html %}
+
+								<div class="homeGrid__item {{ settings_layout }}">
+									<div class="homeGrid__space">
+										<div class="homeGrid__box {{ settings_box }} {{ settings_lightness }}">
+											<div class="homeGrid__bgImg" style="background-image: url({{ product.background_asset }});"></div>
+											<div class="homeGrid__content {{ settings_content }}">
+												<div class="homeGrid__inner">
+
+													<div class="textBox">
+														{% capture title %}{% value product.title_text %}{% endcapture %}
+														<h4 class="textBox__title textBox__title--grid">
+															{{ title | markdownify | remove: '<p>' | remove: '</p>' }}
+														</h4>
+
+														{% capture description %}{% value product.description %}{% endcapture %}
+														<div class="textBox__text textBox__text--grid">{{ description | markdownify }}</div>
+														<div class="textBox__button textBox__button--grid">
+															<a href="{% value product.button_url %}" class="button {{ settings_button }}">
+																<span class="button__text">{% t more %}</span>
+															</a>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							{% endif %}
+						{% endfor %}
+					{% endfor %}
+
+				</div>
+
+			</div>
+		</section>
+
+	{% endif %}
+{% endfor %}

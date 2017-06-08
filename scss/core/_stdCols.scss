@@ -1,0 +1,65 @@
+.stdCols{
+	position: relative;
+
+	&--space{
+		padding: 4rem 0;
+	}
+
+	&--spaceBot{
+		padding-bottom: 8rem;
+	}
+
+	&--spaceTop{
+		padding-top: 8rem;
+	}
+
+	&__cols{
+		position: relative;
+		margin-left: -3rem;
+		text-align: left;
+		font-size: 0;
+
+		&--career{
+			margin-left: -6rem;
+		}
+	}
+
+	&__col{
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		box-sizing: border-box;
+		padding-left: 3rem;
+
+		&--mid{
+			vertical-align: middle;
+		}
+
+		&--z0{ z-index: 0; }
+		&--z1{ z-index: 1; }
+		&--z2{ z-index: 2; }
+
+		&--career{
+			padding-left: 6rem;
+		}
+	}
+
+	&__row{
+		& + &{
+			margin-top: 3rem;
+		}
+	}
+
+	&__head{
+		padding: 3rem 0;
+
+		&--center{
+			text-align: center;
+		}
+	}
+
+	&__body{
+		border-top: 1px solid $c-border;
+	}
+}

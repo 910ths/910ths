@@ -1,0 +1,56 @@
+@media screen and (max-width: 879px) {
+
+	.stdCols{
+		&--space{
+			padding: 4rem 0;
+		}
+
+		&__cols{
+			margin-left: -2rem;
+
+			&--career{
+				margin-left: 0;
+			}
+		}
+
+		&__col{
+			padding-left: 2rem;
+
+			&--career{
+				width: 100%;
+				padding-left: 0;
+
+				& + &{
+					padding-top: 3rem;
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 739px) {
+
+	.stdCols{
+		&--space{
+			padding: 3rem 0;
+		}
+
+		&__col{
+			&--stdBanner,
+			&--videoBanner,
+			&--eventsNews{
+				display: block;
+				width: 100%;
+			}
+
+			&--stdBanner,
+			&--videoBanner{
+				& + &{
+					margin-top: 5rem;
+				}
+			}
+		}
+	}
+
+}

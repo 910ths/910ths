@@ -1,0 +1,26 @@
+@media screen and (max-width: 739px) {
+
+	.pageHeader {
+
+		&__menu {
+
+			ul {
+
+				li {
+					width: 100%;
+					margin: 0;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 639px) {
+
+	.pageHeader {
+		margin-top: 33px;
+	}
+
+}

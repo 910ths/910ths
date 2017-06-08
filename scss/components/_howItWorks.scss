@@ -1,0 +1,101 @@
+.howItWorks{
+	position: relative;
+	padding: 5rem 0;
+
+	&__top{
+		text-align: center;
+	}
+
+	&__bot{
+		overflow: hidden;
+	}
+
+	&__steps{
+		position: relative;
+		font-size: 0;
+		text-align: center;
+	}
+
+	&__step{
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: grid(1,3);
+		box-sizing: border-box;
+		padding: 5rem 0;
+
+		&:hover{
+			.howItWorks__stepIcon{
+				transform: translateY(-16px);
+			}
+		}
+	}
+
+	&__stepHead{
+		position: relative;
+		display: block;
+		padding: 0 2rem;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 28px;
+			height: 28px;
+			background-repeat: no-repeat;
+			background-image: url(../img/circleArrow.svg);
+			background-position: 50% 50%;
+			background-size: 100% 100%;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			margin-top: -14px;
+			margin-left: -14px;
+		}
+
+		&--noArrow:before{
+			display: none;
+		}
+	}
+
+	&__stepIcon{
+		display: block;
+		width: 20rem;
+		height: auto;
+		max-width: 100%;
+		margin: 0 auto;
+		margin-bottom: 4rem;
+		transform: translateY(0);
+		transition: transform 0.2s ease-out;
+	}
+
+	&__stepBody{
+		display: block;
+		width: 24rem;
+		max-width: 100%;
+		box-sizing: border-box;
+		padding: 0 2rem;
+		margin: 0 auto;
+	}
+
+	&__stepTitle{
+		font-size: 1.6rem;
+		line-height: 2.8rem;
+		margin-bottom: 0.6rem;
+		text-transform: uppercase;
+		color: $c-main;
+
+		&[data-prefix]{
+			&:before{
+				color: $c-dark;
+				content: attr(data-prefix);
+			}
+		}
+	}
+
+	&__stepText{
+		color: $c-grayDark;
+		font-size: 1.6rem;
+		line-height: 2rem;
+		margin-top: 1.8rem;
+	}
+}

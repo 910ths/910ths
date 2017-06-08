@@ -1,0 +1,178 @@
+.contentPage {
+	padding: 88px 0 24px 0;
+
+	.stdCols__cols {
+		margin-left: -8rem;
+		overflow: hidden;
+
+		.stdCols__col {
+			padding-left: 8rem;
+
+			&--left {
+				float: left;
+
+				@include parent('body', '[dir=rtl]') {
+					float: right;
+				}
+			}
+		}
+	}
+
+	&__title {
+		font-weight: 300;
+		font-size: 4rem;
+		line-height: 5.5rem;
+
+		@include parent('body', '[dir=rtl]') {
+			text-align: right;
+		}
+
+		strong {
+			display: block;
+			font-weight: 700;
+		}
+	}
+
+	&__date {
+		margin-top: 3rem;
+		font-weight: 400;
+		font-size: 1.8rem;
+		line-height: 2.6rem;
+		color: rgb(109, 188, 0);
+
+		@include parent('body', '[dir=rtl]') {
+			text-align: right;
+		}
+
+		strong {
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+	}
+
+	&__desc {
+		margin-top: 3.8rem;
+	}
+
+
+	&__eventBox {
+		margin-top: 12px;
+		position: relative;
+		border-radius: 8px;
+		overflow: hidden;
+		z-index: 10;
+	}
+
+	&__map {
+		width: 100%;
+		height: 37.5rem;
+	}
+
+	&__data {
+		background-color: rgb(117, 189, 15);
+
+		@include parent('body', '[dir=rtl]') {
+			text-align: right;
+		}
+
+		ul {
+			padding: 3.7rem 4.3rem 3.5rem 4.3rem;
+
+			li {
+				position: relative;
+				font-weight: 300;
+				font-size: 1.6rem;
+				line-height: 2.5rem;
+				color: rgb(255, 255, 255);
+				padding-left: 5rem;
+				margin-top: 2.1rem;
+
+				@include parent('body', '[dir=rtl]') {
+					padding-left: 0;
+					padding-right: 5rem;
+				}
+
+				&:first-child {
+					margin-top: 0;
+				}
+
+				&:before {
+					position: absolute;
+					top: calc(50% - 13px);
+					left: 0;
+					font-family: 'icomoon';
+					font-size: 2.6rem;
+					color: rgb(55, 123, 0);
+
+					@include parent('body', '[dir=rtl]') {
+						left: auto;
+						right: 0;
+					}
+				}
+
+				a {
+					display: inline-block;
+					font-weight: 500;
+					color: rgb(255, 255, 255);
+					transition: 0.3s all;
+
+					&:hover {
+						opacity: 0.75;
+					}
+				}
+
+				&.date {
+					font-weight: 500;
+
+					&:before {
+						content: '\e902';
+					}
+
+					span {
+						display: block;
+						font-weight: 700;
+						font-size: 2.2rem;
+						line-height: 2.9rem;
+						margin-bottom: 3px;
+					}
+
+					sup {
+						vertical-align: super;
+						font-size: 8px;
+						padding-left: 1px;
+					}
+				}
+
+				&.location {
+
+					&:before {
+						content: '\e901';
+					}
+				}
+
+				&.info {
+
+					&:before {
+						content: '\e900';
+					}
+				}
+			}
+		}
+	}
+
+
+	&__images {
+		margin-top: 12px;
+
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: 8px;
+			margin-top: 32px;
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+@media screen and (max-width: 879px) {
+
+	.contentPage {
+		padding-top: 5rem;
+		padding-bottom: 0;
+
+		.stdCols__cols {
+			margin-left: -2rem;
+
+			.stdCols__col {
+				width: 100%;
+				padding-left: 2rem;
+
+				&--left {
+					float: none !important;
+				}
+			}
+		}
+
+		&__title {
+			margin-top: 0;
+		}
+
+		&__content {
+			margin-bottom: 0;
+		}
+
+		&__eventBox {
+			margin-top: 5rem;
+		}
+
+		&__images {
+			margin-top: 5rem;
+		}
+	}
+}

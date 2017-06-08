@@ -1,0 +1,18 @@
+@media screen and (max-width: 499px) {
+
+	.news{
+		
+		&__link{
+			padding: 1rem;
+		}
+		
+		&__img{
+			width: 10rem;
+		}
+
+		&__inner{
+			margin-left: 12rem;
+		}
+	}
+
+}

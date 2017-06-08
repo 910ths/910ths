@@ -1,0 +1,17 @@
+<div class="pagination">
+	{% if paginator.total_pages > 1 %}
+
+		{% if paginator.previous_page %}
+			<a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="button button--grid pagination__item pagination__item--newer">
+				<span class="button__text">{% t pagination.newer %}</span>
+			</a>
+		{% endif %}
+
+		{% if paginator.next_page %}
+			<a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="button button--grid pagination__item pagination__item--older">
+				<span class="button__text">{% t pagination.older %}</span>
+			</a>
+		{% endif %}
+
+	{% endif %}
+</div>

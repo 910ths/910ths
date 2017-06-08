@@ -1,0 +1,55 @@
+@media screen and (max-width: 1119px) {
+
+	.articleBox{
+
+		&__items{
+			margin: 0 -2rem;
+		}
+
+		&__item{
+			padding: 2rem;
+		}
+	}
+
+}
+
+@media screen and (max-width: 879px) {
+
+	.articleBox{
+
+		&--spaceTop{
+			padding-top: 6rem;
+		}
+
+		&__content{
+			padding-top: 4rem;
+		}
+	}
+
+}
+
+@media screen and (max-width: 739px) {
+
+	.articleBox{
+		&__item{
+			display: block;
+			width: 100%;
+		}
+	}
+
+}
+
+@media screen and (max-width: 499px) {
+
+	.articleBox{
+
+		&--spaceTop{
+			padding-top: 4rem;
+		}
+
+		&__content{
+			padding-top: 2rem;
+		}
+	}
+
+}

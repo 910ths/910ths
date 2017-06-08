@@ -1,0 +1,17 @@
+<div class="stdCols__head stdCols__head--center">
+	<div class="textBox">
+		<h3 class="textBox__title">
+			{% if site.lang == "en" %}
+				{% t latest.events.t_01 %}
+				<a href="{% t lang_slug %}/events" class="textBox__titleLink">
+					<strong>{% t latest.events.t_02 %}</strong>
+				</a>
+			{% else %}
+				<a href="{% t lang_slug %}/events" class="textBox__titleLink">
+					<strong>{% t latest.events.t_02 %}</strong>
+				</a>
+				{% t latest.events.t_01 %}
+			{% endif %}
+		</h3>
+	</div>
+</div>

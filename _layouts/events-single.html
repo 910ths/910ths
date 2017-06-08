@@ -1,0 +1,80 @@
+---
+layout: events-single
+---
+
+{% include head.html %}
+
+	{% include components/page-header.html %}
+
+	{% assign date_start  = page.start_date | date: "%F" %}
+	{% assign date_end    = page.end_date | date: "%F" %}
+
+	{% assign day_start   = page.start_date | date: "%d" %}
+	{% assign month_start = page.start_date | date: "m_%m" %}
+	{% assign year_start  = page.start_date | date: "%Y" %}
+
+	{% assign day_end     = page.end_date | date: "%d" %}
+	{% assign month_end   = page.end_date | date: "m_%m" %}
+	{% assign year_end    = page.end_date | date: "%Y" %}
+
+	{% assign time_start  = page.start_date | date: "%I<sup>%M</sup>" %}
+	{% assign time_end    = page.end_date | date: "%I<sup>%M</sup>" %}
+
+	{% assign hour_start  = page.start_date | date: "%P" %}
+	{% assign hour_end    = page.end_date | date: "%P" %}
+
+	<div class="contentPage">
+		<div class="wrapper wrapper--inside">
+			<div class="stdCols__cols">
+				<div class="stdCols__col">
+					<div class="contentPage__content">
+						{% capture title %}{% value page.title_text %}{% endcapture %}
+						<h2 class="contentPage__title">
+							{{ title | markdownify | remove: '<p>' | remove: '</p>' }}
+						</h2>
+						<div class="contentPage__date">
+							<strong>{% t event %}</strong> - 
+							{% numerals {{ day_start }} %} {% t months.full.{{month_start}} %} {% numerals {{ year_start }} %}
+						</div>
+
+						{% capture description %}{% value page.description %}{% endcapture %}
+						<div class="contentPage__desc textWrap">{{ description | markdownify }}</div>
+					</div>
+				</div>
+				<div class="stdCols__col">
+					<div class="contentPage__eventBox">
+						<div class="contentPage__map" data-marker="/img/marker.png" data-lat="{{ page.lat }}" data-lng="{{ page.lng }}"></div>
+						<div class="contentPage__data">
+							<ul>
+								<li class="date">
+									<span>
+										{% numerals {{ day_start }} %} {% t months.full.{{month_start}} %}
+										{% if date_start != date_end %}
+											- {% numerals {{ day_end }} %} {% t months.full.{{month_end}} %}
+										{% endif %}
+									</span>
+									{% numerals {{ time_start }} %} {% t time.{{hour_start}} %}
+									 - 
+									{% numerals {{ time_end }} %} {% t time.{{hour_end}} %}
+								</li>
+								<li class="location">{% value page.location %}</li>
+
+								{% capture info %}{% value page.info_text %}{% endcapture %}
+								{% if info != empty  %}
+									<li class="info">
+										{{ info | markdownify | remove: '<p>' | remove: '</p>' }}
+									</li>
+								{% endif %}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={{ site. google_maps_js_api }}"></script>
+
+	{% include sections/events-and-news.html %}
+
+{% include footer.html %}

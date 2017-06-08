@@ -1,0 +1,40 @@
+{% for section in site.values-section %}
+	{% if section.title contains page.11_values_section %}
+
+		<section class="valuesBox valuesBox--spaceTop">
+			<div class="wrapper wrapper--inside">
+
+				<div class="valuesBox__introBox">
+					<div class="textBox">
+						{% capture title %}{% value section.header_text %}{% endcapture %}
+						<h3 class="textBox__title textBox__title--large">
+							{{ title | markdownify | remove: '<p>' | remove: '</p>' }}
+						</h3>
+					</div>
+				</div>
+
+				<div class="valuesBox__grid">
+					<div class="valuesBox__items jsShowDelayed">
+
+						{% for value in section.list %}
+
+							<div class="valuesBox__item">
+								<div class="valuesBox__imgBox">
+									<img src="{{ value.image }}" alt="" class="valuesBox__img" />
+								</div>
+								<div class="valuesBox__text">
+									<h3>{% value value.title %}</h3>
+									<p>{% value value.information %}</p>
+								</div>
+							</div>
+
+						{% endfor %}
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+	{% endif %}
+{% endfor %}

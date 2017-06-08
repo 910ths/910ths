@@ -1,0 +1,84 @@
+.popup{
+	z-index: 100000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.4s ease-out, visibility 0.4s ease-out;
+
+	&--active{
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&__overlay{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,0.8);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__close{
+		z-index: 1;
+		display: block;
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: #fff;
+
+		&:before{
+			content: '';
+			@include absCenter(24px,24px);
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: cover;
+			background-image: url(../img/cross.png);
+			transform: rotate(0deg);
+			transition: transform 0.3s ease-out;
+		}
+
+		&:focus,
+		&:hover{
+			&:before{
+				transform: rotate(-180deg);
+			}
+		}
+	}
+
+	&__scroll{
+		z-index: 0;
+		position: relative;
+		width: 100%;
+		max-height: 100%;
+		overflow: auto;
+	}
+
+	&__outer{
+		padding: 40px 10%;
+		font-size: 0;
+		text-align: center;
+	}
+
+	&__box{
+		max-width: 90%;
+		display: inline-block;
+		max-height: 100%;
+		// padding: 2rem;
+		background-color: $c-darkest;
+		box-shadow: 0 0 16px rgba(0,0,0,0.6);
+	}
+
+	&__inner{
+		position: relative;
+	}
+}

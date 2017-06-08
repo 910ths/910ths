@@ -1,0 +1,40 @@
+{% for section in site.slider %}
+	{% if section.title contains page.01_slider %}
+
+		<section class="homeBanner">
+			<div class="homeBanner__bg"></div>
+			<video loop poster="{{ section.poster_asset }}" class="homeBanner__bg">
+				<source src="{{ section.background_asset }}" type="video/mp4">
+			</video>
+			<div class="homeBanner__bgMobile" style="background-image: url({{ section.poster_asset }}); background-position-x: {{ section.mobile_poster_offset }}%;"></div>
+			<div class="homeBanner__masks">
+				<div class="homeBanner__mask homeBanner__mask--l"></div>
+				<div class="homeBanner__mask homeBanner__mask--r"></div>
+			</div>
+			<div class="homeBanner__content">
+				<div class="homeBanner__center">
+					<div class="wrapper wrapper--inside">
+
+						<div class="textBox">
+							<h2 class="textBox__title textBox__title--huge">{% value section.header %}</h2>
+
+							{% capture description %}{% value section.description %}{% endcapture %}
+							<div class="textBox__text textBox__text--huge">{{ description | markdownify }}</div>
+							<div class="textBox__button textBox__button--huge globShowOnlyLogged">
+								<a href="{% value section.button_url %}" class="button button--solid button--cta">
+									<span class="button__text">{% value section.button %}</span>
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<a href="#" class="homeBanner__mouse jsScrollTo" data-scroll-to="#homeGrid">
+					<img src="/img/mouse-o.svg" class="homeBanner__mouseBody" />
+					<img src="/img/mouse-i.svg" class="homeBanner__mouseWheel" />
+				</a>
+			</div>
+		</section>
+
+	{% endif %}
+{% endfor %}

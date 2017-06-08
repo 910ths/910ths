@@ -1,0 +1,67 @@
+---
+layout: about-us
+---
+
+{% include head.html %}
+
+	{% include components/page-header.html %}
+
+	<div id="siteRoot" class="siteRoot">
+
+		<section class="articleBox articleBox--spaceTop">
+			<div class="wrapper wrapper--inside">
+
+				<div class="articleBox__introBox">
+					<div class="textBox">
+						{% capture title %}{% value page.header_text %}{% endcapture %}
+						<h3 class="textBox__title textBox__title--large">
+							{{ title | markdownify | remove: '<p>' | remove: '</p>' }}
+						</h3>
+					</div>
+				</div>
+
+				<div class="articleBox__content">
+					<div class="articleBox__items">
+						{% for section in page.list %}
+
+							{% if section.is_used_image %}
+
+								<div class="articleBox__item">
+									<div class="articleBox__itemInner articleBox__itemInner--center">
+										<div class="articleBox__img">
+											<img src="{{ section.image }}" alt="" />
+										</div>
+									</div>
+								</div>
+
+							{% else %}
+
+								<div class="articleBox__item">
+									{% capture text %}{% value section.text %}{% endcapture %}
+									<div class="articleBox__itemInner textWrap">
+										{{ text | markdownify}}
+									</div>
+								</div>
+
+							{% endif %}
+
+						{% endfor %}
+					</div>
+				</div>
+
+			</div>
+		</section>	
+
+		{% include sections/quote.html %}
+
+		{% include sections/values.html %}
+
+		{% include sections/banner.html %}
+
+		{% include sections/events-and-news.html %}
+
+		{% include sections/partners.html %}
+
+	</div>
+
+{% include footer.html %}
