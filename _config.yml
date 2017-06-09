@@ -43,7 +43,7 @@ collections:
     output: false
   work-offers-section:
     title: 20_Work_offers_section
-    output: true
+    output: false
   work-offers-category:
     title: 20__Work_offers_category
     output: false
@@ -303,7 +303,6 @@ exclude:
 - js/isotope.pkgd.min.js
 gems:
 - jekyll-multiple-languages-plugin
-- jekyll/itafroma/collapse_newlines
 - jekyll-sitemap
 - jekyll-paginate-v2
 languages:

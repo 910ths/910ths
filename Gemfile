@@ -6,7 +6,6 @@ source "https://rubygems.org"
 # Gem Requirements
 gem 'jekyll', '3.4.3'
 gem "jekyll-multiple-languages-plugin"
-gem "jekyll-itafroma-collapse_newlines"
 gem "jekyll-sitemap"
 gem "jekyll-paginate-v2"
 
