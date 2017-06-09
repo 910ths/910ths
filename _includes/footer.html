@@ -70,8 +70,9 @@
 							{% for item in nav.items %}
 										
 								{% capture url %}{% value item.url %}{% endcapture %}
+								{% assign url = url | strip %}
 
-								{% if link != empty %}
+								{% if url != empty %}
 									<a url="{{ url }}" class="globFooterLogos__item" {% target {{ item.is_open_in_new_tab }} %}>
 										<img src="{{ item.image }}" alt="">
 									</a>
@@ -135,6 +136,7 @@
 			</div>
 		</div>
 	</footer>
+
 
 	<!-- Zendesk -->
 

@@ -282,6 +282,7 @@ esso:
 esso_api:
   base_url: https://esso-api.910ths.sa/api
 06_partners_section: Default
+google_analytics_ua: 
 google_maps_js_api: AIzaSyCy6hRFVqBgV_JH5DLWLVXqaj4hAdvjdIw
 description: 
 arabic_description: 

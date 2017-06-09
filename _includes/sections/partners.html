@@ -30,6 +30,7 @@
 									{% if partner.title contains current %}
 								
 										{% capture link %}{% value partner.link %}{% endcapture %}
+										{% assign link = link | strip %}
 
 										<div class="logosBanner__logo">
 											{% if link != empty %}
