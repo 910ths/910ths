@@ -6,7 +6,7 @@ module MinifyHTML
 		content = content.gsub(/\n/, '')
 		content = content.gsub(/\t/, '')
 		content = content.gsub(/\<!--(.*?)--\>/, '')
-		content = content.gsub(/\>\s+\</, '')
+		content = content.gsub(/\>\s+\</, '><')
 
 	end
 
