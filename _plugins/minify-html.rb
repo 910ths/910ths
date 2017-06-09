@@ -1,23 +1,15 @@
-module Jekyll
-	module Convertible
+module MinifyHTML
 
-		def write(dest)
+	def minify(content)
 
-			path = destination(dest)
-			FileUtils.mkdir_p(File.dirname(path))
-			output.strip!
-
-			if File.extname(path).downcase.eql? '.html'
-
-				self.output = self.output.gsub(/\n/, '')
-				self.output = self.output.gsub(/\t/, '')
-				self.output = self.output.gsub(/\>\s+\</, '')
-
-			end
-
-			File.open(path, 'w') { |f| f.write(output) }
-
-		end
+		content = content.strip
+		content = content.gsub(/\n/, '')
+		content = content.gsub(/\t/, '')
+		content = content.gsub(/\<!--(.*?)--\>/, '')
+		content = content.gsub(/\>\s+\</, '')
 
 	end
+
 end
+
+Liquid::Template.register_filter(MinifyHTML)

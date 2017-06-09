@@ -2,6 +2,9 @@
 layout: about-us
 ---
 
+{% capture html_content %}
+<!-- START HTML -->
+
 {% include head.html %}
 
 	{% include components/page-header.html %}
@@ -65,3 +68,6 @@ layout: about-us
 	</div>
 
 {% include footer.html %}
+
+<!-- END HTML -->
+{% endcapture %}{{ html_content | minify }}

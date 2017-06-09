@@ -2,6 +2,9 @@
 layout: text
 ---
 
+{% capture html_content %}
+<!-- START HTML -->
+
 {% include head.html %}
 
 	<div class="pageHeader">
@@ -27,3 +30,6 @@ layout: text
 	</div>
 
 {% include footer.html %}
+
+<!-- END HTML -->
+{% endcapture %}{{ html_content | minify }}

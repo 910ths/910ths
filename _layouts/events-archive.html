@@ -2,6 +2,9 @@
 layout: event-archive
 ---
 
+{% capture html_content %}
+<!-- START HTML -->
+
 {% include head.html %}
 
 	{% include components/page-header.html %}
@@ -25,3 +28,6 @@ layout: event-archive
 	</section>
 
 {% include footer.html %}
+
+<!-- END HTML -->
+{% endcapture %}{{ html_content | minify }}

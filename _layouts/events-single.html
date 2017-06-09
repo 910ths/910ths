@@ -2,6 +2,9 @@
 layout: events-single
 ---
 
+{% capture html_content %}
+<!-- START HTML -->
+
 {% include head.html %}
 
 	{% include components/page-header.html %}
@@ -78,3 +81,6 @@ layout: events-single
 	{% include sections/events-and-news.html %}
 
 {% include footer.html %}
+
+<!-- END HTML -->
+{% endcapture %}{{ html_content | minify }}

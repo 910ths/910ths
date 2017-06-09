@@ -74,4 +74,3 @@ media_list:
 layout: career
 ---
 
-## 

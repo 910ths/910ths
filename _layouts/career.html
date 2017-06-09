@@ -2,6 +2,9 @@
 layout: career
 ---
 
+{% capture html_content %}
+<!-- START HTML -->
+
 {% include head.html %}
 
 	{% include components/page-header.html %}
@@ -97,3 +100,6 @@ layout: career
 	</div>
 
 {% include footer.html %}
+
+<!-- END HTML -->
+{% endcapture %}{{ html_content | minify }}

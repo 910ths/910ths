@@ -2,6 +2,9 @@
 layout: index
 ---
 
+{% capture html_content %}
+<!-- START HTML -->
+
 {% include head.html %}
 
 	<div id="siteRoot" class="siteRoot">
@@ -23,3 +26,6 @@ layout: index
 	</div>
 
 {% include footer.html %}
+
+<!-- END HTML -->
+{% endcapture %}{{ html_content | minify }}
