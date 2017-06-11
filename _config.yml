@@ -133,7 +133,7 @@ defaults:
     text: ''
     arabic_text: ''
     02_products:
-    -
+    - 
 - scope:
     path: ''
     type: banner
@@ -201,7 +201,7 @@ defaults:
     button_url: ''
     arabic_button_url: ''
     06_partners:
-    -
+    - 
     background_asset: ''
     background_hex: ''
 - scope:
@@ -250,7 +250,7 @@ defaults:
     arabic_location: ''
     20__work_offers_category: ''
     20__work_offers_type: ''
-    information:
+    information: 
     arabic_information: ''
     button_url: ''
     arabic_button_url: ''
@@ -277,10 +277,10 @@ defaults:
 title_suffix: Nine Tenths
 arabic_title_suffix: تسعة أعشار
 06_partners_section: Default
-google_analytics_ua:
+google_analytics_ua: 
 google_maps_js_api: AIzaSyCy6hRFVqBgV_JH5DLWLVXqaj4hAdvjdIw
-description:
-arabic_description:
+description: 
+arabic_description: 
 permalink: pretty
 markdown: kramdown
 exclude:
