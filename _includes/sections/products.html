@@ -37,7 +37,14 @@
 														{% capture description %}{% value product.description %}{% endcapture %}
 														<div class="textBox__text textBox__text--grid">{{ description | markdownify }}</div>
 														<div class="textBox__button textBox__button--grid">
-															<a href="{% value product.button_url %}" class="button {{ settings_button }}">
+															{% capture button_url %}
+																{% if jekyll.environment == 'production' %}
+																	{% value product.button_url %}
+																{% else %}
+																	{% value product.button_uat_url %}
+																{% endif %}
+															{% endcapture %}
+															<a href="{{ button_url }}" class="button {{ settings_button }}">
 																<span class="button__text">{% t more %}</span>
 															</a>
 														</div>

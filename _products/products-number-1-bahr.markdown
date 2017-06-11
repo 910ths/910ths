@@ -7,10 +7,11 @@ arabic_title_text: منصة بحر
 description: Find freelancers to tackle any job, any size, any time.
 arabic_description: منصة تجمع المستقلين مع أصحاب العمل لانجاز مشاريعك بسرعة و كفاءة.
 button_url: https://bahr.910ths.sa/en
+button_uat_url: https://uat-bahr.910ths.sa/en
 arabic_button_url: https://bahr.910ths.sa/ar
+arabic_button_uat_url: https://uat-bahr.910ths.sa/ar
 background_asset: "/uploads/access-to-freelancers.jpg"
 products_layout: Horizontal
 products_aligment: Right
 is_dark: true
 ---
-

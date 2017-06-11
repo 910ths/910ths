@@ -13,7 +13,14 @@
 						{% capture description %}{% value section.description %}{% endcapture %}
 						<div class="textBox__text">{{ description | markdownify }}</div>
 						<div class="textBox__button">
-							<a href="{% value section.button_url %}" class="button button--solidLightest">
+							{% capture button_url %}
+								{% if jekyll.environment == 'production' %}
+									{% value section.button_url %}
+								{% else %}
+									{% value section.button_uat_url %}
+								{% endif %}
+							{% endcapture %}
+							<a href="{{ button_url }}" class="button button--solidLightest">
 								<span class="button__text">{% value section.button %}</span>
 							</a>
 						</div>
@@ -28,7 +35,7 @@
 							{% for current in section.06_partners %}
 								{% for partner in site.partners %}
 									{% if partner.title contains current %}
-								
+
 										{% capture link %}{% value partner.link %}{% endcapture %}
 										{% assign link = link | strip %}
 
@@ -45,7 +52,7 @@
 												</a>
 
 											{% else %}
-												
+
 												<img src="{{ partner.image }}" alt="{{ partner.title }}" class="logosBanner__logoImg" />
 
 											{% endif %}

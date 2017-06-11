@@ -9,10 +9,11 @@ description: An initiative for business users and Enterpreneurs to submit their 
 arabic_description: هل لديك خدمة تظن أنها مفيدة لتطوير قطاع الأعمال في المملكة؟ بإمكانك
   طرحها للتقييم من أجل إضافة الخدمة إلى منصة تسعة أعشار.
 button_url: https://ayos.910ths.sa
+button_uat_url: https://uat-ayos.910ths.sa
 arabic_button_url: https://ayos.910ths.sa
+arabic_button_uat_url: https://uat-ayos.910ths.sa
 background_asset: "/uploads/ideas.jpg"
 products_layout: Horizontal
 products_aligment: None
 is_dark: true
 ---
-

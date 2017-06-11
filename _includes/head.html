@@ -51,36 +51,94 @@
 								<div class="globHeader__container">
 									<ul class="globHeaderSubNav__items">
 										<li class="globHeaderSubNav__item">
-											<a href="{% t products.p_01.url %}">{% t products.p_01.title %}</a>
+											{% capture url %}
+												{% if jekyll.environment == 'production' %}
+													{% t products.p_01.url %}
+												{% else %}
+													{% t products.p_01.uat_url %}
+												{% endif %}
+											{% endcapture %}
+											<a href="{{url}}">{% t products.p_01.title %}</a>
 										</li>
 										<li class="globHeaderSubNav__item">
-											<a href="{% t products.p_02.url %}">{% t products.p_02.title %}</a>
+											{% capture url %}
+												{% if jekyll.environment == 'production' %}
+													{% t products.p_02.url %}
+												{% else %}
+													{% t products.p_02.uat_url %}
+												{% endif %}
+											{% endcapture %}
+											<a href="{{url}}">{% t products.p_02.title %}</a>
 										</li>
 										<li class="globHeaderSubNav__item">
-											<a href="{% t products.p_03.url %}">{% t products.p_03.title %}</a>
+											{% capture url %}
+												{% if jekyll.environment == 'production' %}
+													{% t products.p_03.url %}
+												{% else %}
+													{% t products.p_03.uat_url %}
+												{% endif %}
+											{% endcapture %}
+											<a href="{{url}}">{% t products.p_03.title %}</a>
 										</li>
 										<li class="globHeaderSubNav__item">
-											<a href="{% t products.p_04.url %}">{% t products.p_04.title %}</a>
+											{% capture url %}
+												{% if jekyll.environment == 'production' %}
+													{% t products.p_04.url %}
+												{% else %}
+													{% t products.p_04.uat_url %}
+												{% endif %}
+											{% endcapture %}
+											<a href="{{url}}">{% t products.p_04.title %}</a>
 										</li>
 										<li class="globHeaderSubNav__item">
-											<a href="{% t products.p_05.url %}">{% t products.p_05.title %}</a>
+											{% capture url %}
+												{% if jekyll.environment == 'production' %}
+													{% t products.p_05.url %}
+												{% else %}
+													{% t products.p_05.uat_url %}
+												{% endif %}
+											{% endcapture %}
+											<a href="{{url}}">{% t products.p_05.title %}</a>
 										</li>
 										<li class="globHeaderSubNav__item">
-											<a href="{% t products.p_06.url %}">{% t products.p_06.title %}</a>
+											{% capture url %}
+												{% if jekyll.environment == 'production' %}
+													{% t products.p_06.url %}
+												{% else %}
+													{% t products.p_06.uat_url %}
+												{% endif %}
+											{% endcapture %}
+											<a href="{{url}}">{% t products.p_06.title %}</a>
 										</li>
 										<li class="globHeaderSubNav__item">
-											<a href="{% t products.p_07.url %}">{% t products.p_07.title %}</a>
+											{% capture url %}
+												{% if jekyll.environment == 'production' %}
+													{% t products.p_07.url %}
+												{% else %}
+													{% t products.p_07.uat_url %}
+												{% endif %}
+											{% endcapture %}
+											<a href="{{url}}">{% t products.p_07.title %}</a>
 										</li>
 									</ul>
 								</div>
 							</div>
 						</li>
+						{% if jekyll.environment == 'production' %}
+							{% assign esso_base_url = 'https://esso.910ths.sa' %}
+							{% assign esso_client_id = '8' %}
+						  {% assign esso_api_base_url = 'https://esso-api.910ths.sa/api' %}
+						{% else %}
+						  {% assign esso_base_url = 'https://uat-esso.910ths.sa' %}
+							{% assign esso_client_id = '24' %}
+							{% assign esso_api_base_url = 'https://uat-esso-api.910ths.sa/api' %}
+						{% endif %}
 						<li class="globHeaderNav__item globShowOnlyLogged">
-							<a href="{{site.esso.base_url}}/register" class="globHeaderNav__link">
+							<a href="{{esso_base_url}}/register" class="globHeaderNav__link">
 								<span class="globHeaderNav__button">{% t api.join %}</span>
 							</a>
 						</li>
-						<li class="globHeaderNav__item globLoginWrap" data-esso-login-url="{{ site.esso.base_url }}" data-esso-client-id="{{ site.esso.client_id }}" data-esso-api-url="{{ site.esso_api.base_url }}">
+						<li class="globHeaderNav__item globLoginWrap" data-esso-login-url="{{ esso_base_url }}" data-esso-client-id="{{ esso_client_id }}" data-esso-api-url="{{ esso_api_base_url }}">
 							<a href="#" class="globHeaderNav__link globLoginButton">{% t api.login %}</a>
 							<a href="#" class="globHeaderNav__link globAvatar">
 								{% t api.account %} <span></span>
@@ -89,16 +147,16 @@
 								<div class="globHeader__container">
 									<ul class="globHeaderSubNav__items">
 										<li class="globHeaderSubNav__item">
-											<a href="{{site.esso.base_url}}/profile">{% t api.settings %}</a>
+											<a href="{{esso_base_url}}/profile">{% t api.settings %}</a>
 										</li>
 										<li class="globHeaderSubNav__item">
-											<a href="{{site.esso.base_url}}/logout" class="globLogoutButton">{% t api.logout %}</a>
+											<a href="{{esso_base_url}}/logout" class="globLogoutButton">{% t api.logout %}</a>
 										</li>
 									</ul>
 								</div>
 							</div>
 						</li>
-						
+
 						<li class="globHeaderNav__line"></li>
 
 						{% assign nav = site.management | where: 'type', 'nav-mobile-header' %}
@@ -107,7 +165,6 @@
 						{% if nav.published != false %}
 
 							{% for item in nav.items %}
-
 								<li class="globHeaderNav__item globHeaderNav__item--mobile">
 									<a href="{% path item.url %}" class="globHeaderNav__link" {% target {{ item.is_open_in_new_tab }} %}>
 										{% value item.title %}

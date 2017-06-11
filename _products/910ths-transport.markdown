@@ -8,9 +8,10 @@ arabic_title_text: 910ths **Transport**
 description: Simply select category and find the right for you. Simple as that!
 arabic_description: Simply select category and find the right for you. Simple as that!
 button_url: "#"
+button_uat_url: "#"
 arabic_button_url: "#"
+arabic_button_uat_url: "#"
 background_asset: "/uploads/910ths-transport.jpg"
 products_layout: Default
 products_aligment: None
 ---
-

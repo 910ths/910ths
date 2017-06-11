@@ -21,7 +21,14 @@
 							{% capture description %}{% value section.description %}{% endcapture %}
 							<div class="textBox__text textBox__text--huge">{{ description | markdownify }}</div>
 							<div class="textBox__button textBox__button--huge globShowOnlyLogged">
-								<a href="{% value section.button_url %}" class="button button--solid button--cta">
+								{% capture button_url %}
+									{% if jekyll.environment == 'production' %}
+										{% value section.button_url %}
+									{% else %}
+										{% value section.button_uat_url %}
+									{% endif %}
+								{% endcapture %}
+								<a href="{{ button_url }}" class="button button--solid button--cta">
 									<span class="button__text">{% value section.button %}</span>
 								</a>
 							</div>

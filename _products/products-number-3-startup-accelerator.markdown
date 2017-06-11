@@ -9,10 +9,11 @@ description: Get the opportunity to cultivate business ideas through mentorship 
 arabic_description: احصل على فرصة لصقل أفكارك التجارية ونيل الإرشاد والدعم اللازمين
   لتنميتها في إطار إبداعي وعصري.
 button_url: https://a2a.910ths.sa/lang/en
+button_uat_url: https://uat-a2a.910ths.sa/lang/en
 arabic_button_url: https://a2a.910ths.sa/lang/ar
+arabic_button_uat_url: https://uat-a2a.910ths.sa/lang/ar
 background_asset: "/uploads/start-up-accelerator.jpg"
 products_layout: Horizontal
 products_aligment: Left
 is_dark: true
 ---
-

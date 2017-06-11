@@ -9,10 +9,11 @@ description: We provide small and medium businesses with the information they ne
 arabic_description: نمد الشركات الصغيرة والمتوسطة ورواد الأعمال ببيانات ومعلومات تساعدهم
   في اخذ القرارات المهمة لأعمالهم.
 button_url: https://data.910ths.sa/ar
+button_uat_url: https://uat-data.910ths.sa/ar
 arabic_button_url: https://data.910ths.sa/ar
+arabic_button_uat_url: https://uat-data.910ths.sa/ar
 background_asset: "/uploads/access-to-visas.jpg"
 products_layout: Horizontal
 products_aligment: None
 is_dark: true
 ---
-
