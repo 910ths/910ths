@@ -1,55 +1,15 @@
-direction: rtl
-
 logo: تسعة أعشار
-lang_slug: ''
-
-api:
-    join: سجل معنا
-    login: دخول
-    account: حسابي
-    logout: خروج
-    settings: الإعدادات
-
-products:
-    title: الخدمات
-    p_01:
-        title: الحلول المالية
-        url: https://a2f.910ths.sa/lang/ar
-        uat_url: https://uat-a2f.910ths.sa/lang/ar
-    p_02:
-        title: فرصة
-        url: https://forsa.910ths.sa/
-        uat_url: https://uat-forsa.910ths.sa/
-    p_03:
-        title: منصة بحر
-        url: https://bahr.910ths.sa/ar
-        uat_url: https://uat-bahr.910ths.sa/ar
-    p_04:
-        title: تُجّار
-        url: https://tojjar.910ths.sa/
-        uat_url: https://uat-tojjar.910ths.sa/
-    p_05:
-        title: مسرعة الأعمال الناشئة
-        url: https://a2a.910ths.sa/lang/ar
-        uat_url: https://uat-a2a.910ths.sa/lang/ar
-    p_06:
-        title: الوصول إلى المعلومات
-        url: https://data.910ths.sa/ar
-        uat_url: https://uat-data.910ths.sa/ar
-    p_07:
-        title: أضف خدمتك
-        url: https://ayos.910ths.sa/
-        uat_url: https://uat-ayos.910ths.sa/
+lang_slug: '/ar'
 
 more: المزيد
 watch: شاهد الفيديو
 
 latest:
   events:
-    t_01: القادمة
+    t_01:  القادمة
     t_02: الفعاليات
   news:
-    t_01: أخر
+    t_01:  أخر
     t_02: الأخبار
 
 months:
@@ -93,10 +53,38 @@ pagination:
     newer: أحدث
     older: أقدم
 
-work_offers:
-    filter: Filter
-    see_details: See details
-    date: Date
-    latest: Latest
-    type: Type
-    category: Category
+header:
+    news: أخبار
+    events: فعاليات
+    about_us: عنا
+    blog: المدونة
+
+api:
+    join: سجل معنا
+    account: حسابي
+    logout: خروج
+    settings: الإعدادات
+
+products:
+    title: الخدمات
+    p_01:
+        title: الحلول المالية
+        url: https://a2f.910ths.sa/lang/ar
+    p_02:
+        title: فرصة
+        url: https://forsa.910ths.sa/
+    p_03:
+        title: منصة بحر
+        url: https://bahr.910ths.sa/ar
+    p_04:
+        title: تُجّار
+        url: https://tojjar.910ths.sa/
+    p_05:
+        title: مسرعة الأعمال الناشئة
+        url: https://a2a.910ths.sa/lang/ar
+    p_06:
+        title: الوصول إلى المعلومات
+        url: https://data.910ths.sa/ar
+    p_07:
+        title: أضف خدمتك
+        url: https://ayos.910ths.sa/
