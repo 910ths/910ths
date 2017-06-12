@@ -4,11 +4,34 @@
 		opacity: 1;
 	}
 	71% {
-		transform: translateY(24%);
+		transform: translateY(11px);
 		opacity: 1;
 	}
 	90% {
-		transform: translateY(24%);
+		transform: translateY(11px);
+		opacity: 0;
+	}
+	91% {
+		transform: translateY(0);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+};
+
+@keyframes mouse-wheel-mobile{
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	71% {
+		transform: translateY(7px);
+		opacity: 1;
+	}
+	90% {
+		transform: translateY(7px);
 		opacity: 0;
 	}
 	91% {

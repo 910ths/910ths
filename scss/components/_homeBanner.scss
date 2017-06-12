@@ -141,9 +141,25 @@
 	&__mouseBody{
 		z-index: 0;
 		position: relative;
+
+		@media screen and (max-width: 1024px) {
+			display: none;
+		}
+
+		&--mobile {
+			display: none;
+
+			@media screen and (max-width: 1024px) {
+				display: block;
+			}
+		}
 	}
 
 	&__mouseWheel{
+		top: 7px;
+		right: 0;
+		width: 6px;
+		margin: 0 auto;
 		z-index: 1;
 		position: absolute;
 		animation-name: mouse-wheel;
@@ -151,6 +167,20 @@
 		animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
 		animation-iteration-count: infinite;
 		animation-direction: normal;
-		// animation-delay: 0;
+
+		@media screen and (max-width: 1024px) {
+			display: none;
+		}
+
+		&--mobile {
+			display: none;
+			top: 11px;
+			width: 10px;
+			animation-name: mouse-wheel-mobile;
+
+			@media screen and (max-width: 1024px) {
+				display: block;
+			}
+		}
 	}
 }
