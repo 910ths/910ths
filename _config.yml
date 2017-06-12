@@ -325,6 +325,7 @@ gems:
 - jekyll-multiple-languages-plugin
 - jekyll-sitemap
 - jekyll-paginate-v2
+- jekyll/imgix
 languages:
 - ar
 - en
