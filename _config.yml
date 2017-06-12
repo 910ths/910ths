@@ -115,7 +115,6 @@ defaults:
     bg_video_asset: ''
     bg_video_poster_asset: ''
     bg_image_asset: ''
-    bg_image_asset: ''
     is_bg_image_active: false
     image_offset_x: ''
     image_offset_y: ''
