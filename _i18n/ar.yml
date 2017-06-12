@@ -46,10 +46,10 @@ watch: شاهد الفيديو
 
 latest:
   events:
-    t_01: القادمة
+    t_01:  القادمة
     t_02: الفعاليات
   news:
-    t_01: أخر
+    t_01:  آخر
     t_02: الأخبار
 
 months:
@@ -99,4 +99,4 @@ work_offers:
     date: Date
     latest: Latest
     type: Type
-    category: Category
+    ategory: Category
