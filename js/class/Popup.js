@@ -119,7 +119,8 @@ Popup.prototype = {
 				'controls': 0,
 				'rel': 0,
 				'showinfo': 0,
-				'loop': 1
+				'loop': 1,
+            	'origin': window.location.protocol + '//' + window.location.hostname
 			},
 			events: {
 				'onReady': function() { _this._lockOpen = false; }
