@@ -13,7 +13,7 @@ arabic_description: نُوفّر باقة من الحلول المبتكرة، �
   الأعمال في جميع مراحلها
 button: See Details
 arabic_button: معرفة المزيد
-button_url: https://roadmap.910ths.sa/
+button_url: https://roadmap.910ths.sa/en/
 arabic_button_url: https://roadmap.910ths.sa/
 is_button_active: true
 video_asset: "/uploads/start-banner.mp4"
