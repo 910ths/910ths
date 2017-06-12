@@ -8,6 +8,12 @@ gem 'jekyll', '3.4.3'
 gem "jekyll-multiple-languages-plugin"
 gem "jekyll-sitemap"
 gem "jekyll-paginate-v2"
-gem "jekyll-imgix"
+
+group :jekyll_plugins do
+  gem 'rouge'
+  gem 'kramdown'
+  gem 'liquid'
+  gem 'jekyll-imgix'
+end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
