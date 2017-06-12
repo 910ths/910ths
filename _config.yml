@@ -110,8 +110,6 @@ defaults:
     button_uat_url: ''
     button_url: ''
     arabic_button_url: ''
-    button_uat_url: ''
-    arabic_button_uat_url: ''
     arabic_button_uat_url: ''
     background_asset: ''
 - scope:
