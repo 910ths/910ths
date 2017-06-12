@@ -309,8 +309,6 @@ arabic_description:
 permalink: pretty
 markdown: kramdown
 exclude:
-- Gemfile
-- Gemfile.lock
 - gulpfile.js
 - node_modules
 - npm-debug.log
