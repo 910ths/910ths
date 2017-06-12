@@ -107,8 +107,12 @@ defaults:
     arabic_description: ''
     button: ''
     arabic_button: ''
+    button_uat_url: ''
     button_url: ''
     arabic_button_url: ''
+    button_uat_url: ''
+    arabic_button_uat_url: ''
+    arabic_button_uat_url: ''
     background_asset: ''
 - scope:
     path: ''
@@ -120,6 +124,8 @@ defaults:
     arabic_description: ''
     button_url: ''
     arabic_button_url: ''
+    button_uat_url: ''
+    arabic_button_uat_url: ''
     background_asset: ''
     products_layout: ''
     products_aligment: ''
@@ -148,6 +154,8 @@ defaults:
     arabic_button: ''
     button_url: ''
     arabic_button_url: ''
+    button_uat_url: ''
+    arabic_button_uat_url: ''
     is_button_active: true
     video_asset: ''
     is_video_active: true
@@ -200,6 +208,8 @@ defaults:
     arabic_button: ''
     button_url: ''
     arabic_button_url: ''
+    button_uat_url: ''
+    arabic_button_uat_url: ''
     06_partners:
     - 
     background_asset: ''
