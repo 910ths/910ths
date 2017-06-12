@@ -111,8 +111,8 @@ defaults:
     button_uat_url: ''
     arabic_button_uat_url: ''
     bg_video_asset: ''
-    video_poster_asset: ''
-    mobile_poster_offset: ''
+    bg_video_poster_asset: ''
+    bg_video_poster_offset: ''
     bg_image_asset: ''
     is_bg_image_active: false
 - scope:
