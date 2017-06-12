@@ -104,16 +104,19 @@ defaults:
   values:
     header: ''
     arabic_header: ''
+    description: ''
     arabic_description: ''
     button: ''
     arabic_button: ''
-    button_uat_url: ''
     button_url: ''
     arabic_button_url: ''
     button_uat_url: ''
     arabic_button_uat_url: ''
-    arabic_button_uat_url: ''
-    background_asset: ''
+    bg_video_asset: ''
+    video_poster_asset: ''
+    mobile_poster_offset: ''
+    bg_image_asset: ''
+    is_bg_image_active: false
 - scope:
     path: ''
     type: products

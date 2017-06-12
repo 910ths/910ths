@@ -4,7 +4,7 @@
 	color: $c-lightest;
 	background-color: $c-dark;
 
-	&__bg{
+	&__bgVideo {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -12,12 +12,24 @@
 		min-height: 100%;
 		width: auto;
 		height: auto;
-		background-size: cover; 
+		background-size: cover;
 		opacity: 0.45;
 
 		@media screen and (max-width: 1023px) {
 			display: none;
 		}
+	}
+
+	&__bgImage {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		opacity: 0.45;
 	}
 
 	&__bgMobile {
@@ -29,6 +41,7 @@
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
+		opacity: 0.45;
 
 		@media screen and (min-width: 1024px) {
 			display: none;

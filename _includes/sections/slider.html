@@ -2,11 +2,18 @@
 	{% if section.title contains page.01_slider %}
 
 		<section class="homeBanner">
-			<div class="homeBanner__bg"></div>
-			<video loop poster="{{ section.poster_asset }}" class="homeBanner__bg">
-				<source src="{{ section.background_asset }}" type="video/mp4">
-			</video>
-			<div class="homeBanner__bgMobile" style="background-image: url({{ section.poster_asset }}); background-position-x: {{ section.mobile_poster_offset }}%;"></div>
+			{% if section.is_bg_image_active %}
+
+				<div class="homeBanner__bgImage" style="background-image: url({{ section.bg_image_asset }});"></div>
+
+			{% else %}
+
+				<video class="homeBanner__bgVideo" poster="{{ section.bg_video_poster_asset }}" loop>
+					<source src="{{ section.bg_video_asset }}" type="video/mp4">
+				</video>
+				<div class="homeBanner__bgMobile" style="background-image: url({{ section.bg_video_poster_asset }}); background-position-x: {{ section.bg_video_poster_offset }}%;"></div>
+
+			{% endif %}
 			<div class="homeBanner__masks">
 				<div class="homeBanner__mask homeBanner__mask--l"></div>
 				<div class="homeBanner__mask homeBanner__mask--r"></div>

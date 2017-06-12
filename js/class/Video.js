@@ -21,7 +21,7 @@ Video.prototype = {
 
 		var _this = this;
 
-		_this._video = document.querySelector('video.homeBanner__bg');
+		_this._video = document.querySelector('video.homeBanner__bgVideo');
 
 		if (!_this._video)
 			return false;
