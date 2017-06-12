@@ -1,17 +1,27 @@
 {% for section in site.slider %}
 	{% if section.title contains page.01_slider %}
 
+		{% assign offset_x = section.image_offset_x | strip %}
+		{% assign offset_y = section.image_offset_y | strip %}
+		
+		{% if offset_x != empty %}
+			{% capture offset_x %}background-position-x: {{ offset_x }}%;{% endcapture %}
+		{% endif %}
+		{% if offset_y != empty %}
+			{% capture offset_y %}background-position-y: {{ offset_y }}%;{% endcapture %}
+		{% endif %}
+
 		<section class="homeBanner">
 			{% if section.is_bg_image_active %}
 
-				<div class="homeBanner__bgImage" style="background-image: url({{ section.bg_image_asset }});"></div>
+				<div class="homeBanner__bgImage" style="background-image: url({{ section.bg_image_asset }}); {{ offset_x }} {{ offset_y }}"></div>
 
 			{% else %}
 
 				<video class="homeBanner__bgVideo" poster="{{ section.bg_video_poster_asset }}" loop>
 					<source src="{{ section.bg_video_asset }}" type="video/mp4">
 				</video>
-				<div class="homeBanner__bgMobile" style="background-image: url({{ section.bg_video_poster_asset }}); background-position-x: {{ section.bg_video_poster_offset }}%;"></div>
+				<div class="homeBanner__bgMobile" style="background-image: url({{ section.bg_video_poster_asset }}); {{ offset_x }} {{ offset_y }}"></div>
 
 			{% endif %}
 			<div class="homeBanner__masks">
