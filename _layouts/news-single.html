@@ -32,7 +32,7 @@ layout: news-single
 				<div class="stdCols__col stdCols__col--left">
 					<div class="contentPage__images">
 						{% for image in page.images %}
-							<img src="{{ image }}" alt="">
+							<img src="{{ image | imgix_url: w: 600, h: 900 }}" alt="">
 						{% endfor %}
 					</div>
 				</div>

@@ -303,6 +303,9 @@ hotjar_id: 511570
 hotjar_snippet_version: 5
 google_analytics_ua: 
 google_maps_js_api: AIzaSyCy6hRFVqBgV_JH5DLWLVXqaj4hAdvjdIw
+imgix:
+  source: 910.imgix.net
+  secure_url_token: T7N3qyEsRwdKWWnV
 06_partners_section: Default
 description: 
 arabic_description: 

@@ -24,7 +24,7 @@
 
 							<div class="howItWorks__step">
 								<div class="howItWorks__stepHead howItWorks__stepHead--noArrow">
-									<img src="{{ step.image }}" class="howItWorks__stepIcon" />
+									<img src="{{ step.image | imgix_url: w: 250, h: 250 }}" class="howItWorks__stepIcon" />
 								</div>
 								<div class="howItWorks__stepBody">
 									<h4 class="howItWorks__stepTitle" data-prefix="{% numerals {{ index }} %}. ">{% value step.title %}</h4>

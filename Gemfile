@@ -6,8 +6,7 @@ source "https://rubygems.org"
 # Gem Requirements
 gem 'jekyll', '3.4.3'
 gem "jekyll-multiple-languages-plugin"
-gem "jekyll-paginate-v2"
 gem "jekyll-sitemap"
-gem "jekyll-imgix"
+gem "jekyll-paginate-v2"
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

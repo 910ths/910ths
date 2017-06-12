@@ -35,7 +35,7 @@
 		<script type="text/javascript" src="/js/html5.js"></script>
 	<![endif]-->
 </head>
-	<body class="{{ page.layout }}" dir="{% t direction %}">
+	<body class="{{ jekyll.environment }} {{ page.layout }}" dir="{% t direction %}">
 
 	{% if jekyll.environment == 'production' %}
 		{% assign esso_base_url     = site.esso.base_url %}

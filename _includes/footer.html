@@ -74,11 +74,11 @@
 
 								{% if url != empty %}
 									<a url="{{ url }}" class="globFooterLogos__item" {% target {{ item.is_open_in_new_tab }} %}>
-										<img src="{{ item.image }}" alt="">
+										<img src="{{ item.image | imgix_url }}" alt="">
 									</a>
 								{% else %}
 									<div class="globFooterLogos__item">
-										<img src="{{ item.image }}" alt="">
+										<img src="{{ item.image | imgix_url }}" alt="">
 									</div>
 								{% endif %}
 
@@ -136,6 +136,7 @@
 			</div>
 		</div>
 	</footer>
+
 
 	{% assign zendesk_subdomain = site.zendesk_subdomain | strip %}
 	{% if zendesk_subdomain != empty %}
