@@ -108,8 +108,6 @@ defaults:
     arabic_description: ''
     button: ''
     arabic_button: ''
-    button_url: ''
-    arabic_button_url: ''
     button_uat_url: ''
     arabic_button_uat_url: ''
     bg_video_asset: ''
