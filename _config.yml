@@ -291,9 +291,17 @@ defaults:
     arabic_value: ''
 title_suffix: Nine Tenths
 arabic_title_suffix: تسعة أعشار
-06_partners_section: Default
+esso:
+  base_url: https://esso.910ths.sa
+  client_id: 8
+  base_uat_url: https://uat-esso.910ths.sa
+  client_uat_id: 24
+esso_api:
+  base_url: https://esso-api.910ths.sa/api
+  base_uat_url: https://uat-esso-api.910ths.sa/api
 google_analytics_ua: 
 google_maps_js_api: AIzaSyCy6hRFVqBgV_JH5DLWLVXqaj4hAdvjdIw
+06_partners_section: Default
 description: 
 arabic_description: 
 permalink: pretty

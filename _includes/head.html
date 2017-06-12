@@ -37,6 +37,16 @@
 </head>
 	<body class="{{ page.layout }}" dir="{% t direction %}">
 
+	{% if jekyll.environment == 'production' %}
+		{% assign esso_base_url     = site.esso.base_url %}
+		{% assign esso_client_id    = site.esso.client_id %}
+		{% assign esso_api_base_url = site.esso_api.base_url %}
+	{% else %}
+		{% assign esso_base_url     = site.esso.base_uat_url %}
+		{% assign esso_client_id    = site.esso.client_uat_id %}
+		{% assign esso_api_base_url = site.esso_api.base_uat_url %}
+	{% endif %}
+
 	<header class="globHeader">
 		<div class="globHeader__inner">
 			<div class="globHeader__container">
@@ -124,17 +134,8 @@
 								</div>
 							</div>
 						</li>
-						{% if jekyll.environment == 'production' %}
-							{% assign esso_base_url = 'https://esso.910ths.sa' %}
-							{% assign esso_client_id = '8' %}
-						  {% assign esso_api_base_url = 'https://esso-api.910ths.sa/api' %}
-						{% else %}
-						  {% assign esso_base_url = 'https://uat-esso.910ths.sa' %}
-							{% assign esso_client_id = '24' %}
-							{% assign esso_api_base_url = 'https://uat-esso-api.910ths.sa/api' %}
-						{% endif %}
 						<li class="globHeaderNav__item globShowOnlyLogged">
-							<a href="{{esso_base_url}}/register" class="globHeaderNav__link">
+							<a href="{{ esso_base_url }}/register" class="globHeaderNav__link">
 								<span class="globHeaderNav__button">{% t api.join %}</span>
 							</a>
 						</li>
