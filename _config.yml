@@ -176,8 +176,8 @@ defaults:
     arabic_description: ''
     video_image: ''
     background_asset: ''
-    youtube_video: ''
-    arabic_youtube_video: ''
+    video_asset: ''
+    arabic_video_asset: ''
 - scope:
     path: ''
     type: steps-section

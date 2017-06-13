@@ -70,7 +70,9 @@ layout: career
 															<div class="popup__inner">
 																<div class="videoBanner__popup">
 																	<div class="videoBanner__videoBox">
-																		<div class="videoBanner__video" data-src="{% value item.youtube_video %}"></div>
+																		<video class="videoBanner__video" preload="none">
+																			<source src="{% value item.video_asset %}" type="video/mp4">
+																		</video>
 																	</div>
 																</div>
 															</div>
