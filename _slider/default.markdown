@@ -13,11 +13,8 @@ button_url: https://esso.910ths.sa/register?lang=en
 arabic_button_url: https://esso.910ths.sa/register?lang=ar
 button_uat_url: https://uat-esso.910ths.sa/register?lang=en
 arabic_button_uat_url: https://uat-esso.910ths.sa/register?lang=ar
-bg_video_asset: "/uploads/riyadh-palms-saudi-kingdom-tower.mp4"
-bg_video_poster_asset: "/uploads/riyadh-palms-saudi-kingdom-tower-01.jpg"
 bg_image_asset: "/uploads/stock-photo-174401623.jpg"
 is_bg_image_active: false
-image_offset_x: 
 image_offset_y: 35
 ---
 
