@@ -13,7 +13,7 @@ button_url: https://esso.910ths.sa/register?lang=en
 arabic_button_url: https://esso.910ths.sa/register?lang=ar
 button_uat_url: https://uat-esso.910ths.sa/register?lang=en
 arabic_button_uat_url: https://uat-esso.910ths.sa/register?lang=ar
-bg_image_asset: "/uploads/stock-photo-174401623.jpg"
+bg_image_asset: "/uploads/nine-tenths-hero.jpg"
 is_bg_image_active: true
 image_offset_y: 35
 ---
