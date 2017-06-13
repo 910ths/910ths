@@ -8,7 +8,7 @@ layout: text
 {% include head.html %}
 
 	<div class="pageHeader">
-		<div class="pageHeader__bg" style="background-image: url({{ '/img/page-header.jpg' | imgix_url: auto: format, w: 1920, h: 400 }});"></div>
+		<div class="pageHeader__bg" style="background-image: url({{ '/img/page-header.jpg' | imgix_url: auto: format, q: 50, w: 1920, h: 400 }});"></div>
 		<div class="pageHeader__text">
 			<div class="wrapper wrapper--inside">
 				<h1>{% value page.title %}</h1>

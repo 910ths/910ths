@@ -4,7 +4,7 @@
 {% if nav.published != false %}
 
 	<div class="pageHeader">
-		<div class="pageHeader__bg" style="background-image: url({{ '/img/page-header.jpg' | imgix_url: w: 1920, h: 400 }});"></div>
+		<div class="pageHeader__bg" style="background-image: url({{ '/img/page-header.jpg' | imgix_url: auto: format, q: 50, w: 1920, h: 400 }});"></div>
 		<div class="pageHeader__menu">
 			<ul>
 				{% for item in nav.items %}
