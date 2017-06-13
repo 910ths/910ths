@@ -14,6 +14,9 @@
 	<meta name="description" content="{{ description | strip_html | strip_newlines | truncate: 160 }}">
 	<meta name="robots" content="index,follow">
 
+	<link rel="stylesheet" href="/css/main.css" type="text/css" media="all">
+	<link rel="stylesheet" href="/globals/css/styles.css" type="text/css" media="all">
+
 	{% assign google_analytics_ua = site.google_analytics_ua | strip %}
 	{% if google_analytics_ua != empty %}
 		<script>
