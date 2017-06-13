@@ -1,7 +1,7 @@
 {% for section in site.partners-section %}
 	{% if section.title contains site.06_partners_section %}
 
-		<section class="logosBanner" style="background-color: {{ section.background_hex }}; background-image: url({{ section.background_asset | imgix_url: w: 1920, h: 600 }});">
+		<section class="logosBanner" style="background-color: {{ section.background_hex }}; background-image: url({{ section.background_asset | imgix_url: auto: format, w: 1920, h: 600 }});">
 			<div class="logosBanner__top globShowOnlyLogged">
 				<div class="wrapper wrapper--inside">
 					<div class="textBox jsShowDelayed">
@@ -48,12 +48,12 @@
 													<a href="{{ link }}">
 												{% endif %}
 
-													<img src="{{ partner.image | imgix_url: w: 100, h: 50 }}" alt="{{ partner.title }}" class="logosBanner__logoImg" />
+													<img src="{{ partner.image | imgix_url: auto: format, w: 100, h: 50 }}" alt="{{ partner.title }}" class="logosBanner__logoImg" />
 												</a>
 
 											{% else %}
 
-												<img src="{{ partner.image | imgix_url: w: 100, h: 50 }}" alt="{{ partner.title }}" class="logosBanner__logoImg" />
+												<img src="{{ partner.image | imgix_url: auto: format, w: 100, h: 50 }}" alt="{{ partner.title }}" class="logosBanner__logoImg" />
 
 											{% endif %}
 										</div>

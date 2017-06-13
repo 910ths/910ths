@@ -8,7 +8,7 @@
 						{% if section.is_video_active %}
 							<div class="stdBanner__videoBox">
 								<video class="stdBanner__video" autoplay loop>
-									<source src="{{ section.video_asset | imgix_url }}" type="video/mp4">
+									<source src="{{ section.video_asset | imgix_url: auto: format }}" type="video/mp4">
 									Your browser does not support HTML5 video.
 								</video>
 								<div class="stdBanner__videoMask stdBanner__videoMask--t"></div>
@@ -16,7 +16,7 @@
 							</div>
 						{% else %}
 							<div class="stdBanner__imageBox">
-								<img src="{{ section.poster_asset | imgix_url: w: 600, h: 450 }}" alt="" class="stdBanner__img" />
+								<img src="{{ section.poster_asset | imgix_url: auto: format, w: 600, h: 450 }}" alt="" class="stdBanner__img" />
 							</div>
 						{% endif %}
 					</div>
@@ -26,7 +26,7 @@
 
 								<div class="stdCols__col stdCols__col--mid stdCols__col--stdBanner">
 									<div class="stdBanner__imgBox">
-										<img src="{{ section.poster_asset | imgix_url: w: 600, h: 450 }}" alt="" class="stdBanner__img" />
+										<img src="{{ section.poster_asset | imgix_url: auto: format, w: 600, h: 450 }}" alt="" class="stdBanner__img" />
 									</div>
 								</div>
 
