@@ -23,6 +23,19 @@
 	<link rel="stylesheet" href="/css/main.css" type="text/css" media="all">
 	<link rel="stylesheet" href="/globals/css/styles.css" type="text/css" media="all">
 
+	<style type="text/css">
+		@media (max-width: 768px) {
+
+			.globHeader__nav:before {
+				background-image: url({{ '/globals/images/mobile-nav-bg.jpg' | imgix_url: auto: format, q: 50 }});
+			}
+		}
+
+		.globFooter__top:before {
+			background-image: url({{ '/globals/images/footer-bg.jpg' | imgix_url: auto: format, q: 50 }});
+		}
+	</style>
+
 	{% assign google_analytics_ua = site.google_analytics_ua | strip %}
 	{% if google_analytics_ua != empty %}
 		<script>
