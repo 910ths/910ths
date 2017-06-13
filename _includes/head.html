@@ -14,6 +14,12 @@
 	<meta name="description" content="{{ description | strip_html | strip_newlines | truncate: 160 }}">
 	<meta name="robots" content="index,follow">
 
+	{% if site.lang == 'en' %}
+		{% include fonts/ltr.html %}
+	{% else %}
+		{% include fonts/rtl.html %}
+	{% endif %}
+
 	<link rel="stylesheet" href="/css/main.css" type="text/css" media="all">
 	<link rel="stylesheet" href="/globals/css/styles.css" type="text/css" media="all">
 
