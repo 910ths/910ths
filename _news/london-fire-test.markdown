@@ -25,6 +25,10 @@ images:
 - "/uploads/594114c093b78.jpg"
 - "/uploads/Rayans-Cover-Podcast-1-500x500.jpeg"
 Field name: 
+description: |-
+  A fire transformed a high-rise apartment tower in West London into an inferno early Wednesday morning, sending at least 50 people to hospitals and raising fears that others might have been trapped inside. The Metropolitan Police confirmed that at least six people had died, and warned that the figure would almost certainly rise.
+
+  “In my 29 years of being a firefighter, I have never, ever seen anything of this scale,” said the official, Dany Cotton, commissioner of the London Fire Brigade.
 ---
 
  A fire transformed a high-rise apartment tower in West London into an inferno early Wednesday morning, sending at least 50 people to hospitals and raising fears that others might have been trapped inside. The Metropolitan Police confirmed that at least six people had died, and warned that the figure would almost certainly rise.
