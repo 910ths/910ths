@@ -7,8 +7,8 @@
 					<div class="stdBanner__bg">
 						{% if section.is_video_active %}
 							<div class="stdBanner__videoBox">
-								<video class="stdBanner__video" autoplay loop>
-									<source src="{{ section.video_asset | imgix_url: auto: format }}" type="video/mp4">
+								<video class="stdBanner__video" poster="" loop>
+									<source src="" data-src="{{ section.video_asset | imgix_url: auto: format }}" type="video/mp4">
 									Your browser does not support HTML5 video.
 								</video>
 								<div class="stdBanner__videoMask stdBanner__videoMask--t"></div>
