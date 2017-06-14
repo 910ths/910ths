@@ -23,6 +23,8 @@ arabic_description: |
   وقال زيد؛، الذي كان أحد اللاعبين البارزين في الوساطة القطرية بين المتمردين الحوثيين والحكومة اليمنية في حروب صعدة: "الدفاع عن قطر دفاع عن إيران مباشرة".
 images:
 - "/uploads/594114c093b78.jpg"
+- "/uploads/Rayans-Cover-Podcast-1-500x500.jpeg"
+Field name: 
 ---
 
  A fire transformed a high-rise apartment tower in West London into an inferno early Wednesday morning, sending at least 50 people to hospitals and raising fears that others might have been trapped inside. The Metropolitan Police confirmed that at least six people had died, and warned that the figure would almost certainly rise.
