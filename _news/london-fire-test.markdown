@@ -1,5 +1,5 @@
 ---
-title: London Fire:test
+title: 'London Fire: At Least 6 Dead After Blaze Engulfs Apartment Tower'
 date: 2017-06-14 14:00:00 +03:00
 title_text: "**London Fire: At Least 6 Dead After Blaze Engulfs Apartment Tower**"
 arabic_title_text: 'وزير حوثي: الدفاع عن قطر دفاع عن إيران مباشرة وتركيا مستهدفة
