@@ -27,7 +27,8 @@ Popup.prototype = {
 		if (!_this._openButtons)
 			return false;
 
-		_this._videos = [];
+		_this._videos    = [];
+		_this._scrollTop = 0;
 
 		return true;
 
@@ -96,6 +97,13 @@ Popup.prototype = {
 
 			addClass(popup, 'popup--active');
 
+			_this._scrollTop = -_this._body.scrollTop + 'px';
+			console.log(_this._scrollTop);
+
+			_this._body.style.position = 'fixed';
+			_this._body.style.top      = _this._scrollTop;
+			_this._body.style.left     = '0';
+
 		}, 250);
 
 
@@ -119,6 +127,14 @@ Popup.prototype = {
 		video.pause();
 
 		removeClass(popup, 'popup--active');
+
+		_this._body.style.position = 'static';
+		_this._body.style.top      = 'auto';
+		_this._body.style.left     = 'auto';
+
+		_this.scrollTop = -parseInt(_this._scrollTop);
+		console.log(_this.scrollTop);
+		_this._body.scrollTop = _this.scrollTop;
 
 	}
 
