@@ -106,21 +106,15 @@ Popup.prototype = {
 		}, 250);
 
 
-		popup.querySelector('.popup__close').addEventListener('click', function(event) {
+		popup.addEventListener('click', function(event) {
 
 			event.preventDefault();
 
-			_this._closePopup(this.parentNode.parentNode.getAttribute('data-popup'));
+			_this._closePopup();
 
 		});
 
-		document.addEventListener('click', function() {
-
-			_this._closePopup(document.querySelector('.popup.popup--active').getAttribute('data-popup'));
-
-		});
-
-		video.addEventListener('click', function() {
+		video.addEventListener('click', function(event) {
 
 			event.stopPropagation();
 
@@ -128,16 +122,12 @@ Popup.prototype = {
 
 	},
 
-	_closePopup: function(id) {
+	_closePopup: function() {
 
 		var _this = this;
 
-		var popup = document.querySelector('.popup[data-popup=' + id + ']');
+		var popup = _this._body.querySelector('.popup--active');
 		var video = popup.querySelector('.videoBanner__video');
-
-		video.pause();
-
-		removeClass(popup, 'popup--active');
 
 		_this._body.style.position = 'static';
 		_this._body.style.top      = 'auto';
@@ -145,6 +135,13 @@ Popup.prototype = {
 
 		_this.scrollTop = -parseInt(_this._scrollTop);
 		_this._body.scrollTop = _this.scrollTop;
+
+		setTimeout(function() {
+
+			video.pause();
+			removeClass(popup, 'popup--active');
+
+		}, 100);
 
 	}
 
