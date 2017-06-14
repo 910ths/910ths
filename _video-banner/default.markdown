@@ -12,7 +12,7 @@ description: |-
 arabic_description: نُوفّر باقة من الحلول المبتكرة، صُممت خصيصًا لدعم وتنمية منشآت
   الأعمال في جميع مراحلها.
 video_image: "/uploads/vid.jpg"
-background_asset: "/uploads/bg.png"
+background_asset: ""
 video_asset: "/uploads/takamol-video-en.mp4"
 arabic_video_asset: "/uploads/takamol-video-ar.mp4"
 ---
