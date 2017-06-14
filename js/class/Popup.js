@@ -98,7 +98,6 @@ Popup.prototype = {
 			addClass(popup, 'popup--active');
 
 			_this._scrollTop = -_this._body.scrollTop + 'px';
-			console.log(_this._scrollTop);
 
 			_this._body.style.position = 'fixed';
 			_this._body.style.top      = _this._scrollTop;
@@ -133,7 +132,6 @@ Popup.prototype = {
 		_this._body.style.left     = 'auto';
 
 		_this.scrollTop = -parseInt(_this._scrollTop);
-		console.log(_this.scrollTop);
 		_this._body.scrollTop = _this.scrollTop;
 
 	}
