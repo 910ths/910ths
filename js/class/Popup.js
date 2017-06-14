@@ -56,7 +56,6 @@ Popup.prototype = {
 		window.onYouTubeIframeAPIReady = function() {
 
 			_this._preparateVideos();
-			console.log('_preparateVideos()');
 
 		};
 

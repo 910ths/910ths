@@ -10,6 +10,10 @@ api:
     logout: Logout
     settings: Settings
 
+zendesk:
+    label: Support
+    waiting: Waiting...
+
 products:
     title: SERVICES
     p_01:

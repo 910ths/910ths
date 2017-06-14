@@ -16,6 +16,7 @@ Core.prototype = {
 		document._910ths.EventMap = new EventMap();
 		document._910ths.video = new Video();
 		document._910ths.offersFilter = new OffersFilter();
+		document._910ths.zendesk = new Zendesk();
 	}
 
 };

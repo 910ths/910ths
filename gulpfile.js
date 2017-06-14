@@ -69,7 +69,7 @@ gulp.task('js', function() {
 	])
 	.pipe( concat('main.js') )
 	// .pipe( gulp.dest('../js') )
-	.pipe( stripdebug() )
+	// .pipe( stripdebug() )
 	.pipe( uglify() )
 	.pipe( gulp.dest('./js') )
 	.pipe( notify({ message: 'JS done!' }) );

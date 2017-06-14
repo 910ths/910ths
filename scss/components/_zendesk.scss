@@ -1,0 +1,44 @@
+.zendeskButton {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	padding: 13px 18px;
+	background-color: $c-main;
+	border-radius: 23px;
+	z-index: 1000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+	transform: translateZ(0px);
+	cursor: pointer;
+	transition: background 0.3s ease-in-out;
+
+	&:hover {
+		background-color: $c-mainLight;
+	}
+
+	span {
+		float: left;
+		display: block;
+		height: 20px;
+		margin: 0 4px;
+
+		&:first-child {
+
+			@include parent('body', '[dir=rtl]') {
+				float: right;
+			}
+
+			svg {
+				width: 20px;
+				height: 20px;
+				fill: rgb(255, 255, 255);
+			}
+		}
+
+		&:last-child {
+			font-size: 16px;
+			line-height: 20px;
+			color: rgb(255, 255, 255);
+			letter-spacing: 0.6px;
+		}
+	}
+}
