@@ -114,6 +114,18 @@ Popup.prototype = {
 
 		});
 
+		document.addEventListener('click', function() {
+
+			_this._closePopup(document.querySelector('.popup.popup--active').getAttribute('data-popup'));
+
+		});
+
+		video.addEventListener('click', function() {
+
+			event.stopPropagation();
+
+		});
+
 	},
 
 	_closePopup: function(id) {
