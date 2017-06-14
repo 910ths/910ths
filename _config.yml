@@ -78,6 +78,7 @@ defaults:
     layout: events-single
     title_text: ''
     arabic_title_text: ''
+    description: ''
     arabic_description: ''
     start_date: ''
     end_date: ''
@@ -96,6 +97,7 @@ defaults:
     arabic_title_text: ''
     excerpt: ''
     arabic_excerpt: ''
+    description: ''
     arabic_description: ''
     images: []
 - scope:
