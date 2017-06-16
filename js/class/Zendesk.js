@@ -21,6 +21,7 @@ Zendesk.prototype = {
 
 		var _this = this;
 
+		_this._body   = document.body || document.documentElement || document.getElementsByName('body');
 		_this._button = document.querySelector('.zendeskButton');
 		_this._host   = document.zendeskHost;
 		_this._lang   = document.zendeskLang;
@@ -35,6 +36,7 @@ Zendesk.prototype = {
 		_this._scriptLoaded        = false;
 		_this._toggle              = false;
 		_this._waitingScriptLoaded = false;
+		_this._currentScrollTop    = _this._body.scrollTop;
 
 		return true;
 
@@ -49,6 +51,25 @@ Zendesk.prototype = {
 			_this._actionAfterClickOnButton();
 
 		});
+
+		document.addEventListener('scroll', function(event) {
+
+			if (_this._body.scrollTop > (_this._currentScrollTop + 100)) {
+
+				addClass(_this._button, 'hidden');
+
+				_this._currentScrollTop = _this._body.scrollTop;
+
+			} else if (_this._body.scrollTop < _this._currentScrollTop) {
+
+				removeClass(_this._button, 'hidden');
+
+				_this._currentScrollTop = _this._body.scrollTop;
+
+			}
+
+		});
+
 
 	},
 

@@ -9,10 +9,16 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
 	transform: translateZ(0px);
 	cursor: pointer;
-	transition: background 0.3s ease-in-out;
+	transition: background 0.3s, opacity 0.3s, visibility 0.3s;
+	overflow: hidden;
 
 	&:hover {
 		background-color: $c-mainLight;
+	}
+
+	&.hidden {
+		opacity: 0;
+		visibility: hidden;
 	}
 
 	span {
@@ -41,8 +47,4 @@
 			letter-spacing: 0.6px;
 		}
 	}
-}
-
-.zopim {
-	display: none !important;
 }
