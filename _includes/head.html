@@ -23,6 +23,12 @@
 	<link rel="stylesheet" href="/css/main.css" type="text/css" media="all">
 	<link rel="stylesheet" href="/globals/css/styles.css" type="text/css" media="all">
 
+	{% if jekyll.environment == 'production' %}
+		<link rel="stylesheet" href="https://cdn.910ths.sa/css/style.min.css" type="text/css" media="all" />
+	{% else %}
+		<link rel="stylesheet" href="https://cdn.910ths.sa/css/style.css" type="text/css" media="all" />
+	{% endif %}
+
 	<style type="text/css">
 		@media (max-width: 768px) {
 
@@ -31,9 +37,9 @@
 			}
 		}
 
-		.globFooter__top:before {
+		/*.globFooter__top:before {
 			background-image: url({{ '/globals/images/footer-bg.jpg' | imgix_url: auto: format, q: 50 }});
-		}
+		}*/
 	</style>
 
 	{% assign google_analytics_ua = site.google_analytics_ua | strip %}
@@ -54,7 +60,7 @@
 		<script type="text/javascript" src="/js/html5.js"></script>
 	<![endif]-->
 </head>
-	<body class="{{ jekyll.environment }} {{ page.layout }}" dir="{% t direction %}">
+	<body class="{{ page.layout }}" dir="{% t direction %}">
 
 	{% if jekyll.environment == 'production' %}
 		{% assign esso_base_url     = site.esso.base_url %}

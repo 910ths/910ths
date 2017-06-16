@@ -1,141 +1,4 @@
-	<footer class="globFooter">
-		<div class="globFooter__top">
-			<div class="globFooter__container">
-				<div class="globFooter__inner">
-					<div class="globFooter__nav globFooterNav">
-						<ul class="globFooterNav__items">
-							<li class="globFooterNav__item">
-								<span class="globFooterNav__title">{% t products.title %}</span>
-								<ul class="globFooterNav__subNav globFooterSubNav">
-									<li class="globFooterSubNav__item">
-										<a href="{% t products.p_01.url %}">{% t products.p_01.title %}</a>
-									</li>
-									<li class="globFooterSubNav__item">
-										<a href="{% t products.p_02.url %}">{% t products.p_02.title %}</a>
-									</li>
-									<li class="globFooterSubNav__item">
-										<a href="{% t products.p_03.url %}">{% t products.p_03.title %}</a>
-									</li>
-									<li class="globFooterSubNav__item">
-										<a href="{% t products.p_04.url %}">{% t products.p_04.title %}</a>
-									</li>
-								</ul>
-							</li>
-							<li class="globFooterNav__item globFooterNav__item--noTitle">
-								<span class="globFooterNav__title"></span>
-								<ul class="globFooterNav__subNav globFooterSubNav">
-									<li class="globFooterSubNav__item">
-										<a href="{% t products.p_05.url %}">{% t products.p_05.title %}</a>
-									</li>
-									<li class="globFooterSubNav__item">
-										<a href="{% t products.p_06.url %}">{% t products.p_06.title %}</a>
-									</li>
-									<li class="globFooterSubNav__item">
-										<a href="{% t products.p_07.url %}">{% t products.p_07.title %}</a>
-									</li>
-								</ul>
-							</li>
-
-							{% assign nav = site.management | where: 'type', 'nav-footer' %}
-							{% assign nav = nav[0] %}
-
-							{% if nav.published != false %}
-
-								<li class="globFooterNav__item">
-									<span class="globFooterNav__title">{% value nav.header %}</span>
-									<ul class="globFooterNav__subNav globFooterSubNav">
-
-										{% for item in nav.items %}
-
-											<li class="globFooterSubNav__item">
-												<a href="{% path item.url %}" {% target {{ item.is_open_in_new_tab }} %}>{% value item.title %}</a>
-											</li>
-
-										{% endfor %}
-
-									</ul>
-								</li>
-
-							{% endif %}
-						</ul>
-					</div>
-
-					{% assign nav = site.management | where: 'type', 'footer-logos' %}
-					{% assign nav = nav[0] %}
-
-					{% if nav.published != false %}
-					
-						<div class="globFooter__logos globFooterLogos">
-
-							{% for item in nav.items %}
-										
-								{% capture url %}{% value item.url %}{% endcapture %}
-								{% assign url = url | strip %}
-
-								{% if url != empty %}
-									<a url="{{ url }}" class="globFooterLogos__item" {% target {{ item.is_open_in_new_tab }} %}>
-										<img src="{{ item.image | imgix_url }}" alt="">
-									</a>
-								{% else %}
-									<div class="globFooterLogos__item">
-										<img src="{{ item.image | imgix_url }}" alt="">
-									</div>
-								{% endif %}
-
-							{% endfor %}
-
-						</div>
-
-					{% endif %}
-				</div>
-			</div>
-		</div>
-		<div class="globFooter__bottom">
-			<div class="globFooter__container">
-				<div class="globFooter__inner">
-					{% assign nav = site.management | where: 'type', 'nav-bottom' %}
-					{% assign nav = nav[0] %}
-
-					{% if nav.published != false %}
-					
-						<div class="globFooter__links globFooterLinks">
-
-							{% for item in nav.items %}
-
-								<a href="{% path item.url %}" class="globFooterLinks__item" {% target {{ item.is_open_in_new_tab }} %}>
-									{% value item.title %}
-								</a>
-
-							{% endfor %}
-
-						</div>
-
-					{% endif %}
-
-
-					{% assign nav = site.management | where: 'type', 'nav-social-icons' %}
-					{% assign nav = nav[0] %}
-
-					{% if nav.published != false %}
-
-						<div class="globFooter__social globFooterSocial">
-							<div class="globFooterSocial__inner">
-								<span class="globFooterSocial__title">{% t follow_us %}:</span>
-
-								{% for item in nav.items %}
-
-									<a href="{{ item.url }}" target="_blank" class="globFooterSocial__item globFooterSocial__item--{{ item.icon }}"></a>
-
-								{% endfor %}
-
-							</div>
-						</div>
-
-					{% endif %}
-				</div>
-			</div>
-		</div>
-	</footer>
+	<footer class="globFooter"></footer>
 
 	{% assign zendesk_subdomain = site.zendesk_subdomain | strip %}
 	{% if zendesk_subdomain != empty %}
@@ -178,6 +41,18 @@
 	<script type="text/javascript" src="/js/main.js"></script>
 	<script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="/globals/js/scripts.js"></script>
+
+	{% if jekyll.environment == 'production' %}
+		<script src="https://cdn.910ths.sa/js/nine10ths-components-latest.min.js"></script>
+	{% else %}
+		<script src="https://cdn.910ths.sa/js/nine10ths-components-latest.js"></script>
+	{% endif %}
+
+	<script type="text/javascript">
+		const footer = new nine10ths.components.Footer(document.querySelector('.globFooter'), {
+			lang: '{{ site.lang }}'
+		});
+	</script>
 
 	<script type="text/javascript">
 		new Core();
