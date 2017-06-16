@@ -1,6 +1,7 @@
 ---
 title: Social icons
 date: 2017-06-01 15:55:00 +03:00
+published: false
 type: nav-social-icons
 items:
 - icon: twitter
