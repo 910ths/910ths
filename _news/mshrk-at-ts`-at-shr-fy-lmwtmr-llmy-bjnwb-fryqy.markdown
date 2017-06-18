@@ -1,6 +1,6 @@
 ---
 title: مشاركة تسعة أعشار في المؤتمر العالمي بجنوب افريقيا
-date: 2017-06-18 13:46:00 +03:00
+date: 2017-03-14 13:46:00 +03:00
 published: false
 title_text: Nine tenths participation in the Global Entrepreneurship Congress (GEC)
   in South Africa
