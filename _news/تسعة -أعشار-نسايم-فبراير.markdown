@@ -3,6 +3,13 @@ title: تسعة أعشار الشريك الإستراتيجي لمعرض نسا
 date: 2017-02-23 15:23:00 +03:00
 title_text: Nine Tenth Participate in Nasayem February Exhibition
 arabic_title_text: تسعة أعشار الشريك الإستراتيجي لمعرض نسايم فبراير
+excerpt: Nasayem February presents the largest entertaining experience in Riyadh.
+  Talented youth from designers and startups gathered up at the golf course in the
+  Intercontinental Hotel Riyadh.
+arabic_excerpt: 'أقيم معرض نسايم فبراير لتقديم أكبر تجربة ترفيهية خارجية الرياض. وجمع
+  العديد من المصممين والمبدعين في ملعب الجولف بفندق الانتركونتننتال الرياض.
+
+'
 description: "Nasayem February presents the largest entertaining experience in Riyadh.
   Talented youth from designers and startups gathered up at the golf course in the
   Intercontinental Hotel Riyadh. \n\n\nNine tenths has participated as a strategic
