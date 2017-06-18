@@ -22,6 +22,8 @@ location: Riyadh International Convention & Exhibition Center
 arabic_location: مركز الرياض الدولي للمؤتمرات و المعارض
 lat: 24.751395
 lng: 46.725959
+info_text: This is info text
+arabic_info_text: This is info text
 ---
 
 المعرض السعودي للمخبوزات و المعجنات في الفترة ما بين من 15 إلى 17 أكتوبر من العام 2017م 
