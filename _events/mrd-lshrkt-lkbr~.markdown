@@ -12,7 +12,7 @@ arabic_description: |-
 
   يهدف المعرض الى اجتماع المنتجون بالمستهلكون
 start_date: 2017-09-19 08:00:00 +03:00
-end_date: 2017-09-21 08:00:00 +03:00
+end_date: 2017-09-21 23:00:00 +03:00
 location: Four seasons Hotel
 arabic_location: فندق الفورسيزون
 lat: 24.711367
