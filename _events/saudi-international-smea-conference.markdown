@@ -1,5 +1,5 @@
 ---
-title: Riyadh Hosts Saudi International Conference for Small and Medium Enterprises
+title: الرياض تحتضن فعاليات المؤتمر السعودي الدولي للمنشآت الصغيرة والمتوسطة
 date: 2017-05-29 23:26:00 +03:00
 title_text: Riyadh Hosts Saudi International Conference for Small and Medium Enterprises
 arabic_title_text: الرياض تحتضن فعاليات المؤتمر السعودي الدولي للمنشآت الصغيرة والمتوسطة
