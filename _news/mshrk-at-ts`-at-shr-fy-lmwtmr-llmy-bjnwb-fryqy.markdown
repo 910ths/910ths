@@ -1,12 +1,15 @@
 ---
-title: مشاركة تسعة أعشار في المؤتمر العالمي بجنوب افريقيا
+title: مشاركة تسعة أعشار في المؤتمر العالمي لريادة الأعمال بجنوب افريقيا
 date: 2017-03-14 13:46:00 +03:00
 published: false
 title_text: Nine tenths participation in the Global Entrepreneurship Congress (GEC)
   in South Africa
-arabic_title_text: مشاركة تسعة أعشار في المؤتمر العالمي بجنوب افريقيا
+arabic_title_text: مشاركة تسعة أعشار في المؤتمر العالمي لريادة الأعمال بجنوب افريقيا
 excerpt: Nine tenths has participated globally to introduce its services for the public.
-arabic_excerpt: شاركت تسعة أعشارعلى الصعيد العالمي لتقدم خدماتها للجمهور
+arabic_excerpt: 'اقيم المؤتمر العالمي لريادة الأعمال لسنة 2017 في جنوب أفريقيا - جوهانسبرغ.
+  ومن خلال هذا المؤتمر، شاركت تسعة أعشار على الصعيد العالمي لتقدم خدماتها للحضور.
+
+'
 description: |-
   Every year, the Global Entrepreneurship Congress gathers together thousands of entrepreneurs, investors, researchers, policymakers and other startup champions from more than 160 countries to identify new ways of helping founders start and scale new ventures around the world. At the week-long GEC, delegates make connections, gain insights, learn about new research, and leave ready to renew their programs, policy ideas or firm founder skills.
 
