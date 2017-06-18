@@ -18,6 +18,6 @@ arabic_location: فندق الفورسيزون
 lat: 24.711367
 lng: 46.674395
 info_text: 'Visit: http://bigexpo-sa.com/'
-arabic_info_text: 'رابط الفعالية: http://bigexpo-sa.com/'
+arabic_info_text: 'رابط الفعالية: bigexpo-sa.com'
 ---
 
