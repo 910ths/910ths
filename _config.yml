@@ -309,8 +309,11 @@ imgix:
   source: 910.imgix.net
   secure_url_token: T7N3qyEsRwdKWWnV
 06_partners_section: Default
-description: Our innovated solutions develop projects, Support entrepreneurs, Facilitate access to investors, and enables you to expand your business. We are sponsored by HRDF Human Resources Development Fund 
-arabic_description: خدماتنا المبتكرة تطور المشاريع، تدعم رواد الأعمال، تسهل الوصول للمستثمرين، تمهد لتوسعك التجاري. نتبع صندوق تنمية الموارد البشرية. 
+description: Our innovated solutions develop projects, Support entrepreneurs, Facilitate
+  access to investors, and enables you to expand your business. We are sponsored by
+  HRDF Human Resources Development Fund
+arabic_description: خدماتنا المبتكرة تطور المشاريع، تدعم رواد الأعمال، تسهل الوصول
+  للمستثمرين، تمهد لتوسعك التجاري. نتبع صندوق تنمية الموارد البشرية.
 permalink: pretty
 markdown: kramdown
 exclude:
