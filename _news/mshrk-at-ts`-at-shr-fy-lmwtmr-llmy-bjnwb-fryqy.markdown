@@ -13,7 +13,7 @@ arabic_excerpt: 'اقيم المؤتمر العالمي لريادة الأعم�
 description: |-
   Every year, the Global Entrepreneurship Congress gathers together thousands of entrepreneurs, investors, researchers, policymakers and other startup champions from more than 160 countries to identify new ways of helping founders start and scale new ventures around the world. At the week-long GEC, delegates make connections, gain insights, learn about new research, and leave ready to renew their programs, policy ideas or firm founder skills.
 
-  GEC 2017 take a place in the heartbeat of South Africa, in Johannesburg. Through out this congress, Nine tenths has participated globally to introduce its services for the public.
+  GEC 2017 take a place in the heartbeat of South Africa, in Johannesburg. Through out this congress, Nine Tenths has participated globally to introduce its services for the public.
 arabic_description: |
   سنوياً يعقد المؤتمر العالمي لريادة الأعمال. حيث يجمع الآلاف من رجال الأعمال والمستثمرين و المهتمين في مجال ريادة الأعمال من أكثر من 160 بلداً. يهدف المؤتمر مساعدة رواد الأعمال في جميع انحاء العالم في بدء وتوسيع مشاريعهم الصغيره و المتوسطة.
 
