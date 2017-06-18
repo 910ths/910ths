@@ -1,0 +1,31 @@
+---
+title: تسعة أعشار الشريك الإستراتيجي لمعرض التجارة الإلكترونية
+date: 2017-04-03 14:46:00 +03:00
+title_text: Nine-tenths is the strategic partner for the e-commerce exhibition
+arabic_title_text: تسعة أعشار الشريك الإستراتيجي لمعرض التجارة الإلكترونية
+excerpt: Nine tenths participated as a strategic partner of the exhibition, where
+  the services of Nine Tenths was introduce to more than 50.000 visitors.
+arabic_excerpt: تشارك تسعة أعشار كشريك استراتيجي لمعرض التجارة الإلكترونية  في نسخته
+  الأولى الذي اقيم في فندق الفورسيزون بالرياض؛ بهدف نشر ثقافة التجارة الإلكترونية
+description: |-
+  The e-commerce exhibition in its first edition, was set up at the Four Seasons Hotel in Riyadh to spread and introduce the e-commerce world, and showcase the best products and service solutions to the entrepreneur and the small trader in the business world.
+
+  The exhibition gathers the most powerful e-platforms from local and international companies. In addition, a workshop was held to highlight the future of e-commerce under the title "The Future of Trade in Your Hands".
+
+  Nine tenths participated as a strategic partner of the exhibition, where the services of Nine Tenths was introduce to more than 50.000 visitors.
+
+  During the exhibition, Nine tenths officially lunched "Tojjar" platform. In addition, Nine Tenths held a workshop entitled "Supporting the Entrepreneurs and SME'S"
+arabic_description: "انطلق معرض التجارة الإلكترونية في نسخته الأولى الذي اقيم في فندق
+  الفورسيزون بالرياض؛ بهدف نشر ثقافة عالم التجارة الإلكترونية، وعرض أفضل المنتجات
+  والحلول الخدمية التي تهم رائد الأعمال و التاجر الصغير في عالم المال والأعمال.\nحيث
+  ضم المعرض اقوى منصات العرض الإلكترونية من شركات محلية وعالمية، بحضور شخصيات بارزة
+  في مواقع التواصل الاجتماعي، بالإضافة إلى ورشة عمل لتسليط الضوء على مستقبل التجارة
+  الإلكترونية تحت عنوان “مستقبل التجارة بين يديك”.\nشاركت تسعة أعشار كشريك استراتيجي
+  للمعرض ، حيث تم التعريف بخدمات تسعة أعشار لاكثر من 50.000 زائر \nو خلال المعرض تم
+  التدشين الرسمي لمنصة «تجار» بالإضافة إلى أن تسعة أعشار اقامت ورشة عمل للحضور بعنوان
+  \"دعم الشركات الناشئة و ريادة الأعمال\"\n\n\n"
+images:
+- "/uploads/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9-%D8%AA%D8%B3%D8%B9%D8%A9-%D8%A3%D8%B9%D8%B4%D8%A7%D8%B1-%D8%B4%D8%B1%D9%8A%D9%83-%D8%A5%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A.jpg"
+- "/uploads/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9-%D8%AA%D8%B3%D8%B9%D8%A9-%D8%A3%D8%B9%D8%B4%D8%A7%D8%B1-%D8%B4%D8%B1%D9%8A%D9%83-%D8%A5%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A-1.jpg"
+---
+
