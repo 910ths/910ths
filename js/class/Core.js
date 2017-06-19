@@ -16,9 +16,10 @@ Core.prototype = {
 		document._910ths.video = new Video();
 		document._910ths.offersFilter = new OffersFilter();
 
-		document._910ths.popup = new Popup();
-		document._910ths.zendesk = new Zendesk();
-		document._910ths.banner = new Banner();
+		document._910ths.popupVideo   = new PopupVideo();
+		document._910ths.popupYouTube = new PopupYouTube();
+		document._910ths.zendesk      = new Zendesk();
+		document._910ths.banner       = new Banner();
 	}
 
 };
