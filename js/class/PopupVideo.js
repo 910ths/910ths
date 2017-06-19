@@ -24,8 +24,19 @@ PopupVideo.prototype = {
 		_this._body        = document.body || document.documentElement || document.getElementsByName('body');
 		_this._openButtons = document.querySelectorAll('.jsPopup--HTML');
 
-		if (!_this._openButtons)
+		if (!_this._openButtons || (_this._openButtons.length == 0))
 			return false;
+
+
+		if (/SAFARI/.test(navigator.userAgent.toUpperCase())) {
+
+			_this._bodyScroll = document.documentElement || document.body;
+
+		} else {
+
+			_this._bodyScroll = document.body || document.documentElement;
+
+		}
 
 		_this._videos    = [];
 		_this._scrollTop = 0;

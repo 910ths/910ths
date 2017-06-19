@@ -24,8 +24,19 @@ PopupYouTube.prototype = {
 		_this._body        = document.body || document.documentElement || document.getElementsByName('body');
 		_this._openButtons = document.querySelectorAll('.jsPopup--YT');
 
-		if (!_this._openButtons)
+		if (!_this._openButtons || (_this._openButtons.length == 0))
 			return false;
+
+
+		if (/SAFARI/.test(navigator.userAgent.toUpperCase())) {
+
+			_this._bodyScroll = document.documentElement || document.body;
+
+		} else {
+
+			_this._bodyScroll = document.body || document.documentElement;
+
+		}
 
 		_this._videos   = [];
 		_this._players  = [];
@@ -146,7 +157,7 @@ PopupYouTube.prototype = {
 
 			addClass(popup, 'popup--active');
 
-			_this._scrollTop = -_this._body.scrollTop + 'px';
+			_this._scrollTop = -_this._bodyScroll.scrollTop + 'px';
 
 			_this._body.style.position = 'fixed';
 			_this._body.style.top      = _this._scrollTop;
@@ -185,7 +196,7 @@ PopupYouTube.prototype = {
 		_this._body.style.left     = 'auto';
 
 		_this.scrollTop = -parseInt(_this._scrollTop);
-		_this._body.scrollTop = _this.scrollTop;
+		_this._body._bodyScroll = _this.scrollTop;
 
 		removeClass(popup, 'popup--active');
 
