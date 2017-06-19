@@ -30,11 +30,11 @@ PopupVideo.prototype = {
 
 		if (/SAFARI/.test(navigator.userAgent.toUpperCase())) {
 
-			_this._bodyScroll = document.documentElement || document.body;
+			_this._bodyScroll = document.body || document.documentElement;
 
 		} else {
 
-			_this._bodyScroll = document.body || document.documentElement;
+			_this._bodyScroll = document.documentElement || document.body;
 
 		}
 
@@ -108,7 +108,7 @@ PopupVideo.prototype = {
 
 			addClass(popup, 'popup--active');
 
-			_this._scrollTop = -_this._body.scrollTop + 'px';
+			_this._scrollTop = -_this._bodyScroll.scrollTop + 'px';
 
 			_this._body.style.position = 'fixed';
 			_this._body.style.top      = _this._scrollTop;
@@ -144,8 +144,8 @@ PopupVideo.prototype = {
 		_this._body.style.top      = 'auto';
 		_this._body.style.left     = 'auto';
 
-		_this.scrollTop = -parseInt(_this._scrollTop);
-		_this._body.scrollTop = _this.scrollTop;
+		_this._scrollTop = -parseInt(_this._scrollTop);
+		_this._bodyScroll.scrollTop = _this._scrollTop;
 
 		video.pause();
 		removeClass(popup, 'popup--active');

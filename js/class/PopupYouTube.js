@@ -30,11 +30,11 @@ PopupYouTube.prototype = {
 
 		if (/SAFARI/.test(navigator.userAgent.toUpperCase())) {
 
-			_this._bodyScroll = document.documentElement || document.body;
+			_this._bodyScroll = document.body || document.documentElement;
 
 		} else {
 
-			_this._bodyScroll = document.body || document.documentElement;
+			_this._bodyScroll = document.documentElement || document.body;
 
 		}
 
@@ -195,8 +195,8 @@ PopupYouTube.prototype = {
 		_this._body.style.top      = 'auto';
 		_this._body.style.left     = 'auto';
 
-		_this.scrollTop = -parseInt(_this._scrollTop);
-		_this._body._bodyScroll = _this.scrollTop;
+		_this._scrollTop = -parseInt(_this._scrollTop);
+		_this._bodyScroll.scrollTop = _this._scrollTop;
 
 		removeClass(popup, 'popup--active');
 
