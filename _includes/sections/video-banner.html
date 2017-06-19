@@ -56,9 +56,17 @@
 							<div class="popup__inner">
 								<div class="videoBanner__popup">
 									<div class="videoBanner__videoBox">
-										<video class="videoBanner__video" preload="none">
-											<source src="{% value section.video_asset %}" type="video/mp4">
-										</video>
+										{% if section.is_youtube_active %}
+
+											<div class="videoBanner__video" data-src="{% value section.yt_video_id %}"></div>
+
+										{% else %}
+
+											<video class="videoBanner__video" preload="none">
+												<source src="{% value section.video_asset %}" type="video/mp4">
+											</video>
+
+										{% endif %}
 									</div>
 								</div>
 							</div>
