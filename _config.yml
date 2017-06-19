@@ -177,6 +177,9 @@ defaults:
     background_asset: ''
     video_asset: ''
     arabic_video_asset: ''
+    yt_video_id: ''
+    arabic_yt_video_id: ''
+    is_youtube_active: false
 - scope:
     path: ''
     type: steps-section
