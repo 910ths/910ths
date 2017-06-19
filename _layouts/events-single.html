@@ -32,7 +32,7 @@ layout: events-single
 				</div>
 				<div class="stdCols__col">
 					<div class="contentPage__eventBox">
-						<div class="contentPage__map" data-marker="/img/marker.png" data-lat="{{ page.info_box[0].location[0].lat }}" data-lng="{{ page.info_box[0].location[0].lng }}"></div>
+						<div class="contentPage__map" data-marker="/img/marker.png" data-lat="{{ page.location[0].lat }}" data-lng="{{ page.location[0].lng }}"></div>
 						<div class="contentPage__data">
 							<ul>
 								<li class="date">
@@ -46,9 +46,9 @@ layout: events-single
 									 - 
 									{% numerals {{ time_end }} %} {% t time.{{hour_end}} %}
 								</li>
-								<li class="location">{% value page.info_box[0].location[0].address %}</li>
+								<li class="location">{% value page.address %}</li>
 
-								{% capture info %}{% value page.info_box[1].info[0].text %}{% endcapture %}
+								{% capture info %}{% value page.info_text %}{% endcapture %}
 								{% if info != empty  %}
 									<li class="info">
 										{{ info | markdownify | remove: '<p>' | remove: '</p>' }}
