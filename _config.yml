@@ -78,17 +78,15 @@ defaults:
     layout: events-single
     start_at: ''
     end_at: ''
-    info_box:
-    - location:
-      - lat: ''
-        lng: ''
-        address: ''
-        arabic_address: ''
-    - info:
-      - text: ''
-        arabic_text: ''
+    location:
+    - lat: ''
+      lng: ''
+    address: ''
+    info_text: ''
     arabic_title: ''
     arabic_content_md: ''
+    arabic_address: ''
+    arabic_info_text: ''
 - scope:
     path: ''
     type: news
