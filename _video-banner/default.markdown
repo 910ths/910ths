@@ -13,5 +13,7 @@ arabic_description: نُوفّر باقة من الحلول المبتكرة، �
   الأعمال في جميع مراحلها.
 video_asset: "/uploads/takamol-video-en.mp4"
 arabic_video_asset: "/uploads/takamol-video-ar.mp4"
+yt_video_id: h-NRwPHZE3Y
+arabic_yt_video_id: 4bclY7llo6Q
 ---
 
