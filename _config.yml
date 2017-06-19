@@ -312,7 +312,8 @@ imgix:
 description: Our innovated solutions develop projects, Support entrepreneurs, Facilitate
   access to investors, and enables you to expand your business. We are sponsored by
   HRDF Human Resources Development Fund
-arabic_description: مبادرة وطنية تقدم حلول مبتكرة لدعم ريادة الأعمال والمنشآت الناشئة والراغبة في التوسع
+arabic_description: مبادرة وطنية تقدم حلول مبتكرة لدعم ريادة الأعمال والمنشآت الناشئة
+  والراغبة في التوسع
 permalink: pretty
 markdown: kramdown
 exclude:
