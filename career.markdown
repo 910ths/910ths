@@ -50,25 +50,37 @@ arabic_text: |-
 
   * Maecenas metus
 media_list:
-- video_asset: "/uploads/takamol-video-en.mp4"
-  arabic_video_asset: "/uploads/takamol-video-ar.mp4"
-  video_image: "/uploads/vid-aaeab4.jpg"
-  is_used_images: 
+- video:
+    video_asset: "/uploads/takamol-video-en.mp4"
+    arabic_video_asset: "/uploads/takamol-video-ar.mp4"
+    yt_video_id: h-NRwPHZE3Y
+    arabic_yt_video_id: 4bclY7llo6Q
+    is_youtube_active: false
+    video_image: "/uploads/vid-aaeab4.jpg"
   images:
   - 
-- arabic_youtube_video: 
-  youtube_video: 
-  video_image: 
-  is_used_images: true
+  is_used_images: false
+- video:
+    video_asset: 
+    arabic_video_asset: 
+    yt_video_id: 
+    arabic_yt_video_id: 
+    is_youtube_active: false
+    video_image: 
   images:
   - "/uploads/about-01.jpg"
   - "/uploads/about-02.jpg"
-- arabic_youtube_video: 
-  youtube_video: 
-  video_image: 
   is_used_images: true
+- video:
+    video_asset: 
+    arabic_video_asset: 
+    yt_video_id: 
+    arabic_yt_video_id: 
+    is_youtube_active: false
+    video_image: 
   images:
   - "/uploads/about-01.jpg"
+  is_used_images: true
 20_work_offers_section: Default
 03_banner: Work with us
 layout: career
