@@ -3,7 +3,7 @@ title: The Consumption Big Companies Expo
 start_at: 2017-09-19 08:00:00 +03:00
 end_at: 2017-09-21 23:00:00 +03:00
 location:
-- lat: 24.711367
+  lat: 24.711367
   lng: 46.674395
 address: Four seasons Hotel
 info_text: 'Visit: [http://bigexpo-sa.com/](bigexpo-sa)'

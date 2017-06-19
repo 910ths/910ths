@@ -79,7 +79,7 @@ defaults:
     start_at: ''
     end_at: ''
     location:
-    - lat: ''
+      lat: ''
       lng: ''
     address: ''
     info_text: ''

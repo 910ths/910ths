@@ -56,14 +56,14 @@ layout: career
 
 										{% assign index = index | plus: 1 %}
 
-										{% if section.is_youtube_active %}
+										{% if item.video.is_youtube_active %}
 											{% assign video_type = 'jsPopup--YT' %}
 										{% else %}
 											{% assign video_type = 'jsPopup--HTML' %}
 										{% endif %}
 
 										<div class="careerContent__videoBox">
-											<div class="careerContent__photo" style="background-image: url({{ item.video_image | imgix_url: auto: format, q: 50, w: 600, h: 350 }});"></div>
+											<div class="careerContent__photo" style="background-image: url({{ item.video.video_image | imgix_url: auto: format, q: 50, w: 600, h: 350 }});"></div>
 											<a href="#" class="careerContent__play jsPopup {{ video_type }}" data-popup="videoPopup-{{ index }}"></a>
 										</div>
 
@@ -76,14 +76,14 @@ layout: career
 															<div class="popup__inner">
 																<div class="videoBanner__popup">
 																	<div class="videoBanner__videoBox">
-																		{% if section.is_youtube_active %}
+																		{% if item.video.is_youtube_active %}
 
-																			<div class="videoBanner__video" data-src="{% value item.yt_video_id %}"></div>
+																			<div class="videoBanner__video" data-src="{% value item.video.yt_video_id %}"></div>
 
 																		{% else %}
 
 																			<video class="videoBanner__video" preload="none">
-																				<source src="{% value item.video_asset %}" type="video/mp4">
+																				<source src="{% value item.video.video_asset %}" type="video/mp4">
 																			</video>
 
 																		{% endif %}

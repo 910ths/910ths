@@ -4,7 +4,7 @@ date: 2017-06-19 10:57:00 +03:00
 start_at: 2017-09-10 09:00:00 +03:00
 end_at: 2017-09-13 17:00:00 +03:00
 location:
-- lat: 24.7513952
+  lat: 24.7513952
   lng: 46.7259587
 address: Riyadh International Convention & Exhibition Center
 arabic_title: الرياض تحتضن فعاليات المؤتمر السعودي الدولي للمنشآت الصغيرة والمتوسطة

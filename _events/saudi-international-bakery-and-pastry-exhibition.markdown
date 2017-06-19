@@ -4,7 +4,7 @@ date: 2017-06-19 11:01:00 +03:00
 start_at: 2017-10-15 00:00:00 +03:00
 end_at: 2017-06-17 00:00:00 +03:00
 location:
-- lat: 24.751395
+  lat: 24.751395
   lng: 46.725959
 address: Riyadh International Convention & Exhibition Center
 arabic_title: المعرض السعودي الدولي للمخبوزات والمعجنات
