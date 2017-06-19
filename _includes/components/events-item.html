@@ -1,15 +1,14 @@
-{% assign day   = event.start_date | date: "%d" %}
-{% assign month = event.start_date | date: "m_%m" %}
-{% assign year  = event.start_date | date: "%Y" %}
+{% assign object = event %}
+{% include settings/date-event.html %}
 
 <div class="events__item">
 	<a href="{% t lang_slug %}{{ event.url }}" class="events__link">
 		<div class="events__inner">
 			<span class="events__date">
-				{% numerals {{ day }} %} {% t months.short.{{month}} %} {% numerals {{ year }} %}
+				{% numerals {{ day_start }} %} {% t months.short.{{month_start}} %} {% numerals {{ year_start }} %}
 			</span>
 	
-			{% capture title %}{% value event.title_text %}{% endcapture %}
+			{% capture title %}{% value event.title %}{% endcapture %}
 			<h4 class="events__title">{{ title | remove: '**' }}</h4>
 		</div>
 	</a>

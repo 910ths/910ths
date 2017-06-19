@@ -9,24 +9,20 @@ layout: news-single
 
 	{% include components/page-header.html %}
 
-	{% assign day   = page.date | date: "%d" %}
-	{% assign month = page.date | date: "m_%m" %}
-	{% assign year  = page.date | date: "%Y" %}
+	{% assign object = page %}
+	{% include settings/date-news.html %}
 
 	<div class="contentPage">
 		<div class="wrapper wrapper--inside">
 			<div class="stdCols__cols">
 				<div class="stdCols__col">
 					<div class="contentPage__content">
-						{% capture title %}{% value page.title_text %}{% endcapture %}
-						<h2 class="contentPage__title">
-							{{ title | markdownify | remove: '<p>' | remove: '</p>' }}
-						</h2>
+						<h2 class="contentPage__title">{% value page.title %}</h2>
 						<div class="contentPage__date">
 							<strong>{% t news %}</strong> - {% numerals {{ day }} %} {% t months.short.{{month}} %} {% numerals {{ year }} %}</div>
 
-						{% capture description %}{% value page.description %}{% endcapture %}
-						<div class="contentPage__desc textWrap">{{ description | markdownify }}</div>
+						{% capture content %}{% value page.content %}{% endcapture %}
+						<div class="contentPage__desc textWrap">{{ content | markdownify }}</div>
 					</div>
 				</div>
 				<div class="stdCols__col stdCols__col--left">

@@ -9,29 +9,15 @@ layout: events-single
 
 	{% include components/page-header.html %}
 
-	{% assign date_start  = page.start_date | date: "%F" %}
-	{% assign date_end    = page.end_date | date: "%F" %}
-
-	{% assign day_start   = page.start_date | date: "%d" %}
-	{% assign month_start = page.start_date | date: "m_%m" %}
-	{% assign year_start  = page.start_date | date: "%Y" %}
-
-	{% assign day_end     = page.end_date | date: "%d" %}
-	{% assign month_end   = page.end_date | date: "m_%m" %}
-	{% assign year_end    = page.end_date | date: "%Y" %}
-
-	{% assign time_start  = page.start_date | date: "%I<sup>%M</sup>" %}
-	{% assign time_end    = page.end_date | date: "%I<sup>%M</sup>" %}
-
-	{% assign hour_start  = page.start_date | date: "%P" %}
-	{% assign hour_end    = page.end_date | date: "%P" %}
+	{% assign object = page %}
+	{% include settings/date-event.html %}
 
 	<div class="contentPage">
 		<div class="wrapper wrapper--inside">
 			<div class="stdCols__cols">
 				<div class="stdCols__col">
 					<div class="contentPage__content">
-						{% capture title %}{% value page.title_text %}{% endcapture %}
+						{% capture title %}{% value page.title %}{% endcapture %}
 						<h2 class="contentPage__title">
 							{{ title | markdownify | remove: '<p>' | remove: '</p>' }}
 						</h2>
@@ -40,13 +26,13 @@ layout: events-single
 							{% numerals {{ day_start }} %} {% t months.full.{{month_start}} %} {% numerals {{ year_start }} %}
 						</div>
 
-						{% capture description %}{% value page.description %}{% endcapture %}
-						<div class="contentPage__desc textWrap">{{ description | markdownify }}</div>
+						{% capture content %}{% value page.content %}{% endcapture %}
+						<div class="contentPage__desc textWrap">{{ content | markdownify }}</div>
 					</div>
 				</div>
 				<div class="stdCols__col">
 					<div class="contentPage__eventBox">
-						<div class="contentPage__map" data-marker="/img/marker.png" data-lat="{{ page.lat }}" data-lng="{{ page.lng }}"></div>
+						<div class="contentPage__map" data-marker="/img/marker.png" data-lat="{{ page.info_box[0].location[0].lat }}" data-lng="{{ page.info_box[0].location[0].lng }}"></div>
 						<div class="contentPage__data">
 							<ul>
 								<li class="date">
@@ -60,9 +46,9 @@ layout: events-single
 									 - 
 									{% numerals {{ time_end }} %} {% t time.{{hour_end}} %}
 								</li>
-								<li class="location">{% value page.location %}</li>
+								<li class="location">{% value page.info_box[0].location[0].address %}</li>
 
-								{% capture info %}{% value page.info_text %}{% endcapture %}
+								{% capture info %}{% value page.info_box[1].info[0].text %}{% endcapture %}
 								{% if info != empty  %}
 									<li class="info">
 										{{ info | markdownify | remove: '<p>' | remove: '</p>' }}

@@ -7,9 +7,8 @@
 				{% assign items = site.news | sort: 'date' | reverse %}
 				{% for news in items limit: 2 %}
 
-					{% assign day   = news.date | date: "%d" %}
-					{% assign month = news.date | date: "m_%m" %}
-					{% assign year  = news.date | date: "%Y" %}
+					{% assign object = news %}
+					{% include settings/date-news.html %}
 
 					<div class="news__item">
 						<a href="{% t lang_slug %}{{ news.url }}" class="news__link">
@@ -20,13 +19,11 @@
 								<span class="news__date">
 									{% numerals {{ day }} %} {% t months.short.{{month}} %} {% numerals {{ year }} %}
 								</span>
+								<h4 class="news__title">{% value news.title %}</h4>
 						
-								{% capture title %}{% value news.title_text %}{% endcapture %}
-								<h4 class="news__title">{{ title | remove: '**' }}</h4>
-						
-								{% capture text %}{% value news.excerpt %}{% endcapture %}
+								{% capture excerpt %}{% value news.excerpt %}{% endcapture %}
 								<p class="news__text">
-									{{ text | markdownify | remove: '<p>' | remove: '</p>' }}
+									{{ excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
 								</p>
 							</div>
 						</a>

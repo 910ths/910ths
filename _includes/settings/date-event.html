@@ -1,0 +1,19 @@
+{% assign date_start    = object.start_at %}
+{% assign date_end      = object.end_at %}
+
+{% assign date_start_if = date_start | date: "%F" %}
+{% assign date_end _if  = date_end   | date: "%F" %}
+
+{% assign day_start     = date_start | date: "%d" %}
+{% assign month_start   = date_start | date: "m_%m" %}
+{% assign year_start    = date_start | date: "%Y" %}
+
+{% assign day_end       = date_end   | date: "%d" %}
+{% assign month_end     = date_end   | date: "m_%m" %}
+{% assign year_end      = date_end   | date: "%Y" %}
+
+{% assign time_start    = date_start | date: "%I<sup>%M</sup>" %}
+{% assign time_end      = date_end   | date: "%I<sup>%M</sup>" %}
+
+{% assign hour_start    = date_start | date: "%P" %}
+{% assign hour_end      = date_end   | date: "%P" %}

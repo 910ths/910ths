@@ -76,29 +76,28 @@ defaults:
     type: events
   values:
     layout: events-single
-    title_text: ''
-    arabic_title_text: ''
-    description: ''
-    arabic_description: ''
-    start_date: ''
-    end_date: ''
-    location: ''
-    arabic_location: ''
-    lat: ''
-    lng: ''
-    info_text: ''
-    arabic_info_text: ''
+    start_at: ''
+    end_at: ''
+    info_box:
+    - location:
+      - lat: ''
+        lng: ''
+        address: ''
+        arabic_address: ''
+    - info:
+      - text: ''
+        arabic_text: ''
+    arabic_title: ''
+    arabic_content_md: ''
 - scope:
     path: ''
     type: news
   values:
     layout: news-single
-    title_text: ''
-    arabic_title_text: ''
     excerpt: ''
+    arabic_title: ''
+    arabic_content_md: ''
     arabic_excerpt: ''
-    description: ''
-    arabic_description: ''
     images: []
 - scope:
     path: ''

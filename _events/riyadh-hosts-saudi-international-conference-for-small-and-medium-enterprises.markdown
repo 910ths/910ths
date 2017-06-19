@@ -1,15 +1,19 @@
 ---
-title: الرياض تحتضن فعاليات المؤتمر السعودي الدولي للمنشآت الصغيرة والمتوسطة
-date: 2017-05-29 23:26:00 +03:00
-title_text: Riyadh Hosts Saudi International Conference for Small and Medium Enterprises
-arabic_title_text: الرياض تحتضن فعاليات المؤتمر السعودي الدولي للمنشآت الصغيرة والمتوسطة
-description: |-
-  Riyadh International Convention and Exhibition Center will host the Saudi International Conference for Small and Medium Enterprises (SME) between 10th and 13th of September 2017.
-
-  The conference aims to discuss the role governmental bodies in supporting the legal environment for SME's, exploring international expertise, and the role of large corporations in them.
-
-  The conference also aims to establish cooperation between SME's and supporting entities in order to help them face the different challenges they face and elevate them to compete globally.
-arabic_description: |-
+title: Riyadh Hosts Saudi International Conference for Small and Medium Enterprises
+date: 2017-06-19 10:57:00 +03:00
+start_at: 2017-09-10 09:00:00 +03:00
+end_at: 2017-09-13 17:00:00 +03:00
+info_box:
+- location:
+  - lat: 24.7513952
+    lng: 46.7259587
+    address: Riyadh International Convention & Exhibition Center
+    arabic_address: مركز الرياض الدولي للمؤتمرات والمعارض
+- info:
+  - text: 
+    arabic_text: 
+arabic_title: الرياض تحتضن فعاليات المؤتمر السعودي الدولي للمنشآت الصغيرة والمتوسطة
+arabic_content_md: |-
   يحتضن مركز الرياض الدولي للمؤتمرات والمعارض فعاليات
   المؤتمر السعودي الدولي للمنشآت الصغيرة والمتوسطة وذلك خلال الفترة من ١٠
   إلى ١٣ سبتمبر ٢٠١٧.
@@ -46,11 +50,10 @@ arabic_description: |-
   تطور هذا النمو بحسب العديد من الدراسات ، تتمثل في الاجراءات الحكومية
   والمعقدة. وأضاف د.الربيعة، ” تعمل وزارة التجارة والصناعة على تسهيل
   اجراءات التسجيل التجاري، والتي باتت مختصرة بثلاثة ايام كحد اقصى.
-start_date: 2017-09-10 09:00:00 +03:00
-end_date: 2017-09-13 17:00:00 +03:00
-location: Riyadh International Convention & Exhibition Center
-arabic_location: مركز الرياض الدولي للمؤتمرات والمعارض
-lat: 24.7513952
-lng: 46.7259587
 ---
 
+Riyadh International Convention and Exhibition Center will host the Saudi International Conference for Small and Medium Enterprises (SME) between 10th and 13th of September 2017.
+
+The conference aims to discuss the role governmental bodies in supporting the legal environment for SME's, exploring international expertise, and the role of large corporations in them.
+
+The conference also aims to establish cooperation between SME's and supporting entities in order to help them face the different challenges they face and elevate them to compete globally.

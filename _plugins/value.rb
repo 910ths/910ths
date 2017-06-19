@@ -13,7 +13,8 @@ module Jekyll
 		def render(context)
 
 			current_lang = context['site.lang']
-			variable     = @variable
+			variable     = @variable.strip
+			suffix       = ''
 
 			if current_lang != @arabic_slug
 
@@ -22,7 +23,14 @@ module Jekyll
 			end
 			
 			variable = variable.split('.')
-			variable[variable.count - 1] = @arabic_prefix + variable[variable.count - 1]
+			
+			if variable[variable.count - 1] == 'content'
+
+				suffix = '_md'
+
+			end
+
+			variable[variable.count - 1] = @arabic_prefix + variable[variable.count - 1] + suffix
 
 			return context[variable.join('.')]
 
