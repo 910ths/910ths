@@ -205,8 +205,6 @@ Zendesk.prototype = {
 
 		var _this = this;
 
-		console.log('_closePopup');
-
 		$zopim(function() {
 
 			$zopim.livechat.hideAll();
