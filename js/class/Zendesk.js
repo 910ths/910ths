@@ -57,7 +57,15 @@ Zendesk.prototype = {
 
 		var _this = this;
 
-		_this._button.addEventListener('click', function() {
+		document.addEventListener('click', function() {
+
+			_this._closePopup();
+
+		});
+
+		_this._button.addEventListener('click', function(event) {
+
+			event.stopPropagation();
 
 			_this._actionAfterClickOnButton();
 
@@ -117,6 +125,13 @@ Zendesk.prototype = {
 		var firstScriptTag = document.getElementsByTagName('script')[0];
 		firstScriptTag.parentNode.insertBefore(scriptTag, firstScriptTag);
 
+		_this._waitForZendesk();
+
+	},
+
+	_waitForZendesk: function() {
+
+		var _this = this;
 
 		_this._waitingScriptLoaded = setInterval(function() {
 
@@ -124,32 +139,7 @@ Zendesk.prototype = {
 
 			if (widget) {
 
-				zE(function() {
-					zE.setLocale(_this._lang);
-				});
-
-				widget = widget.contentWindow.document.body;
-
-				var styleTag       = document.createElement('style');
-				styleTag.innerHTML = '#Embed { display: none !important; }';
-				widget.insertBefore(styleTag, widget.firstChild);
-
-
-				_this._toggle = widget.querySelector('div.src-component-Launcher-wrapper');
-				
-				setTimeout(function() {
-
-					_this._toggle.click();
-
-					setTimeout(function() {
-
-						_this._label.innerHTML = _this._labelDefault;
-						_this._locked          = false;
-
-					}, 250);
-
-				}, 1000);
-
+				_this._initZendeskAfterLoad(widget);
 
 				window.clearInterval(_this._waitingScriptLoaded);
 
@@ -159,11 +149,69 @@ Zendesk.prototype = {
 
 	},
 
+	_initZendeskAfterLoad: function(widget) {
+
+		var _this = this;
+
+		zE.setLocale(_this._lang);
+
+
+		widget = widget.contentWindow.document.body;
+
+		var styleTag       = document.createElement('style');
+		styleTag.innerHTML = '#Embed { display: none !important; }';
+		widget.insertBefore(styleTag, widget.firstChild);
+		
+		_this._openPopup();
+
+	},
+
 	_openPopup: function() {
 
 		var _this = this;
 
-		_this._toggle.click();
+		$zopim(function() {
+
+			$zopim.livechat.window.show();
+			$zopim.livechat.button.hide();
+
+		});
+
+		_this._waitForZopim();
+
+	},
+
+	_waitForZopim: function() {
+
+		var _this = this;
+
+		_this._waitingZopimLoaded = setInterval(function() {
+
+			var widget = document.querySelector('.zopim');
+
+			if (widget) {
+
+				_this._label.innerHTML = _this._labelDefault;
+
+				window.clearInterval(_this._waitingZopimLoaded);
+
+			}
+
+		}, 100);
+
+	},
+
+	_closePopup: function() {
+
+		var _this = this;
+
+		console.log('_closePopup');
+
+		$zopim(function() {
+
+			$zopim.livechat.hideAll();
+
+		});
 
 	}
 
