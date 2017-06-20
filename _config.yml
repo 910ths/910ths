@@ -300,7 +300,7 @@ esso:
 esso_api:
   base_url: https://esso-api.910ths.sa/api
   base_uat_url: https://uat-esso-api.910ths.sa/api
-zendesk_subdomain: test5941
+zendesk_subdomain: 910ths
 hotjar_id: 511570
 hotjar_snippet_version: 5
 google_analytics_ua: 
