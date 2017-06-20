@@ -13,8 +13,9 @@ button_url: https://esso.910ths.sa/register?lang=en
 arabic_button_url: https://esso.910ths.sa/register?lang=ar
 button_uat_url: https://uat-esso.910ths.sa/register?lang=en
 arabic_button_uat_url: https://uat-esso.910ths.sa/register?lang=ar
+bg_video_asset: "/uploads/Comp%201_1.mp4"
 bg_image_asset: "/uploads/nine-tenths-hero.jpg"
-is_bg_image_active: true
+is_bg_image_active: false
 image_offset_y: 35
 ---
 
