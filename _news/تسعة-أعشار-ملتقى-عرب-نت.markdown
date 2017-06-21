@@ -1,6 +1,6 @@
 ---
 title: Nine Tenths Participation in Arab Net
-date: 2017-06-21 11:41:00 +03:00
+date: 2016-12-12 11:41:00 +03:00
 excerpt: Arab Net is the largest annual digital forum in Saudi Arabia, that gathers
   more than 1,500 participants from across the region.
 arabic_title: مشاركة تسعة أعشار في ملتقى عرب نت
