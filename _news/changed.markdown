@@ -1,5 +1,5 @@
 ---
-title: PLEASE DO NOT USE ARABIC LETTERS IN TITLE AND IMAGES FILENAMES
+title: Changed
 date: 2017-05-15 10:44:00 +03:00
 published: false
 arabic_title: تسعة أعشار الشريك الإستراتيجي لملتقى فرصة
