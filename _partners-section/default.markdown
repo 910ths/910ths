@@ -8,13 +8,13 @@ arabic_description: انضمّ  إلينا الآن ودعنا نحوّل رؤي
 button: Join Us Now
 arabic_button: انضم إلينا الآن
 button_url: https://esso.910ths.sa/register?lang=en
-button_uat_url: https://uat-esso.910ths.sa/register?lang=en
 arabic_button_url: https://esso.910ths.sa/register?lang=ar
+button_uat_url: https://uat-esso.910ths.sa/register?lang=en
 arabic_button_uat_url: https://uat-esso.910ths.sa/register?lang=ar
 06_partners:
 - 'Partner #1'
 - 'Partner #2'
-background_asset: "/uploads/bg.jpg"
+background_asset: "/uploads/bg-2.jpg"
 background_hex: "#71b400"
 ---
 
