@@ -1,6 +1,0 @@
----
-title: _PLEASE DO NOT USE ARABIC LETTERS IN TITLE AND IMAGES FILENAMES
-date: 2050-01-01 00:00:00 +03:00
-published: false
----
-
