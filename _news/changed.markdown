@@ -5,7 +5,7 @@ published: false
 excerpt: |-
   Chance Forum is an initiative aimed to help the entrepreneurs to find investment opportunities for their businesses, by gather all entrepreneurs with investors. This will save time and effort in the search for the perfect partner.
 
-  The forum was held in Al Khuzama Hall in Riyadh, where Nine Tenths participated as a strategic partner. The participating teams in Nine Tenths Accelerator also participated at the forum, to presente their projects to more than 1500 investors.
+  The forum was held in Al Khuzama Hall in Riyadh, where Nine Tenths participated as a strategic partner. The participating teams in Nine Tenths Accelerator also participated at the forum, to present their projects to more than 1500 investors.
 arabic_title: تسعة أعشار الشريك الإستراتيجي لملتقى فرصة
 arabic_content_md: |
   ملتقى فرصة هي مبادرة تهدف إلى تمكين رواد الأعمال لإيجاد فرصة إستثمارية لدى رجال الأعمال ، الشركات الإستثمارية و حاضنات الأعمال لتوفير الوقت والجهد في عناء البحث عن الشريك المثالي.
@@ -20,4 +20,4 @@ images:
 
 Chance Forum is an initiative aimed to help the entrepreneurs to find investment opportunities for their businesses, by gather all entrepreneurs with investors. This will save time and effort in the search for the perfect partner.
 
-The forum was held in Al Khuzama Hall in Riyadh, where Nine Tenths participated as a strategic partner. The participating teams in Nine Tenths Accelerator also participated at the forum, to presente their projects to more than 1500 investors.
+The forum was held in Al Khuzama Hall in Riyadh, where Nine Tenths participated as a strategic partner. The participating teams in Nine Tenths Accelerator also participated at the forum, to present their projects to more than 1500 investors.
