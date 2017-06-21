@@ -14,7 +14,7 @@ arabic_button_uat_url: https://uat-esso.910ths.sa/register?lang=ar
 06_partners:
 - 'Partner #1'
 - 'Partner #2'
-background_asset: "/uploads/bg-2.jpg"
+background_asset: "/uploads/bg.jpg"
 background_hex: "#71b400"
 ---
 
