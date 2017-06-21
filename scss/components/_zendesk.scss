@@ -49,7 +49,8 @@
 	}
 }
 
-body > iframe {
+body > iframe,
+.zEWidget-launcher {
 	display: none !important;
 }
 
