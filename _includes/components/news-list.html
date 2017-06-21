@@ -4,31 +4,39 @@
 
 		<div class="stdCols__body">
 			<div class="news__items jsShowDelayed">
+				{% assign count = 0 %}
 				{% assign items = site.news | sort: 'date' | reverse %}
-				{% for news in items limit: 2 %}
+				{% for news in items %}
+					{% if news.published != false %}
 
-					{% assign object = news %}
-					{% include settings/date-news.html %}
+						{% assign object = news %}
+						{% include settings/date-news.html %}
 
-					<div class="news__item">
-						<a href="{% t lang_slug %}{{ news.url }}" class="news__link">
-							<div class="news__imgBox">
-								<div class="news__img" style="background-image: url({{ news.images[0] | imgix_url: auto: format, q: 50, w: 150, h: 250 }});"></div>
-							</div>
-							<div class="news__inner">
-								<span class="news__date">
-									{% numerals {{ day }} %} {% t months.short.{{month}} %} {% numerals {{ year }} %}
-								</span>
-								<h4 class="news__title">{% value news.title %}</h4>
-						
-								{% capture excerpt %}{% value news.excerpt %}{% endcapture %}
-								<p class="news__text">
-									{{ excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
-								</p>
-							</div>
-						</a>
-					</div>
+						{% assign count = count | plus: 1 %}
 
+						{% if count > 2 %}
+							{% break %}
+						{% endif %}
+
+						<div class="news__item">
+							<a href="{% t lang_slug %}{{ news.url }}" class="news__link">
+								<div class="news__imgBox">
+									<div class="news__img" style="background-image: url({{ news.images[0] | imgix_url: auto: format, q: 50, w: 150, h: 250 }});"></div>
+								</div>
+								<div class="news__inner">
+									<span class="news__date">
+										{% numerals {{ day }} %} {% t months.short.{{month}} %} {% numerals {{ year }} %}
+									</span>
+									<h4 class="news__title">{% value news.title %}</h4>
+							
+									{% capture excerpt %}{% value news.excerpt %}{% endcapture %}
+									<p class="news__text">
+										{{ excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+									</p>
+								</div>
+							</a>
+						</div>
+					{% endif %}
 				{% endfor %}
 			</div>
 		</div>

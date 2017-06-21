@@ -4,23 +4,32 @@
 
 		<div class="stdCols__body">
 			<div class="events__items jsShowDelayed">
+				{% assign count = 0 %}
 				{% assign items = site.events | sort: 'start_at' | reverse %}
-				{% for event in items limit: 4 %}
+				{% for event in items %}
+					{% if event.published != false %}
 
-				{% assign object = event %}
-				{% include settings/date-event.html %}
+						{% assign object = event %}
+						{% include settings/date-event.html %}
 
-					<div class="events__item">
-						<a href="{% t lang_slug %}{{ event.url }}" class="events__link">
-							<div class="events__inner">
-								<span class="events__date">
-									{% numerals {{ day_start }} %} {% t months.short.{{month_start}} %} {% numerals {{ year_start }} %}
-								</span>
-								<h4 class="events__title">{% value event.title %}</h4>
-							</div>
-						</a>
-					</div>
+						{% assign count = count | plus: 1 %}
 
+						{% if count > 4 %}
+							{% break %}
+						{% endif %}
+
+						<div class="events__item">
+							<a href="{% t lang_slug %}{{ event.url }}" class="events__link">
+								<div class="events__inner">
+									<span class="events__date">
+										{% numerals {{ day_start }} %} {% t months.short.{{month_start}} %} {% numerals {{ year_start }} %}
+									</span>
+									<h4 class="events__title">{% value event.title %}</h4>
+								</div>
+							</a>
+						</div>
+
+					{% endif %}
 				{% endfor %}
 			</div>
 		</div>

@@ -16,9 +16,11 @@ layout: news-archive
 			<div class="stdCols__body">
 				<div class="events__items jsShowDelayed">
 					{% for news in paginator.posts %}
+						{% if news.published != false %}
 
-						{% include components/news-item.html %}
+							{% include components/news-item.html %}
 
+						{% endif %}
 					{% endfor %}
 				</div>
 			</div>
