@@ -1,0 +1,26 @@
+---
+title: Nine Tenths Participation in Arab Net
+date: 2017-06-21 11:41:00 +03:00
+excerpt: Arab Net is the largest annual digital forum in Saudi Arabia, that gathers
+  more than 1,500 participants from across the region.
+arabic_title: مشاركة تسعة أعشار في ملتقى عرب نت
+arabic_content_md: |-
+  ملتقى عرب نت أكبر منتدى رقمي سنوي في السعودية ، حيث يجمع اكثر من 1500 مشارك من قادمين من مختلف أنحاء المنطقة.
+
+  يستضيف الملتقى ثلاثة مسارات رئيسيّة هي: الأعمال والإعلام وريادة الأعمال، مع وجود متحدّثين من جميع أنحاء العالم ومنطقة الشرق الأوسط وشمال أفريقيا للحديث عن بناء الواجهة الرقميّة الجديدة في إحدى أقوى أسواق المنطقة.
+
+  شاركت تسعة أعشار في ملتقى عرب نت للتعريف بخدمات تسعة أعشار و الإستماع للملاحظات من الزوار و المستخدمين من اجل التطوير.
+arabic_excerpt: 'ملتقى عرب نت أكبر منتدى رقمي سنوي في السعودية ، حيث يجمع اكثر من
+  1500 مشارك من قادمين من مختلف أنحاء المنطقة.
+
+'
+images:
+- "/uploads/Arab-Net-Nine-tenths.jpg"
+- "/uploads/Riyadh-2016-Arabic.jpg"
+---
+
+Arab Net is the largest annual digital forum in Saudi Arabia, that gathers more than 1,500 participants from across the region.
+
+The forum host three main sectors, which are: Business, Media and Entrepreneurship. Moreover, there will be speakers from around the world and the Middle East and North Africa region talking about building a new digital frontier in one of the region's strongest markets.
+
+Nine tenths participated in the Arab Net forum to introduce Nine Tenths service, and listening to the feedback from visitors and users for more development.
