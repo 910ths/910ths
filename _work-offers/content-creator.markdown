@@ -5,7 +5,7 @@ short_desc: Quisque ligula est, congue nec cursus sed, dapibus sit amet massa. S
   iaculis mollis nulla, et scelerisque lorem tempus. Duis volutpat mattis dui.
 20__work_offers_category: Content
 20__work_offers_type: Full-time
-20__work_offers_city: Riyadh
+20__work_offers_location: Riyadh
 amount:
   min: 7000
   max: 8000

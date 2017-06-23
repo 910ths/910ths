@@ -5,7 +5,7 @@ short_desc: Quisque ligula est, congue nec cursus sed, dapibus sit amet massa. S
   iaculis mollis nulla, et scelerisque lorem tempus. Duis volutpat mattis dui.
 20__work_offers_category: Client Services
 20__work_offers_type: Full-time
-20__work_offers_city: Jeddah
+20__work_offers_location: Jeddah
 amount:
   min: 7000
   max: 8000

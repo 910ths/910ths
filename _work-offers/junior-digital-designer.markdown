@@ -5,7 +5,7 @@ short_desc: Quisque ligula est, congue nec cursus sed, dapibus sit amet massa. S
   iaculis mollis nulla, et scelerisque lorem tempus. Duis volutpat mattis dui.
 20__work_offers_category: Creative
 20__work_offers_type: Remote
-20__work_offers_city: Dammam
+20__work_offers_location: Dammam
 amount:
   min: 7000
   max: 8000

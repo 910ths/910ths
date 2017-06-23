@@ -47,8 +47,8 @@ collections:
   work-offers-category:
     title: 20__Work_offers_category
     output: false
-  work-offers-city:
-    title: 20__Work_offers_city
+  work-offers-location:
+    title: 20__Work_offers_location
     output: false
   work-offers-type:
     title: 20__Work_offers_type
@@ -266,7 +266,7 @@ defaults:
     short_desc: ''
     20__work_offers_category: ''
     20__work_offers_type: ''
-    20__work_offers_city: ''
+    20__work_offers_location: ''
     amount:
       min: ''
       max: ''
@@ -290,7 +290,7 @@ defaults:
     arabic_value: ''
 - scope:
     path: ''
-    type: work-offers-city
+    type: work-offers-location
   values:
     country: ''
     lat: ''
