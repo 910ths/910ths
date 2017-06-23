@@ -65,6 +65,7 @@ gulp.task('js', function() {
 	return gulp.src([
 		'./js/global.js',
 		'./js/isotope.pkgd.min.js',
+		'./js/jquery-3.2.1.min.js',
 		'./js/class/**/*.js'
 	])
 	.pipe( concat('main.js') )

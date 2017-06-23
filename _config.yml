@@ -323,9 +323,8 @@ exclude:
 - package.json
 - README.md
 - scss
-- js/class
-- js/vendors
 - js/global.js
+- js/jquery-3.2.1.min.js
 - js/isotope.pkgd.min.js
 gems:
 - jekyll-multiple-languages-plugin
