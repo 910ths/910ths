@@ -5,9 +5,5 @@ work_position: Project Manager
 arabic_work_position: Project Manager
 20__work_offers_category: Client Services
 20__work_offers_type: Full-time
-information: Quisque ligula est, congue nec cursus sed, dapibus sit amet massa. Sed
-  iaculis mollis nulla, et scelerisque lorem tempus. Duis volutpat mattis dui.
-arabic_information: Quisque ligula est, congue nec cursus sed, dapibus sit amet massa.
-  Sed iaculis mollis nulla, et scelerisque lorem tempus. Duis volutpat mattis dui.
 ---
 
