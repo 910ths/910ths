@@ -45,6 +45,7 @@ Zendesk.prototype = {
 		_this._labelWaiting        = _this._label.getAttribute('data-waiting');
 		_this._locked              = false;
 		_this._scriptLoaded        = false;
+		_this._popupOpened         = false;
 		_this._toggle              = false;
 		_this._waitingScriptLoaded = false;
 		_this._currentScrollTop    = _this._bodyScroll.scrollTop;
@@ -101,6 +102,8 @@ Zendesk.prototype = {
 
 		if (!_this._scriptLoaded) {
 
+			_this._locked = true;
+
 			_this._loadScripts();
 
 		} else {
@@ -155,13 +158,8 @@ Zendesk.prototype = {
 
 		zE.setLocale(_this._lang);
 
+		_this._locked = false;
 
-		widget = widget.contentWindow.document.body;
-
-		var styleTag       = document.createElement('style');
-		styleTag.innerHTML = '#Embed { display: none !important; }';
-		widget.insertBefore(styleTag, widget.firstChild);
-		
 		_this._openPopup();
 
 	},
@@ -170,12 +168,7 @@ Zendesk.prototype = {
 
 		var _this = this;
 
-		$zopim(function() {
-
-			$zopim.livechat.window.show();
-			$zopim.livechat.button.hide();
-
-		});
+		zE.activate();
 
 		_this._waitForZopim();
 
@@ -191,7 +184,13 @@ Zendesk.prototype = {
 
 			if (widget) {
 
-				_this._label.innerHTML = _this._labelDefault;
+				setTimeout(function() {
+
+					_this._label.innerHTML = _this._labelDefault;
+
+				}, 2500);
+
+				_this._popupOpened = true;
 
 				window.clearInterval(_this._waitingZopimLoaded);
 
@@ -205,11 +204,12 @@ Zendesk.prototype = {
 
 		var _this = this;
 
-		$zopim(function() {
+		if (!_this._popupOpened)
+			return;
 
-			$zopim.livechat.hideAll();
+		_this._popupOpened = false;
 
-		});
+		zE.hide();
 
 	}
 
