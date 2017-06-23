@@ -14,3 +14,12 @@
 
 	{% endif %}
 {% endfor %}
+
+
+{% for item in site.work-offers-city %}
+	{% if item.title contains offer.20__work_offers_city %}
+
+		{% capture offer_city %}{% value item %}{% endcapture %}
+
+	{% endif %}
+{% endfor %}
