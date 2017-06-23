@@ -16,10 +16,10 @@
 {% endfor %}
 
 
-{% for item in site.work-offers-city %}
-	{% if item.title contains offer.20__work_offers_city %}
+{% for item in site.work-offers-location %}
+	{% if item.title contains offer.20__work_offers_location %}
 
-		{% capture offer_city %}{% value item %}{% endcapture %}
+		{% assign offer_location = item %}
 
 	{% endif %}
 {% endfor %}
