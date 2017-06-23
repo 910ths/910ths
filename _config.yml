@@ -40,7 +40,7 @@ collections:
     output: false
   work-offers:
     title: 20_Work_offers
-    output: false
+    output: true
   work-offers-section:
     title: 20_Work_offers_section
     output: false
@@ -49,6 +49,9 @@ collections:
     output: false
   work-offers-type:
     title: 20__Work_offers_type
+    output: false
+  work-offers-city:
+    title: 20__Work_offers_city
     output: false
   management:
     title: 99_Management
@@ -263,18 +266,11 @@ defaults:
     short_desc: ''
     20__work_offers_category: ''
     20__work_offers_type: ''
-    location:
-      city: ''
-      arabic_city: ''
-      country: ''
-      arabic_country: ''
-      lat: ''
-      lng: ''
-    information:
-      amount:
-        min: ''
-        max: ''
-      deadline_at: ''
+    20__work_offers_city: ''
+    amount:
+      min: ''
+      max: ''
+    deadline_at: ''
     arabic_title: ''
     arabic_content_md: ''
     arabic_short_desc: ''
@@ -292,6 +288,15 @@ defaults:
   values:
     value: ''
     arabic_value: ''
+- scope:
+    path: ''
+    type: work-offers-city
+  values:
+    country: ''
+    lat: ''
+    lng: ''
+    arabic_title: ''
+    arabic_country: ''
 - scope:
     path: ''
     type: work-offers-type
