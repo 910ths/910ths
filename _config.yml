@@ -47,11 +47,11 @@ collections:
   work-offers-category:
     title: 20__Work_offers_category
     output: false
-  work-offers-type:
-    title: 20__Work_offers_type
-    output: false
   work-offers-city:
     title: 20__Work_offers_city
+    output: false
+  work-offers-type:
+    title: 20__Work_offers_type
     output: false
   management:
     title: 99_Management
