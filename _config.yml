@@ -262,6 +262,8 @@ defaults:
   values:
     work_position: ''
     arabic_work_position: ''
+    20__work_offers_category: ''
+    20__work_offers_type: ''
     location:
       city: ''
       arabic_city: ''
@@ -269,9 +271,13 @@ defaults:
       arabic_country: ''
       lat: ''
       lng: ''
-    20__work_offers_category: ''
-    20__work_offers_type: ''
+    information:
+      amount:
+        min: ''
+        max: ''
+      deadline_at: ''
     information: 
+    arabic_content_md: ''
     arabic_information: ''
 - scope:
     path: ''
