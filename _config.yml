@@ -260,8 +260,6 @@ defaults:
     path: ''
     type: work-offers
   values:
-    work_position: ''
-    arabic_work_position: ''
     20__work_offers_category: ''
     20__work_offers_type: ''
     location:
@@ -277,6 +275,7 @@ defaults:
         max: ''
       deadline_at: ''
     information: 
+    arabic_title: ''
     arabic_content_md: ''
     arabic_information: ''
 - scope:
