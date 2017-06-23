@@ -269,11 +269,6 @@ defaults:
       arabic_country: ''
       lat: ''
       lng: ''
-    information:
-      amount:
-        min: ''
-        max: ''
-      deadline_at: ''
     information: 
     arabic_title: ''
     arabic_content_md: ''
