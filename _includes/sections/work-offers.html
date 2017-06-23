@@ -52,12 +52,12 @@
 										<div class="workItem">
 											<div class="workItem__body">
 												<span class="workItem__cat">{{ offer_category }}</span>
-												<h3 class="workItem__title">{% value offer.work_position %}<h3>
-												<span class="workItem__tags">{% value offer.location %}, {{ offer_type }}</span>
-												<p class="workItem__text">{% value offer.information %}</p>
+												<h3 class="workItem__title">{% value offer.title %}<h3>
+												<span class="workItem__tags">{% value offer_location.title %}, {{ offer_type }}</span>
+												<p class="workItem__text">{% value offer.short_desc %}</p>
 											</div>
 											<div class="workItem__foot">
-												<a href="{% value offer.button_url %}" class="workItem__button">
+												<a href="{{ offer.url }}" class="workItem__button">
 													<span class="workItem__buttonText" data-hover="{% t work_offers.see_details %}">
 														{% t work_offers.see_details %}
 													</span>
