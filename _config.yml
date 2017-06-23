@@ -47,8 +47,8 @@ collections:
   work-offers-category:
     title: 20__Work_offers_category
     output: false
-  work-offers-city:
-    title: 20__Work_offers_city
+  work-offers-location:
+    title: 20__Work_offers_location
     output: false
   work-offers-type:
     title: 20__Work_offers_type
