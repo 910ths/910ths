@@ -41,6 +41,10 @@
 	<script type="text/javascript" src="/js/main.js"></script>
 	<script type="text/javascript" src="/globals/js/scripts.js"></script>
 
+	{% if page.layout == 'events-single' or page.layout == 'work-single' %}
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={{ site. google_maps_js_api }}"></script>
+	{% endif %}
+
 	{% if jekyll.environment == 'production' %}
 		<script src="https://cdn.910ths.sa/js/nine10ths-components.min.js"></script>
 	{% else %}

@@ -71,7 +71,7 @@ arabic_short_desc: Quisque ligula est, congue nec cursus sed, dapibus sit amet m
   Sed iaculis mollis nulla, et scelerisque lorem tempus. Duis volutpat mattis dui.
 ---
 
-## Channel Partner Manager
+Channel Partner Manager
 
 A number of endowment ministers from Islamic countries are expected to attend and take part in the conference as a number of sessions are delivered by high-ranking speakers who are recognized by the Islamic world.
 

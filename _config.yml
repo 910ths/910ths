@@ -263,6 +263,7 @@ defaults:
     path: ''
     type: work-offers
   values:
+    layout: work-single
     short_desc: ''
     20__work_offers_category: ''
     20__work_offers_type: ''

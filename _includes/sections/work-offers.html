@@ -57,7 +57,7 @@
 												<p class="workItem__text">{% value offer.short_desc %}</p>
 											</div>
 											<div class="workItem__foot">
-												<a href="{{ offer.url }}" class="workItem__button">
+												<a href="{% t lang_slug %}{{ offer.url }}" class="workItem__button">
 													<span class="workItem__buttonText" data-hover="{% t work_offers.see_details %}">
 														{% t work_offers.see_details %}
 													</span>
