@@ -32,13 +32,15 @@ OfferBox.prototype = {
 			_this._bodyScroll = document.documentElement || document.body;
 		}
 
-		_this._wrap        = document.querySelector('.offerBoxWrap');
-		_this._nextSection = document.querySelector('.stdBanner');
-		_this._offset      =  {
+		_bottomSpaceContent    = 28;
+		_spaceAboveNextwection = 98;
+		_this._wrap         = document.querySelector('.offerBoxWrap');
+		_this._nextSection  = document.querySelector('.stdBanner');
+		_this._offset       =  {
 			top  : _this._wrap.getBoundingClientRect().top + window.pageYOffset,
 			left : _this._wrap.getBoundingClientRect().left + window.pageXOffset
 		};
-		_this._maxOffset   = _this._nextSection.getBoundingClientRect().top + window.pageYOffset - _this._box.clientHeight - 100 - 28;
+		_this._maxOffset    = _this._nextSection.getBoundingClientRect().top + window.pageYOffset - _this._box.clientHeight - 100 - _bottomSpaceContent;
 
 		return true;
 
@@ -52,31 +54,35 @@ OfferBox.prototype = {
 
 			if ((_this._bodyScroll.scrollTop + 100) >= _this._offset.top) {
 
-				addClass(_this._box, 'sticky');
-				_this._box.style.top   = '100px';
-				_this._box.style.left  = _this._offset.left;
-				_this._box.style.width = _this._wrap.clientWidth + 'px';
+				if (_this._bodyScroll.scrollTop < _this._maxOffset) {
 
-				if (_this._bodyScroll.scrollTop >= _this._maxOffset) {
+					addClass(_this._box, 'sticky');
+					_this._box.style.position = 'fixed';
+					_this._box.style.top      = '100px';
+					_this._box.style.left     = _this._offset.left + 'px';
+					_this._box.style.width    = _this._wrap.clientWidth + 'px';
 
-					_this._box.style.top = (100 - (_this._bodyScroll.scrollTop - _this._maxOffset)) + 'px';
+				} else {
+
+					_this._box.style.position = 'absolute';
+					_this._box.style.top      = (_this._maxOffset - _this._offset.top + _spaceAboveNextwection) + 'px';
+					_this._box.style.left     = '0px';
 
 				}
 
 			} else {
 
 				removeClass(_this._box, 'sticky');
-				_this._box.style.top   = 'auto';
-				_this._box.style.left  = 'auto';
-				_this._box.style.width = 'auto';
+				_this._box.style.position = 'static';
+				_this._box.style.top      = 'auto';
+				_this._box.style.left     = 'auto';
+				_this._box.style.width    = 'auto';
 
 			}
 
 		});
 
 		window.onresize = function() {
-
-			console.log('resize');
 
 			_this._offset    =  {
 				top  : _this._wrap.getBoundingClientRect().top + window.pageYOffset,
