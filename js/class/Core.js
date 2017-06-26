@@ -20,6 +20,7 @@ Core.prototype = {
 		document._910ths.popupYouTube = new PopupYouTube();
 		document._910ths.zendesk      = new Zendesk();
 		document._910ths.banner       = new Banner();
+		document._910ths.offerBox     = new OfferBox();
 	}
 
 };

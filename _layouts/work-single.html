@@ -14,7 +14,7 @@ layout: work-single
 	<div class="contentPage">
 		<div class="wrapper wrapper--inside">
 			<div class="closeButton">
-				<a href="{% t lang_slug %}/career">Back to open positions</a>
+				<a href="{% t lang_slug %}/career/#offers">{% t work_offers.back_button %}</a>
 			</div>
 			<div class="stdCols__cols">
 				<div class="stdCols__col stdCols__col--big">
@@ -29,14 +29,16 @@ layout: work-single
 					</div>
 				</div>
 				<div class="stdCols__col stdCols__col--small stdCols__col--margin">
-					<div class="offerBox">
-						<div class="offerBox__data">
-							<p class="offerBox__amount"><span>{{ page.amount.min }} - {{ page.amount.max }}</span> {% t work_offers.currency %}</p>
-							<p class="offerBox__deadline">{% t work_offers.deadline %}: <span>{{ offer_deadline }}</span></p>
-							<a href="#" class="offerBox__button">{% t work_offers.apply %}</a>
-							<p class="offerBox__location">{{ offer_city }}, {{ offer_country }}</p>
+					<div class="offerBoxWrap">
+						<div class="offerBox">
+							<div class="offerBox__data">
+								<p class="offerBox__amount"><span>{{ page.amount.min }} - {{ page.amount.max }}</span> {% t work_offers.currency %}</p>
+								<p class="offerBox__deadline">{% t work_offers.deadline %}: <span>{{ offer_deadline }}</span></p>
+								<a href="#" class="offerBox__button">{% t work_offers.apply %}</a>
+								<p class="offerBox__location">{{ offer_city }}, {{ offer_country }}</p>
+							</div>
+							<div class="offerBox__map google__map" data-marker="/img/marker.png" data-lat="{{ offer_lat }}" data-lng="{{ offer_lng }}"></div>
 						</div>
-						<div class="offerBox__map google__map" data-marker="/img/marker.png" data-lat="{{ offer_lat }}" data-lng="{{ offer_lng }}"></div>
 					</div>
 				</div>
 			</div>

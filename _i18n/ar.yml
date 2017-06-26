@@ -114,3 +114,4 @@ work_offers:
     currency: USD
     deadline: Deadline
     apply: Apply now
+    back_button: Back to open positions
