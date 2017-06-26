@@ -9,53 +9,34 @@ layout: work-single
 
 	{% include components/page-header.html %}
 
-	{% assign object = page %}
-	{% include settings/date-event.html %}
+	{% include settings/offer.html %}
 
 	<div class="contentPage">
 		<div class="wrapper wrapper--inside">
+			<div class="closeButton">
+				<a href="#">Back to open positions</a>
+			</div>
 			<div class="stdCols__cols">
-				<div class="stdCols__col">
+				<div class="stdCols__col stdCols__col--big">
 					<div class="contentPage__content">
 						{% capture title %}{% value page.title %}{% endcapture %}
 						<h2 class="contentPage__title">
 							{{ title | markdownify | remove: '<p>' | remove: '</p>' }}
 						</h2>
-						<div class="contentPage__date">
-							<strong>{% t event %}</strong> - 
-							{% numerals {{ day_start }} %} {% t months.full.{{month_start}} %} {% numerals {{ year_start }} %}
-						</div>
 
 						{% capture content %}{% value page.content %}{% endcapture %}
-						<div class="contentPage__desc textWrap">{{ content | markdownify }}</div>
+						<div class="contentPage__desc textWrap textWrap--career">{{ content | markdownify }}</div>
 					</div>
 				</div>
-				<div class="stdCols__col">
-					<div class="contentPage__eventBox">
-						<div class="contentPage__map" data-marker="/img/marker.png" data-lat="{{ page.location.lat }}" data-lng="{{ page.location.lng }}"></div>
-						<div class="contentPage__data">
-							<ul>
-								<li class="date">
-									<span>
-										{% numerals {{ day_start }} %} {% t months.full.{{month_start}} %}
-										{% if date_start != date_end %}
-											- {% numerals {{ day_end }} %} {% t months.full.{{month_end}} %}
-										{% endif %}
-									</span>
-									{% numerals {{ time_start }} %} {% t time.{{hour_start}} %}
-									 - 
-									{% numerals {{ time_end }} %} {% t time.{{hour_end}} %}
-								</li>
-								<li class="location">{% value page.address %}</li>
-
-								{% capture info %}{% value page.info_text %}{% endcapture %}
-								{% if info != empty  %}
-									<li class="info">
-										{{ info | markdownify | remove: '<p>' | remove: '</p>' }}
-									</li>
-								{% endif %}
-							</ul>
+				<div class="stdCols__col stdCols__col--small stdCols__col--margin">
+					<div class="offerBox">
+						<div class="offerBox__data">
+							<p class="offerBox__amount"><span>{{ page.amount.min }} - {{ page.amount.max }}</span> {% t work_offers.currency %}</p>
+							<p class="offerBox__deadline">{% t work_offers.deadline %}: <span>{{ offer_deadline }}</span></p>
+							<a href="#" class="offerBox__button">{% t work_offers.apply %}</a>
+							<p class="offerBox__location">{{ offer_city }}, {{ offer_country }}</p>
 						</div>
+						<div class="offerBox__map google__map" data-marker="/img/marker.png" data-lat="{{ offer_lat }}" data-lng="{{ offer_lng }}"></div>
 					</div>
 				</div>
 			</div>

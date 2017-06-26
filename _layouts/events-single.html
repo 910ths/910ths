@@ -30,10 +30,10 @@ layout: events-single
 						<div class="contentPage__desc textWrap">{{ content | markdownify }}</div>
 					</div>
 				</div>
-				<div class="stdCols__col">
-					<div class="contentPage__eventBox">
-						<div class="contentPage__map" data-marker="/img/marker.png" data-lat="{{ page.location.lat }}" data-lng="{{ page.location.lng }}"></div>
-						<div class="contentPage__data">
+				<div class="stdCols__col stdCols__col--margin">
+					<div class="workBox">
+						<div class="workBox__map google__map" data-marker="/img/marker.png" data-lat="{{ page.location.lat }}" data-lng="{{ page.location.lng }}"></div>
+						<div class="workBox__data">
 							<ul>
 								<li class="date">
 									<span>

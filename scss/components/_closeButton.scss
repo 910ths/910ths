@@ -1,0 +1,36 @@
+.closeButton {
+	margin: -28px 0 34px 0;
+
+	a {
+		position: relative;
+		display: inline-block;
+		color: rgb(43, 43, 43);
+		font-weight: 500;
+		height: 43px;
+		font-size: 14px;
+		line-height: 41px;
+		text-transform: uppercase;
+		border: 1px solid rgba(43, 43, 43, 0.3);
+		border-radius: 8px;
+		overflow: hidden;
+		padding: 0 32px 0 53px;
+		box-sizing: border-box;
+		transition: opacity 0.2s ease;
+
+		&:hover,
+		&:focus,
+		&:hover {
+			opacity: 0.5;
+		}
+
+		&:before {
+			position: absolute;
+			top: 0;
+			left: 32px;
+			font-family: 'icomoon';
+			content: '\e904';
+			font-size: 11px;
+			line-height: 41px;
+		}
+	}
+}

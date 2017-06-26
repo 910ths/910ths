@@ -21,7 +21,7 @@ EventMap.prototype = {
 
 		var _this = this;
 
-		_this._map = document.querySelectorAll('.contentPage__map')[0];
+		_this._map = document.querySelectorAll('.google__map')[0];
 
 		if (!_this._map)
 			return false;

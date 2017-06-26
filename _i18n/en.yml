@@ -84,6 +84,13 @@ months:
     m_11: November
     m_12: December
 
+date:
+    st: st
+    nd: nd
+    rd: rd
+    th: th
+    of: of
+
 follow_us: Follow Us
 
 event: Event
@@ -104,3 +111,6 @@ work_offers:
     latest: Latest
     type: Type
     category: Category
+    currency: USD
+    deadline: Deadline
+    apply: Apply now

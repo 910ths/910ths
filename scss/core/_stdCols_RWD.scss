@@ -39,7 +39,9 @@
 		&__col{
 			&--stdBanner,
 			&--videoBanner,
-			&--eventsNews{
+			&--eventsNews,
+			&--big,
+			&--small {
 				display: block;
 				width: 100%;
 			}

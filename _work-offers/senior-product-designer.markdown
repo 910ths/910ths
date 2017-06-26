@@ -12,8 +12,6 @@ amount:
 deadline_at: 2017-08-08 00:00:00 +03:00
 arabic_title: Senior Product Designer
 arabic_content_md: |-
-  Channel Partner Manager
-
   A number of endowment ministers from Islamic countries are expected to attend and take part in the conference as a number of sessions are delivered by high-ranking speakers who are recognized by the Islamic world.
 
   The conference aims to be a platform to discuss the role of endowments at the Islamic level, highlight their role in carrying out the economic and social development and activating integrated systems to increase sources of endowments.
@@ -70,8 +68,6 @@ arabic_content_md: |-
 arabic_short_desc: Quisque ligula est, congue nec cursus sed, dapibus sit amet massa.
   Sed iaculis mollis nulla, et scelerisque lorem tempus. Duis volutpat mattis dui.
 ---
-
-Channel Partner Manager
 
 A number of endowment ministers from Islamic countries are expected to attend and take part in the conference as a number of sessions are delivered by high-ranking speakers who are recognized by the Islamic world.
 

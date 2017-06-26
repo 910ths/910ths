@@ -1,5 +1,12 @@
+{% if page.layout == 'work-single' %}
+	{% assign object = page %}
+{% else %}
+	{% assign object = offer %}
+{% endif %}
+
+
 {% for item in site.work-offers-category %}
-	{% if item.title contains offer.20__work_offers_category %}
+	{% if item.title contains object.20__work_offers_category %}
 
 		{% capture offer_category %}{% value item.value %}{% endcapture %}
 
@@ -8,7 +15,7 @@
 
 
 {% for item in site.work-offers-type %}
-	{% if item.title contains offer.20__work_offers_type %}
+	{% if item.title contains object.20__work_offers_type %}
 
 		{% capture offer_type %}{% value item.value %}{% endcapture %}
 
@@ -17,9 +24,39 @@
 
 
 {% for item in site.work-offers-location %}
-	{% if item.title contains offer.20__work_offers_location %}
+	{% if item.title contains object.20__work_offers_location %}
 
-		{% assign offer_location = item %}
+		{% capture offer_city %}{% value item.title %}{% endcapture %}
+		{% capture offer_country %}{% value item.country %}{% endcapture %}
+		{% assign offer_lat = item.lat %}
+		{% assign offer_lng = item.lng %}
+
+	{% endif %}
+{% endfor %}
+
+
+{% assign offer_month    = object.deadline_at | date: "m_%m" %}
+{% assign offer_deadline = object.deadline_at | date: "%d" | plus: '0' %}
+{% case offer_deadline %}
+	{% when 1 or 21 or 31 %}
+		{% capture offer_deadline %}{{ offer_deadline }}{% t date.st %}{% endcapture %}
+	{% when 2 or 22 %}
+		{% capture offer_deadline %}{{ offer_deadline }}{% t date.nd %}{% endcapture %}
+	{% when 3 or 23 %}
+		{% capture offer_deadline %}{{ offer_deadline }}{% t date.rd %}{% endcapture %}
+	{% else %}
+		{% capture offer_deadline %}{{ offer_deadline }}{% t date.th %}{% endcapture %}
+{% endcase %}
+
+{% capture offer_deadline %}{{ offer_deadline }} {% t date.of %} {% t months.full.{{ offer_month }} %}{% endcapture %}
+
+{% for item in site.work-offers-location %}
+	{% if item.title contains object.20__work_offers_location %}
+
+		{% capture offer_city %}{% value item.title %}{% endcapture %}
+		{% capture offer_country %}{% value item.country %}{% endcapture %}
+		{% assign offer_lat = item.lat %}
+		{% assign offer_lng = item.lng %}
 
 	{% endif %}
 {% endfor %}

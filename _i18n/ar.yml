@@ -84,6 +84,13 @@ months:
     m_11: نوفمبر
     m_12: ديسمبر
 
+date:
+    st: st
+    nd: nd
+    rd: rd
+    th: th
+    of: of
+
 follow_us: إتبعنا
 
 event: فعاليات
@@ -104,3 +111,6 @@ work_offers:
     latest: Latest
     type: Type
     ategory: Category
+    currency: USD
+    deadline: Deadline
+    apply: Apply now
