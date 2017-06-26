@@ -41,6 +41,7 @@ collections:
   work-offers:
     title: 20_Work_offers
     output: true
+    permalink: "/carrer/:path"
   work-offers-section:
     title: 20_Work_offers_section
     output: false
