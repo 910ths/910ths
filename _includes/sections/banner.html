@@ -1,5 +1,11 @@
+{% if page.layout == 'work-single' %}
+	{% include settings/carrer.html %}
+{% else %}
+	{% assign section_title = page.03_banner %}
+{% endif %}
+
 {% for section in site.banner %}
-	{% if section.title contains page.03_banner %}
+	{% if section.title contains section_title %}
 
 		<section class="stdBanner stdBg">
 			<div class="wrapper wrapper--inside">
