@@ -52,33 +52,7 @@ OfferBox.prototype = {
 
 		document.addEventListener('scroll', function() {
 
-			if ((_this._bodyScroll.scrollTop + 100) >= _this._offset.top) {
-
-				if (_this._bodyScroll.scrollTop < _this._maxOffset) {
-
-					addClass(_this._box, 'sticky');
-					_this._box.style.position = 'fixed';
-					_this._box.style.top      = '100px';
-					_this._box.style.left     = _this._offset.left + 'px';
-					_this._box.style.width    = _this._wrap.clientWidth + 'px';
-
-				} else {
-
-					_this._box.style.position = 'absolute';
-					_this._box.style.top      = (_this._maxOffset - _this._offset.top + _spaceAboveNextwection) + 'px';
-					_this._box.style.left     = '0px';
-
-				}
-
-			} else {
-
-				removeClass(_this._box, 'sticky');
-				_this._box.style.position = 'static';
-				_this._box.style.top      = 'auto';
-				_this._box.style.left     = 'auto';
-				_this._box.style.width    = 'auto';
-
-			}
+			_this._checkPosition();
 
 		});
 
@@ -91,6 +65,40 @@ OfferBox.prototype = {
 			_this._maxOffset = _this._nextSection.getBoundingClientRect().top + window.pageYOffset - _this._box.clientHeight - 100 - 28;
 
 		};
+
+	},
+
+	_checkPosition: function() {
+
+		var _this = this;
+
+		if ((_this._bodyScroll.scrollTop + 100) >= _this._offset.top) {
+
+			if (_this._bodyScroll.scrollTop < _this._maxOffset) {
+
+				addClass(_this._box, 'sticky');
+				_this._box.style.position = 'fixed';
+				_this._box.style.top      = '100px';
+				_this._box.style.left     = _this._offset.left + 'px';
+				_this._box.style.width    = _this._wrap.clientWidth + 'px';
+
+			} else {
+
+				_this._box.style.position = 'absolute';
+				_this._box.style.top      = (_this._maxOffset - _this._offset.top + _spaceAboveNextwection) + 'px';
+				_this._box.style.left     = '0px';
+
+			}
+
+		} else {
+
+			removeClass(_this._box, 'sticky');
+			_this._box.style.position = 'static';
+			_this._box.style.top      = 'auto';
+			_this._box.style.left     = 'auto';
+			_this._box.style.width    = 'auto';
+
+		}
 
 	}
 
