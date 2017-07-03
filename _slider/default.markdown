@@ -13,7 +13,7 @@ button_url: https://esso.910ths.sa/register?lang=en
 arabic_button_url: https://esso.910ths.sa/register?lang=ar
 button_uat_url: https://uat-esso.910ths.sa/register?lang=en
 arabic_button_uat_url: https://uat-esso.910ths.sa/register?lang=ar
-bg_video_asset: "/uploads/910ths-slider.mp4"
+bg_video_asset: "/uploads/910ths-slider-9f6fa2.mp4"
 bg_video_poster_asset: "/uploads/910ths-slider-01.jpg"
 bg_image_asset: "/uploads/910ths-slider-01.jpg"
 is_bg_image_active: false
