@@ -37,7 +37,9 @@ globalLogin.prototype = {
     var o = this;
     o._token = o._getTokenFromUrl("token");
     if (!o._token) {
-      o._getTokenUsingCookie();
+      if (!localStorage.user910accessToken) {
+        o._getTokenUsingCookie();
+      }
     } else {
       o._removeTokenFromUrl();
       localStorage.user910accessToken = o._token;
