@@ -10,11 +10,28 @@ Banner.prototype = {
 
 		var _this = this;
 		
+		_this._setBannerHeight();
+
 		if (!_this._setVars())
 			return;
 
 		_this._setEvents();
 
+	},
+
+	_setBannerHeight: function(){
+		var maxScreenSize, banner, bg;
+		
+		banner = document.querySelector('.homeBanner');
+		if( !banner ) return;
+
+		bgMobile = document.querySelector('.homeBanner__bgMobile');
+		if( !bgMobile ) return;
+
+		maxScreenSize = window.innerHeight;
+		
+		banner.style.maxHeight = maxScreenSize + 'px';
+		bgMobile.style.maxHeight = maxScreenSize + 'px';
 	},
 
 	_setVars: function() {
