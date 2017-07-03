@@ -37,13 +37,10 @@ globalLogin.prototype = {
     var o = this;
     o._token = o._getTokenFromUrl("token");
     if (!o._token) {
-      if (!localStorage.user910accessToken) {
-        o._getTokenUsingCookie();
-      }
-    } else {
-      o._removeTokenFromUrl();
-      localStorage.user910accessToken = o._token;
+      return;
     }
+    o._removeTokenFromUrl();
+    localStorage.user910accessToken = o._token;
   },
   _getTokenFromUrl: function(o) {
     var e = this;
@@ -72,8 +69,8 @@ globalLogin.prototype = {
           "Content-Type": "application/json",
           Authorization: "Bearer " + localStorage.user910accessToken
         },
-        error: function(o) {
-          console.log(o)
+        error: function(e) {
+          o._getUserDataUsingCookie();
         },
         success: function(e) {
           o._loginWrap.addClass("globHeaderNav__item--hasSubNav");
@@ -81,9 +78,11 @@ globalLogin.prototype = {
           o._loginHidden.hide()
         }
       })
+    } else {
+      o._getUserDataUsingCookie();
     }
   },
-  _getTokenUsingCookie: function() {
+  _getUserDataUsingCookie: function() {
     var o = this;
     $.ajax({
       url: o._apiUrl + "/service/g-t",
@@ -102,6 +101,7 @@ globalLogin.prototype = {
       success: function(data) {
         o._token = data.access_token;
         localStorage.user910accessToken = o._token;
+        o._getUserData();
       }
     })
   }
