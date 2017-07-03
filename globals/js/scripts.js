@@ -15,7 +15,6 @@ globalLogin.prototype = {
     o._loginUrl = o._loginWrap.data("esso-login-url") + "/login-from-service?client_id=" + o._loginWrap.data("esso-client-id") + "&redirect_uri=" + o._url;
     o._apiUrl = o._loginWrap.data("esso-api-url");
     o._setEvents();
-    o._getUserDataUsingCookie();
   },
   _setVars: function() {
     var o = this;
@@ -37,11 +36,14 @@ globalLogin.prototype = {
   _readToken: function() {
     var o = this;
     o._token = o._getTokenFromUrl("token");
-    if (!o._token)
-      return;
-    o._removeTokenFromUrl();
-    localStorage.user910accessToken = o._token;
-    o._getUserData()
+    if (!o._token) {
+      if (!localStorage.user910accessToken) {
+        o._getTokenUsingCookie();
+      }
+    } else {
+      o._removeTokenFromUrl();
+      localStorage.user910accessToken = o._token;
+    }
   },
   _getTokenFromUrl: function(o) {
     var e = this;
@@ -81,7 +83,7 @@ globalLogin.prototype = {
       })
     }
   },
-  _getUserDataUsingCookie: function() {
+  _getTokenUsingCookie: function() {
     var o = this;
     $.ajax({
       url: o._apiUrl + "/service/g-t",
@@ -100,7 +102,6 @@ globalLogin.prototype = {
       success: function(data) {
         o._token = data.access_token;
         localStorage.user910accessToken = o._token;
-        o._getUserData();
       }
     })
   }
