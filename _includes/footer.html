@@ -39,7 +39,6 @@
 	{% endif %}
 
 	<script type="text/javascript" src="/js/main.js"></script>
-	<script type="text/javascript" src="/globals/js/scripts.js"></script>
 
 	{% if page.layout == 'events-single' or page.layout == 'work-single' %}
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={{ site. google_maps_js_api }}"></script>
@@ -53,6 +52,10 @@
 
 	<script type="text/javascript">
 		new Core();
+
+		const header = new nine10ths.components.Header(document.querySelector('.globHeader'), {
+			lang: '{{ site.lang }}'
+		});
 
 		const footer = new nine10ths.components.Footer(document.querySelector('.globFooter'), {
 			lang: '{{ site.lang }}'
