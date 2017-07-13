@@ -57,7 +57,8 @@
 
 				if (callback.lang == 'ar')
 					window.location.href = currentUrl;
-				else
+
+				if (callback.lang == 'en')
 					window.location.href = '/' + callback.lang + currentUrl;
 
 			}
