@@ -53,6 +53,7 @@
 
 		const header = new nine10ths.components.Header(document.querySelector('.globHeader'), {
 			lang: '{{ site.lang }}',
+			env: '{% if jekyll.environment == 'production' %}prod{% else %}uat{% endif %}',
 			onChangeLanguage: function(callback) {
 
 				if (callback.lang == 'ar')

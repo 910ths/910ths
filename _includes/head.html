@@ -43,14 +43,4 @@
 </head>
 	<body class="{{ page.layout }}" dir="{% t direction %}">
 
-	{% if jekyll.environment == 'production' %}
-		{% assign esso_base_url     = site.esso.base_url %}
-		{% assign esso_client_id    = site.esso.client_id %}
-		{% assign esso_api_base_url = site.esso_api.base_url %}
-	{% else %}
-		{% assign esso_base_url     = site.esso.base_uat_url %}
-		{% assign esso_client_id    = site.esso.client_uat_id %}
-		{% assign esso_api_base_url = site.esso_api.base_uat_url %}
-	{% endif %}
-
 	<header class="globHeader"></header>
