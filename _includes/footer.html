@@ -25,6 +25,14 @@
 	{% assign hotjar_snippet_version = site.hotjar_snippet_version | strip %}
 	{% if hotjar_id != empty and hotjar_snippet_version != empty %}
 
+	{% if jekyll.environment == 'production' %}
+		{% assign esso_client_id    = site.esso.client_id %}
+		{% assign esso_api_base_url = site.esso_api.base_url %}
+	{% else %}
+		{% assign esso_client_id    = site.esso.client_uat_id %}
+		{% assign esso_api_base_url = site.esso_api.base_uat_url %}
+	{% endif %}
+
 		<script>
 			(function(h,o,t,j,a,r){
 				h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -39,6 +47,7 @@
 	{% endif %}
 
 	<script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/globals/js/scripts.js"></script>
 
 	{% if page.layout == 'events-single' or page.layout == 'work-single' %}
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={{ site. google_maps_js_api }}"></script>
@@ -63,6 +72,10 @@
 					window.location.href = '/' + callback.lang + currentUrl;
 
 			}
+		});
+
+		const globalLogin = new GlobalLogin('{{esso_api_base_url}}', '{{esso_client_id}}', function(userData) {
+			header.update({loggedInUserInfo: userData});
 		});
 
 		const footer = new nine10ths.components.Footer(document.querySelector('.globFooter'), {
