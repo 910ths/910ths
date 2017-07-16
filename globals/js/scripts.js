@@ -22,7 +22,6 @@ GlobalLogin.prototype = {
       return;
     o._removeTokenFromUrl();
     localStorage.user910accessToken = o._token;
-    o._getUserData()
   },
   _getTokenFromUrl: function(o) {
     var e = this;
