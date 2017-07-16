@@ -7,6 +7,7 @@ var GlobalLogin = function(apiUrl, essoClientId, onLoginSuccess) {
 GlobalLogin.prototype = {
   init: function() {
     var o = this;
+    o._url = window.location.href;
     o._setEvents()
   },
   _setEvents: function() {
