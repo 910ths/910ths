@@ -22,3 +22,4 @@ video_asset: "/uploads/start-banner.mp4"
 is_video_active: true
 poster_asset: "/uploads/start-banner.png"
 ---
+
