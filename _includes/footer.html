@@ -83,7 +83,8 @@
 		});
 
 		const footer = new nine10ths.components.Footer(document.querySelector('.globFooter'), {
-			lang: '{{ site.lang }}'
+			lang: '{{ site.lang }}',
+			env: '{% if jekyll.environment == 'production' %}prod{% else %}uat{% endif %}'
 		});
 	</script>
 
