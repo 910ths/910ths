@@ -21,7 +21,12 @@
 	{% endif %}
 
 	<link rel="stylesheet" href="/css/main.css" type="text/css" media="all">
-	<link rel="stylesheet" href="https://cdn.910ths.sa/css/components.min.css" type="text/css" media="all" />
+
+	{% if jekyll.environment == 'production' %}
+		<link href="https://cdn.910ths.sa/css/bundle.min.css" rel="stylesheet"/>
+	{% else %}
+		<link href="https://s3.eu-central-1.amazonaws.com/nine10ths-cdn-uat/css/bundle.css" rel="stylesheet"/>
+	{% endif %}
 
 	{% assign google_analytics_ua = site.google_analytics_ua | strip %}
 	{% if google_analytics_ua != empty %}
