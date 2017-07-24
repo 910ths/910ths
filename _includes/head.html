@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
-	<meta name="format-detection" content="telephone=no"> {% capture head_title %}{% value page.title %}{% endcapture %}
+	<meta name="format-detection" content="telephone=no">
+
+	{% capture head_title %}{% value page.title %}{% endcapture %}
 	<title>{{ head_title }} - {% value site.title_suffix %}</title>
 
-	<link rel="icon" type="image/png" href="/img/favicon.png"> {% capture description %}{% value site.description %}{% endcapture %}
+	{% capture description %}{% value site.description %}{% endcapture %}
 	<meta name="description" content="{{ description | strip_html | strip_newlines | truncate: 160 }}">
-	<meta name="robots" content="index,follow"> {% if site.lang == 'en' %} {% include fonts/ltr.html %} {% else %} {% include fonts/rtl.html %} {% endif %}
+	<meta name="robots" content="index,follow">
+	<link rel="icon" type="image/png" href="/img/favicon.png">
 
-	<link rel="stylesheet" href="/css/main.css" type="text/css" media="all"> {% if jekyll.environment == 'production' %}
-	<link href="https://cdn.910ths.sa/css/bundle.min.css" rel="stylesheet" /> {% else %}
-	<link href="https://s3.eu-central-1.amazonaws.com/nine10ths-cdn-uat/css/bundle.css" rel="stylesheet" /> {% endif %} {% assign google_analytics_ua = site.google_analytics_ua | strip %} {% if google_analytics_ua != empty %}
+	<link rel="stylesheet" href="/css/main.css" type="text/css" media="all">
+
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<script type="text/javascript" src="/js/html5.js"></script>
+	<![endif]-->
+
+	{% if jekyll.environment == 'production' %}
+		<link href="https://cdn.910ths.sa/css/bundle.min.css" rel="stylesheet" />
+	{% else %}
+		<link href="https://s3.eu-central-1.amazonaws.com/nine10ths-cdn-uat/css/bundle.css" rel="stylesheet" />
+	{% endif %}
+
+	{% if site.lang == 'en' %} {% include fonts/ltr.html %} {% else %} {% include fonts/rtl.html %} {% endif %}
+
+	{% assign google_analytics_ua = site.google_analytics_ua | strip %}
+	{% if google_analytics_ua != empty %}
 	<script>
 		(function(i, s, o, g, r, a, m) {
 			i['GoogleAnalyticsObject'] = r;
@@ -32,11 +48,6 @@
 	</script>
 	{% endif %}
 
-	<!--[if IE]>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<script type="text/javascript" src="/js/html5.js"></script>
-	<![endif]-->
-
 	{% if jekyll.environment == 'production' %}
 	<!-- Google Tag Manager -->
 	<script>
@@ -52,17 +63,18 @@
 			j.async = true;
 			j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
 			f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-PGTQKW3');
+		})(window, document, 'script', 'dataLayer', '{{ google_tag_manager_gtm }}');
 	</script>
 	<!-- End Google Tag Manager -->
 	{% endif %}
-
 </head>
 
 <body class="{{ page.layout }}" dir="{% t direction %}">
 	{% if jekyll.environment == 'production' %}
 		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGTQKW3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+			<noscript>
+				<iframe src="https://www.googletagmanager.com/ns.html?id={{ google_tag_manager_gtm }}" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+			</noscript>
 		<!-- End Google Tag Manager (noscript) -->
 	{% endif %}
 
