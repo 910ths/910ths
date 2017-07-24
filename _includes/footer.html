@@ -25,6 +25,13 @@
 		{% endif %}
 	<!-- ▲ Zendesk ▲ -->
 
+	<!-- ▼ JavaScript ▼ -->
+		<script type="text/javascript" src="/js/main.js"></script>
+		<script type="text/javascript">
+			new Core();
+		</script>
+	<!-- ▲ JavaScript ▲ -->
+
 	<!-- ▼ Global components ▼ -->
 		<script type="text/javascript" src="/globals/js/scripts.js"></script>
 
@@ -74,13 +81,6 @@
 			});
 		</script>
 	<!-- ▲ Global components ▲ -->
-
-	<!-- ▼ JavaScript ▼ -->
-		<script type="text/javascript" src="/js/main.js"></script>
-		<script type="text/javascript">
-			new Core();
-		</script>
-	<!-- ▲ JavaScript ▲ -->
 
 	<!-- ▼ Hotjar ▼ -->
 		{% assign hotjar_id              = site.hotjar_id | strip %}
