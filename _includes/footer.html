@@ -57,13 +57,13 @@
 						window.location.href = '/' + callback.lang + currentUrl;
 
 				},
-				onClickLogin: function(event, loginURL){
+				onClickLogin: function(event, loginURL) {
 					window.location = '{{ esso_base_url }}' + "/login-from-service?client_id=" + '{{ esso_client_id }}' + "&redirect_uri=" + window.location.href;
 				}
 			});
 
 			const globalLogin = new GlobalLogin('{{ esso_api_base_url }}', '{{ esso_client_id }}', function(userData) {
-				header.update({loggedInUserInfo: userData});
+				header.update({ loggedInUserInfo: userData });
 			});
 
 			const footer = new nine10ths.components.Footer(document.querySelector('.globFooter'), {
