@@ -318,7 +318,7 @@ esso_api:
 zendesk_subdomain: 910ths
 hotjar_id: 511570
 hotjar_snippet_version: 5
-google_analytics_ua: 
+google_analytics_ua: UA-80770522-1 
 google_tag_manager_gtm: GTM-PGTQKW3
 google_maps_js_api: AIzaSyCy6hRFVqBgV_JH5DLWLVXqaj4hAdvjdIw
 imgix:
