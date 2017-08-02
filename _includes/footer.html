@@ -71,7 +71,7 @@
 				}
 			});
 
-			let globalLogin = new GlobalLogin('{{ esso_api_base_url }}', '{{ esso_client_id }}', function(userData) {
+			new GlobalLogin('{{ esso_api_base_url }}', '{{ esso_client_id }}', function(userData) {
 				header.update({ loggedInUserInfo: userData });
 			});
 
