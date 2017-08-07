@@ -20,6 +20,7 @@ Banner.prototype = {
 	},
 
 	_setBannerHeight: function(){
+
 		var maxScreenSize, banner, bg;
 		
 		banner = document.querySelector('.homeBanner');
@@ -32,6 +33,7 @@ Banner.prototype = {
 		
 		banner.style.maxHeight = maxScreenSize + 'px';
 		bgMobile.style.maxHeight = maxScreenSize + 'px';
+
 	},
 
 	_setVars: function() {
@@ -43,16 +45,13 @@ Banner.prototype = {
 		if (!_this._video)
 			return false;
 
-
-		if (/SAFARI/.test(navigator.userAgent.toUpperCase())) {
-
+		if (/SAFARI/.test(navigator.userAgent.toUpperCase()))
 			_this._bodyScroll = document.body || document.documentElement;
-
-		} else {
-
+		else
 			_this._bodyScroll = document.documentElement || document.body;
 
-		}
+		_this.iOS          = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream; 
+		_this.windowHeight = (iOS) ? screen.height : window.innerHeight;
 
 		_this._content = document.querySelector('.homeBanner__content');
 		_this._playing = false;
@@ -78,7 +77,7 @@ Banner.prototype = {
 
 		document.addEventListener('scroll', function() {
 
-			var windowHeight  = (window.innerHeight / 2);
+			var windowHeight  = (_this.windowHeight / 2);
 			var currentScroll = _this._bodyScroll.scrollTop;
 			var percent       = 1;
 
