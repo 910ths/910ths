@@ -51,7 +51,7 @@ Banner.prototype = {
 			_this._bodyScroll = document.documentElement || document.body;
 
 		_this.iOS          = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream; 
-		_this.windowHeight = (iOS) ? screen.height : window.innerHeight;
+		_this.windowHeight = (_this.iOS) ? (screen.height / 2) : window.innerHeight;
 
 		_this._content = document.querySelector('.homeBanner__content');
 		_this._playing = false;
