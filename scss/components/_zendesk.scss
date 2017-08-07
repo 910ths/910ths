@@ -55,6 +55,10 @@ body > iframe,
 	display: none !important;
 }
 
+body > iframe[data-test-id=ChatWidgetMobileWindow] {
+	display: initial !important;
+}
+
 body > #siteleaf__toolbar {
 	display: block !important;
 }

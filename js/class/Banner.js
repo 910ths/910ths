@@ -82,6 +82,8 @@ Banner.prototype = {
 			var currentScroll = _this._bodyScroll.scrollTop;
 			var percent       = 1;
 
+			console.log(currentScroll + ' / ' + windowHeight);
+
 			if (currentScroll > 0) {
 
 				percent = currentScroll / windowHeight;
