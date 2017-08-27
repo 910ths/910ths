@@ -1,7 +1,7 @@
 ---
 title: Riyadh Hosts Saudi International Conference for Small and Medium Enterprises
 date: 2017-06-19 10:57:00 +03:00
-position: 2
+position: 4
 start_at: 2017-09-10 09:00:00 +03:00
 end_at: 2017-09-13 17:00:00 +03:00
 location:
