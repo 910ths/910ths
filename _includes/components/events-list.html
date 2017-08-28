@@ -5,7 +5,7 @@
 		<div class="stdCols__body">
 			<div class="events__items jsShowDelayed">
 				{% assign count = 0 %}
-				{% assign items = site.events | sort: 'start_at' | reverse %}
+				{% assign items = site.events | sort: 'start_at' %}
 				{% for event in items %}
 					{% if event.published != false %}
 
