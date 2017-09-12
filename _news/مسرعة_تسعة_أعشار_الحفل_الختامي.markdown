@@ -41,7 +41,9 @@ arabic_content_md: "تم اختيار اثني عشر (12) شركة سعودية
   لكل فريق أثناء مرحلة التمويل التأسيسي الذي يأتي كجزء من البرنامج .كما قدمت مُسرِعة
   الأعمال الناشئة مكاتب عمل  مشتركة، و مساندة من مدربين دوليين من ذوي الخبرات العالية
   في مجال الابتكار بمركز ريادة الأعمال بجامعة الملك عبد الله للعلوم و التقنية لبدء
-  مشاريعها الجديدة. \n\nتمنياتنا للجميع بالتوفيق و النجاح.\n\nفيديو للفعالية: https://www.youtube.com/watch?v=vVklWJoZMVc"
+  مشاريعها الجديدة. \n\nتمنياتنا للجميع بالتوفيق و النجاح.\n\n<iframe width=\"560\"
+  height=\"315\" src=\"https://www.youtube-nocookie.com/embed/vVklWJoZMVc?rel=0&amp;showinfo=0\"
+  frameborder=\"0\" allowfullscreen></iframe>"
 arabic_excerpt: 'تم اختيار اثني عشر (12) شركة سعودية ناشئة للمشاركة في  الحفل الختامي
   للدفعة الثانية لمُسرِعة تسعة أعشار للأعمال '
 images:
@@ -84,4 +86,4 @@ The Saudi startups that pitched at the showcase were:
 •	OMcare
 •	Ajeer
 
-Demo day video: https://www.youtube.com/watch?v=vVklWJoZMVc
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vVklWJoZMVc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
