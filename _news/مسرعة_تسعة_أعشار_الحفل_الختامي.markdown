@@ -1,6 +1,6 @@
 ---
 title: 910ths startup accelerator graduation day
-date: 2017-09-12 11:46:00 +03:00
+date: 2017-08-16 11:46:00 +03:00
 excerpt: Twelve Saudi startups were chosen to pitch at the first 910th Startup Accelerator
   showcase at the Kempinski hotel in Riyadh
 arabic_title: تسعة أعشار | الحفل الختامي لمسرعة الأعمال الناشئة 2017
