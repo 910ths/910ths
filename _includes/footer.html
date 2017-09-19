@@ -106,5 +106,20 @@
 			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_js_api }}"></script>
 		{% endif %}
 	<!-- ▲ Google Maps API ▲ -->
+
+  <script>
+    var cb = function() {
+      var l = document.createElement('link'); l.rel = 'stylesheet';
+      l.href = '/css/main.css';
+      var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+
+      var ll = document.createElement('link'); ll.rel = 'stylesheet';
+      ll.href = 'https://cdn.910ths.sa/css/bundle.min.css';
+      var hh = document.getElementsByTagName('head')[0]; hh.parentNode.insertBefore(ll, hh);
+    };
+
+    var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb); else window.addEventListener('load', cb);
+  </script>
 </body>
 </html>
