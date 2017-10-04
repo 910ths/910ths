@@ -12,7 +12,7 @@ button_url: https://apps.910ths.sa
 arabic_button_url: https://apps.910ths.sa
 button_uat_url: https://uat-store.910ths.sa
 arabic_button_uat_url: https://uat-store.910ths.sa
-background_asset: "/uploads/ideas.jpg"
+background_asset: "/uploads/_mini_01.jpg"
 products_layout: Horizontal
 products_aligment: None
 is_dark: true
