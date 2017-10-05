@@ -2,10 +2,13 @@
 title: App World 2017
 date: 2017-08-22 14:41:00 +03:00
 position: 2
-start_at: 2017-09-28 00:00:00 +03:00
-end_at: 2017-09-29 00:00:00 +03:00
+start_at: 2017-09-28 16:00:00 +03:00
+end_at: 2017-09-29 23:00:00 +03:00
+location:
+  lat: 21.5575004
+  lng: 39.1871214
 address: Jeddah Chamber of Commerce, Jeddah, Saudi Arabia.
-info_text: 'For more info: www.jcci.org.sa'
+info_text: 'For more info: [www.jcci.org.sa](www.jcci.org.sa)'
 arabic_title: تطبيقات نحو رؤية 2030
 arabic_content_md: "برعاية كريمة من صاحب السمو الملكي الأمير خالد الفيصل مستشار خادم
   الحرمين الشريفين - أمير منطقة مكة المكرمة تنظم غرفة جدة ملتقى عالم التطبيقات خلال
@@ -17,7 +20,7 @@ arabic_content_md: "برعاية كريمة من صاحب السمو الملك�
   مع استعراض تجارب وقصص لشركات حول العالم التي بدأت بفكرة واليوم تأخذ مكانها الإقتصادي
   في العالم من خلال التطبيقات."
 arabic_address: الغرفة التجارية الصناعية بجدة، مدينة جدة، المملكة العربية السعودية
-arabic_info_text: 'لمزيد من المعلومات: www.jcci.org.sa'
+arabic_info_text: 'لمزيد من المعلومات: [www.jcci.org.sa](www.jcci.org.sa)'
 ---
 
 Under the patronage of His Royal Highness Prince Khalid Al Faisal, Advisor to the Custodian of the Two Holy Mosques, Prince of Makkah Region, Jeddah Chamber organizes the Applications World Forum during the period from 8 to 9 Muharram 1439H (28-29 September 2017). Under the title:

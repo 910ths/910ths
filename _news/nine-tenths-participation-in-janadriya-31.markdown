@@ -16,8 +16,8 @@ arabic_excerpt: في 2 فبراير 2017م , تمت مشاركة تسعة أعش
   للتراث و الثقافة, و كان زوار مهرجان ( الجنادرية 31 ) قد فاق المليون و 150 ألف زائر
   و زائرة.
 images:
-- "/uploads/910ths-janadriya-1.jpg"
 - "/uploads/910ths-01.jpg"
+- "/uploads/910ths-janadriya-1.jpg"
 ---
 
 On 2 Feb, 2017, Nine tenths participated in the Janadriya National Festival for Heritage and Culture, Where visitors of the festival (Janadriya 31) has exceeded one million and 150 thousand visitors.
