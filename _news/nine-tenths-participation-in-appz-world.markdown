@@ -1,5 +1,5 @@
 ---
-title: Nine Tenths Participation in Appz World
+title: Nine Tenths Participation in Apps World
 date: 2017-10-05 15:54:00 +03:00
 arabic_title: 'تسعة أعشار يشارك في ملتقى #عالم_التطبيقات لتحقيق رؤية 2030'
 arabic_content_md: "\n      باتت التطبيقات تؤثر بشكل كبير على نطاق الأعمال والأفراد
