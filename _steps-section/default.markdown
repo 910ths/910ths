@@ -19,7 +19,7 @@ list:
 - title: Grow
   arabic_title: طوّر عملك
   description: Take your business to the next level with our services
-  arabic_description: خذ عملك إلى الخطوة التالي مع الخدمات
+  arabic_description: خذ عملك إلى الخطوة التالية مع الخدمات
   image: "/uploads/03.jpg"
 ---
 
