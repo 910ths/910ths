@@ -22,7 +22,7 @@
 		min-height: 3.6rem;
 	}
 
-	&--grid{
+	&.button--grid{
 		border-color: $c-dark;
 
 		&.hover,
@@ -33,7 +33,7 @@
 		}
 	}
 
-	&--gridDark{
+	&.button--gridDark{
 		border-color: $c-lightest;
 		color: $c-lightest;
 
@@ -45,7 +45,7 @@
 		}
 	}
 
-	&--solid{
+	&.button--solid{
 		background-color: $c-main;
 		border-color: $c-main;
 		color: $c-dark;
@@ -58,7 +58,7 @@
 		}
 	}
 
-	&--lightest{
+	&.button--lightest{
 		border-color: $c-lightest;
 		color: $c-lightest;
 
@@ -70,7 +70,7 @@
 		}
 	}
 
-	&--solidLightest{
+	&.button--solidLightest{
 		background-color: $c-lightest;
 		border-color: $c-lightest;
 		color: $c-mainDark;
