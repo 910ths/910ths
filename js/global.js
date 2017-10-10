@@ -1,3 +1,14 @@
+var currentScroll = function() {
+
+  var scroll = window.scrollY || window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop || 0;
+
+  if (document.body.style.position == 'fixed')
+    scroll = -parseInt(document.body.style.top);
+
+  return scroll;
+
+}
+
 function getOffset(el, relEl){
 	if( !el || el === relEl ) return { l: 0, t: 0 };
 	var eOff = { l: el.offsetLeft, t: el.offsetTop };

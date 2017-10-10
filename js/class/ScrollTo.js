@@ -99,9 +99,10 @@ ScrollTo.prototype = {
 		this._animScrollTo( getOffset(el).t - 60 ); // header offset
 	},
 
-	_animScrollTo: function( top ){
+	_animScrollTo: function( top ){ 
+
 		var _this = this,
-			scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+			scroll = currentScroll();
 
 		_this._bTime = window.performance.now();
 		_this._eTime = _this._bTime + _this._duration;
@@ -140,12 +141,7 @@ ScrollTo.prototype = {
 
 	_update: function( t ){
 		var _this = this,
-			body = document.documentElement || document.body,
 			fract;
-
-		if( _this._is_safari ){
-			body = document.body || document.documentElement;
-		}
 
 		if( t > _this._eTime ){
 			// complete
@@ -154,7 +150,9 @@ ScrollTo.prototype = {
 
 		fract = ( t - _this._bTime ) / _this._duration;
 		fract = _this._easing.easeOutCubic( fract );
-		body.scrollTop = _this._bScroll + fract * _this._dScroll;
+		// body.scrollTop = _this._bScroll + fract * _this._dScroll;
+    document.body.scrollTop = document.documentElement.scrollTop = _this._bScroll + fract * _this._dScroll
+
 	}
 
 };

@@ -96,12 +96,7 @@ Popup.prototype = {
 		setTimeout(function() {
 
 			addClass(popup, 'popup--active');
-
-			_this._scrollTop = -_this._body.scrollTop + 'px';
-
-			_this._body.style.position = 'fixed';
-			_this._body.style.top      = _this._scrollTop;
-			_this._body.style.left     = '0';
+      Scroll.lock();
 
 		}, 250);
 
@@ -109,7 +104,6 @@ Popup.prototype = {
 		popup.addEventListener('click', function(event) {
 
 			event.preventDefault();
-
 			_this._closePopup();
 
 		});
@@ -129,19 +123,9 @@ Popup.prototype = {
 		var popup = _this._body.querySelector('.popup--active');
 		var video = popup.querySelector('.videoBanner__video');
 
-		_this._body.style.position = 'static';
-		_this._body.style.top      = 'auto';
-		_this._body.style.left     = 'auto';
-
-		_this.scrollTop = -parseInt(_this._scrollTop);
-		_this._body.scrollTop = _this.scrollTop;
-
-		setTimeout(function() {
-
-			video.pause();
-			removeClass(popup, 'popup--active');
-
-		}, 100);
+    Scroll.unlock();
+    video.pause();
+    removeClass(popup, 'popup--active');
 
 	}
 

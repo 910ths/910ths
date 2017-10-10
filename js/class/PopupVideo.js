@@ -27,17 +27,6 @@ PopupVideo.prototype = {
 		if (!_this._openButtons || (_this._openButtons.length == 0))
 			return false;
 
-
-		if (/SAFARI/.test(navigator.userAgent.toUpperCase())) {
-
-			_this._bodyScroll = document.body || document.documentElement;
-
-		} else {
-
-			_this._bodyScroll = document.documentElement || document.body;
-
-		}
-
 		_this._videos    = [];
 		_this._scrollTop = 0;
 
@@ -107,12 +96,7 @@ PopupVideo.prototype = {
 		setTimeout(function() {
 
 			addClass(popup, 'popup--active');
-
-			_this._scrollTop = -_this._bodyScroll.scrollTop + 'px';
-
-			_this._body.style.position = 'fixed';
-			_this._body.style.top      = _this._scrollTop;
-			_this._body.style.left     = '0';
+      Scroll.lock();
 
 		}, 250);
 
@@ -120,7 +104,6 @@ PopupVideo.prototype = {
 		popup.addEventListener('click', function(event) {
 
 			event.preventDefault();
-
 			_this._closePopup();
 
 		});
@@ -140,15 +123,9 @@ PopupVideo.prototype = {
 		var popup = _this._body.querySelector('.popup--active');
 		var video = popup.querySelector('.videoBanner__video');
 
-		_this._body.style.position = 'static';
-		_this._body.style.top      = 'auto';
-		_this._body.style.left     = 'auto';
-
-		_this._scrollTop = -parseInt(_this._scrollTop);
-		_this._bodyScroll.scrollTop = _this._scrollTop;
-
 		video.pause();
 		removeClass(popup, 'popup--active');
+    Scroll.unlock();
 
 	}
 

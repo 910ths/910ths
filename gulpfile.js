@@ -12,6 +12,7 @@ var plumber 			= require('gulp-plumber');
 var gutil 				= require('gulp-util');
 var watch					= require('gulp-watch');
 var mediaQuery		= require('gulp-group-css-media-queries');
+var minify        = require('gulp-minifier');
 // var browsersync 	= require('browser-sync');
 
 // error function for plumber
@@ -64,6 +65,7 @@ gulp.task('css', function() {
 gulp.task('js', function() {
 	return gulp.src([
 		'./js/global.js',
+    './js/lockScroll.js',
 		'./js/isotope.pkgd.min.js',
 		'./js/jquery-3.2.1.min.js',
 		'./js/class/**/*.js'
@@ -71,7 +73,10 @@ gulp.task('js', function() {
 	.pipe( concat('main.js') )
 	// .pipe( gulp.dest('../js') )
 	// .pipe( stripdebug() )
-	.pipe( uglify() )
+  .pipe(minify({
+    minify   : true,
+    minifyJS : true
+  }))
 	.pipe( gulp.dest('./js') )
 	.pipe( notify({ message: 'JS done!' }) );
 });

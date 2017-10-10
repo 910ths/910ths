@@ -27,17 +27,6 @@ PopupYouTube.prototype = {
 		if (!_this._openButtons || (_this._openButtons.length == 0))
 			return false;
 
-
-		if (/SAFARI/.test(navigator.userAgent.toUpperCase())) {
-
-			_this._bodyScroll = document.body || document.documentElement;
-
-		} else {
-
-			_this._bodyScroll = document.documentElement || document.body;
-
-		}
-
 		_this._videos   = [];
 		_this._players  = [];
 		_this._lockOpen = true;
@@ -86,7 +75,6 @@ PopupYouTube.prototype = {
 			_this._openButtons[i].addEventListener('click', function(event) {
 
 				event.preventDefault();
-
 				_this._openPopup(this.getAttribute('data-popup'));
 
 			});
@@ -96,7 +84,6 @@ PopupYouTube.prototype = {
 				continue;
 
 			_this._videos.push(id);
-
 			_this._moveVideoToBody(id);
 
 		}
@@ -156,12 +143,7 @@ PopupYouTube.prototype = {
 		setTimeout(function() {
 
 			addClass(popup, 'popup--active');
-
-			_this._scrollTop = -_this._bodyScroll.scrollTop + 'px';
-
-			_this._body.style.position = 'fixed';
-			_this._body.style.top      = _this._scrollTop;
-			_this._body.style.left     = '0';
+      Scroll.lock();
 
 		}, 250);
 
@@ -169,7 +151,6 @@ PopupYouTube.prototype = {
 		popup.addEventListener('click', function(event) {
 
 			event.preventDefault();
-
 			_this._closePopup();
 
 		});
@@ -190,17 +171,9 @@ PopupYouTube.prototype = {
 		var id    = popup.getAttribute('data-popup');
 		var video = popup.querySelector('.videoBanner__video');
 
-
-		_this._body.style.position = 'static';
-		_this._body.style.top      = 'auto';
-		_this._body.style.left     = 'auto';
-
-		_this._scrollTop = -parseInt(_this._scrollTop);
-		_this._bodyScroll.scrollTop = _this._scrollTop;
-
 		removeClass(popup, 'popup--active');
-
 		_this._players[id].pauseVideo();
+    Scroll.unlock();
 
 	}
 

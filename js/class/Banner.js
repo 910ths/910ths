@@ -45,11 +45,6 @@ Banner.prototype = {
 		if (!_this._video)
 			return false;
 
-		if (/SAFARI/.test(navigator.userAgent.toUpperCase()))
-			_this._bodyScroll = document.body || document.documentElement;
-		else
-			_this._bodyScroll = document.documentElement || document.body;
-
 		_this.iOS          = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream; 
 		_this.windowHeight = (_this.iOS) ? (screen.height / 2) : window.innerHeight;
 
@@ -78,12 +73,12 @@ Banner.prototype = {
 		document.addEventListener('scroll', function() {
 
 			var windowHeight  = (_this.windowHeight / 2);
-			var currentScroll = _this._bodyScroll.scrollTop;
+			var scroll        = currentScroll();
 			var percent       = 1;
 
-			if (currentScroll > 0) {
+			if (scroll > 0) {
 
-				percent = currentScroll / windowHeight;
+				percent = scroll / windowHeight;
 
 				if (percent > 1) {
 
