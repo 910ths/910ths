@@ -110,7 +110,7 @@
 		box-sizing: border-box;
 		padding: 9rem 0;
 		font-size: 0;
-    z-index: 100;
+    z-index: 10;
 
 		&:after{
 			@include vcAfter;
