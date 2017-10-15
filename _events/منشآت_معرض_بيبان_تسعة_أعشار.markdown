@@ -1,6 +1,7 @@
 ---
 title: Beban Expo 2017
 date: 2017-08-22 14:14:00 +03:00
+published: false
 position: 0
 start_at: 2017-09-17 00:00:00 +03:00
 end_at: 2017-09-20 00:00:00 +03:00
