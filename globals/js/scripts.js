@@ -78,6 +78,10 @@ GlobalLogin.prototype = {
         o._token = data.access_token;
         localStorage.user910accessToken = o._token;
         o._getUserData();
+      },
+      error: function() {
+        o._token = null;
+        delete localStorage.user910accessToken;
       }
     });
   }
