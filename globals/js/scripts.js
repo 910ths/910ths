@@ -2,13 +2,13 @@ var GlobalLogin = function(apiUrl, essoClientId, onLoginSuccess) {
   this._onLoginSuccess = onLoginSuccess;
   this._apiUrl = apiUrl;
   this._essoClientId = essoClientId;
-  this.init()
+  this.init();
 };
 GlobalLogin.prototype = {
   init: function() {
     var o = this;
     o._url = window.location.href;
-    o._setEvents()
+    o._setEvents();
   },
   _setEvents: function() {
     var o = this;
@@ -17,38 +17,35 @@ GlobalLogin.prototype = {
   },
   _readToken: function() {
     var o = this;
-    o._token = o._getTokenFromUrl("token");
-    if (!o._token)
-      return;
+    o._token = o._getTokenFromUrl('token');
+    if (!o._token) return;
     o._removeTokenFromUrl();
     localStorage.user910accessToken = o._token;
   },
   _getTokenFromUrl: function(o) {
     var e = this;
-    o = o.replace(/[\[\]]/g, "\\$&");
-    var t = new RegExp("[?&]" + o + "(=([^&#]*)|&|#|$)");
+    o = o.replace(/[\[\]]/g, '\\$&');
+    var t = new RegExp('[?&]' + o + '(=([^&#]*)|&|#|$)');
     var n = t.exec(e._url);
-    if (!n)
-      return null;
-    if (!n[2])
-      return "";
-    return decodeURIComponent(n[2].replace(/\+/g, " "))
+    if (!n) return null;
+    if (!n[2]) return '';
+    return decodeURIComponent(n[2].replace(/\+/g, ' '));
   },
   _removeTokenFromUrl: function() {
     var o = window.location.pathname;
-    history.pushState("", document.title, o)
+    history.pushState('', document.title, o);
   },
   _getUserData: function() {
     var o = this;
     if (localStorage.user910accessToken) {
       $.ajax({
-        url: o._apiUrl + "/user/info",
-        method: "GET",
-        dataType: "json",
+        url: o._apiUrl + '/user/info',
+        method: 'GET',
+        dataType: 'json',
         headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-          Authorization: "Bearer " + localStorage.user910accessToken
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+          Authorization: 'Bearer ' + localStorage.user910accessToken
         },
         error: function(e) {
           o._getUserDataUsingCookie();
@@ -56,7 +53,7 @@ GlobalLogin.prototype = {
         success: function(userData) {
           o._onLoginSuccess(userData);
         }
-      })
+      });
     } else {
       o._getUserDataUsingCookie();
     }
@@ -64,9 +61,9 @@ GlobalLogin.prototype = {
   _getUserDataUsingCookie: function() {
     var o = this;
     $.ajax({
-      url: o._apiUrl + "/service/g-t",
-      method: "POST",
-      dataType: "json",
+      url: o._apiUrl + '/service/g-t',
+      method: 'POST',
+      dataType: 'json',
       data: JSON.stringify({
         client_id: o._essoClientId
       }),
@@ -74,14 +71,14 @@ GlobalLogin.prototype = {
         withCredentials: true
       },
       headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
       },
       success: function(data) {
         o._token = data.access_token;
         localStorage.user910accessToken = o._token;
         o._getUserData();
       }
-    })
+    });
   }
 };
