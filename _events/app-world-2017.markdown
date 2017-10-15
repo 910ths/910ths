@@ -1,6 +1,7 @@
 ---
 title: App World 2017
 date: 2017-08-22 14:41:00 +03:00
+published: false
 position: 2
 start_at: 2017-09-28 16:00:00 +03:00
 end_at: 2017-09-29 23:00:00 +03:00
