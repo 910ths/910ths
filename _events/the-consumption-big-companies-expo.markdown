@@ -1,5 +1,6 @@
 ---
 title: The Consumption Big Companies Expo
+published: false
 position: 1
 start_at: 2017-09-19 08:00:00 +03:00
 end_at: 2017-09-21 23:00:00 +03:00
