@@ -7,7 +7,7 @@ location:
   lat: 21.6171423
   lng: 39.1559879
 address: مركز جدة للمنتديات والفعاليات، جدة
-info_text: http://www.foodexsaudi.com/
+info_text: 'Visit : http://www.foodexsaudi.com/'
 arabic_title: فوديكس السعودية
 arabic_content_md: 'معرض فوديكس السعودية هو المعرض السعودي الدولي الوحيد المتخصص 100%
   في قطاع الأغذية والمشروبات ويتيح المعرض للزوار الفرصة للتعرف على منتجات غذائية من
