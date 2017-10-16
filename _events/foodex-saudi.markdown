@@ -9,11 +9,10 @@ location:
 address: مركز جدة للمنتديات والفعاليات، جدة
 info_text: 'Visit : http://www.foodexsaudi.com/'
 arabic_title: فوديكس السعودية
-arabic_content_md: 'معرض فوديكس السعودية هو المعرض السعودي الدولي الوحيد المتخصص 100%
+arabic_content_md: معرض فوديكس السعودية هو المعرض السعودي الدولي الوحيد المتخصص 100%
   في قطاع الأغذية والمشروبات ويتيح المعرض للزوار الفرصة للتعرف على منتجات غذائية من
-  أكثر من 30 دولة وتبادل الاعمال والخبرات مع العارضين واكتشاف أحدث المنتجات والتقنيات
-  في صناعة الأغذية. '
+  أكثر من 30 دولة.
 arabic_info_text: 'رابط المعرض: http://www.foodexsaudi.com/'
 ---
 
-Foodex Saudi is Saudi Arabia’s Leading International Trade exhibition 100% dedicated to the food and drink industry. By attending the show you will have the opportunity to source products from over 35 countries, and trade with exhibitors displaying a global offering of food and beverage products and solutions.
+Foodex Saudi is the first Saudi International Trade exhibition that is 100% dedicated to the food and drink industry. By attending the Foodex will have the opportunity to source products from over 35 countries.
