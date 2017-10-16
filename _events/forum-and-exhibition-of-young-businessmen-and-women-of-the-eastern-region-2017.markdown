@@ -16,4 +16,4 @@ arabic_content_md: |+
 arabic_info_text: 'رابط الملتقى: https://www.chamber.org.sa/sites/Arabic/Events/aybcf2017/Pages/Home.aspx'
 ---
 
-Providing the opportunity for the economic community, large companies and businessmen to identify and support the products and services of young and young projects so that there are facilities qualified to compete internally and externally.
+Providing the opportunity for the economic community, large companies and businessmen to identify the young products and services by supporting them.
