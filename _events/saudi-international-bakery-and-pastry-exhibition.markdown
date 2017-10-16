@@ -1,6 +1,7 @@
 ---
 title: Saudi International Bakery & pastry exhibition
 date: 2017-06-19 11:01:00 +03:00
+published: false
 position: 3
 start_at: 2017-10-15 00:00:00 +03:00
 end_at: 2017-06-17 00:00:00 +03:00
