@@ -7,7 +7,7 @@ location:
   lat: 24.7925023
   lng: 46.6321092
 address: فندق رفال كمبنسكي، الرياض
-info_text: 'Visit: https://arabnet.me/conference/riyadh/'
+info_text: "[Website](https://arabnet.me/conference/riyadh/)"
 arabic_title: عرب نت 2017
 arabic_content_md: " أكبر تجمع رقمي في المملكة و يتناول أحدث المواضيع المتخصصة لتطوير
   الأعمال في المملكة، يتم الحديث عن أربعة منتديات مهتمة بتطوير الأعمال وهي الاستثمار
