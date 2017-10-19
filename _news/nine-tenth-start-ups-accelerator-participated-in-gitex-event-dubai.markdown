@@ -26,13 +26,13 @@ arabic_content_md: "       شاركت مسرعة الأعمال الناشئة �
   المختلفة مع تقديم خاصية تمكن العميل المقارنة بين الأسعار المقدمة مع خدمة توصيل المطبوعات
   إلى باب المشتري. \n         أما الفريق الأخير المشارك هو فريق\" سيرفس\" و المهتم
   بتسويق الخدمات في المملكة عن طريق استلام العميل 5 عروض أسعار من مقدمي الخدمة المختلفين
-  في غضون دقائق من الطلب علمًا بأن العملية تتم بشكل مجاني للعملاء. \n     في النهاية
-  تحرص مسرعة تسعة أعشار للأعمال الناشئة و التابعة لصندوق تنمية الموارد البشرية \"هدف\"
-  لتقديم الإرشاد والدعم الفوري و العديد من الخدمات  لتهيئة رواد الأعمال لبدء افكارهم
-  و مشاريعهم على أرض الواقع و إضافة إلى ذلك تسعى المسرعة للبحث عن كل ماهو جديد ومواكبة
-  الأحداث سعيًا لتوسيع مشاريع فرقها في السوق، و ذلك استكمالاً لرؤيتها و دعمها لفرقها
-  المشاركة و حرصًا منها لاستكمال ما تم البدء به ومساعدة فرقها على النمو بشكل أكبر
-  و استغلال الفرص لتوسعهم بشكل ملحوظ و إيجابي.\n"
+  في غضون دقائق من الطلب علمًا بأن العملية تتم بشكل مجاني للعملاء. \n     \nتحرص مسرعة
+  تسعة أعشار للأعمال الناشئة و التابعة لصندوق تنمية الموارد البشرية \"هدف\" لتقديم
+  الإرشاد والدعم الفوري و العديد من الخدمات  لتهيئة رواد الأعمال لبدء افكارهم و مشاريعهم
+  على أرض الواقع و إضافة إلى ذلك تسعى المسرعة للبحث عن كل ماهو جديد ومواكبة الأحداث
+  سعيًا لتوسيع مشاريع فرقها في السوق، و ذلك استكمالاً لرؤيتها و دعمها لفرقها المشاركة
+  و حرصًا منها لاستكمال ما تم البدء به ومساعدة فرقها على النمو بشكل أكبر و استغلال
+  الفرص لتوسعهم بشكل ملحوظ و إيجابي.\n"
 images:
 - "/uploads/DLsnYUIX4AEGNvM.jpg"
 - "/uploads/DL2_sdOW4AIobUB.jpg"
@@ -50,4 +50,4 @@ Away from the health teams, there are also other teams that are interested in fa
 Also, the team of Munjz app is also participated where the app is specialized in various services of printing, offering a feature that enables customers to compare between prices offered with service of delivering the publications to the buyer.
 And the last team participated is the team of Service app which is interested in services marketing in the kingdom through providing the customer with 5 price quotations from the different service providers in minutes after submitting the request knowing that the service is being provided to customers at no charge.
 
-Finally, Nine Tenth Startup Accelerator under the Human Resources Development Fund (HRDF) aims at providing instant guidance and support and a lot of services to prepare entrepreneurs to translate their ideas and projects into real projects, in addition to that the Accelerator seeks to search for all that is new and keeps pace with events in order to expand the projects of its  teams in the market, for the sake of completing its vision, supporting its participating teams, being keen on finalizing what is initiated, supporting its teams to grow on a large scale for a significant and positive expansion.
+Nine Tenth Startup Accelerator under the Human Resources Development Fund (HRDF) aims at providing instant guidance and support and a lot of services to prepare entrepreneurs to translate their ideas and projects into real projects, in addition to that the Accelerator seeks to search for all that is new and keeps pace with events in order to expand the projects of its  teams in the market, for the sake of completing its vision, supporting its participating teams, being keen on finalizing what is initiated, supporting its teams to grow on a large scale for a significant and positive expansion.
