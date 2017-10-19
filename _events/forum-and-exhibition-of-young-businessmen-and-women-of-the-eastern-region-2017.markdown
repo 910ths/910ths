@@ -6,7 +6,7 @@ end_at: 2017-11-29 22:00:00 +03:00
 location:
   lat: 26.3808645
   lng: 50.2107617
-address: Dhahran Expo
+address: 'Dhahran Expo '
 info_text: 'Website: [](https://www.chamber.org.sa/sites/Arabic/Events/aybcf2017/Pages/Home.aspx)'
 arabic_title: 'منتدى ومعرض اعمال شباب وشابات المنطقة الشرقية 2017 '
 arabic_content_md: |2+
