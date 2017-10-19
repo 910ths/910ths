@@ -1,5 +1,5 @@
 ---
-title: Nine Tenth Start Ups Accelerator Participated in GITEX event-Dubai
+title: Nine Tenth Start Ups Accelerator Participated in GITEX Event-Dubai
 date: 2017-10-16 12:53:00 +03:00
 arabic_title: 'مسرعة الأعمال من تسعة أعشار تشارك في معرض جايتكس - دبي '
 arabic_content_md: "       شاركت مسرعة الأعمال الناشئة التابعة لبرنامج تسعة أعشار
