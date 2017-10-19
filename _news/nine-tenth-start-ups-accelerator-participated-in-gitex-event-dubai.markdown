@@ -38,7 +38,6 @@ images:
 - "/uploads/DL2_sdOW4AIobUB.jpg"
 - "/uploads/DLxja4AX0AAtnZY.jpg"
 - "/uploads/DLypsTYW4AETJ4R.jpg"
-- "/uploads/DMCLC0pW4AEafYA.jpg"
 ---
 
 The Startup Accelerator of the Nine Tenth program is participating in the 37th round of GITEX to be held in Dubai of the United Arab of Emirates starting from 8th to 10th of October 2017. GITEX is an annual event that attracts the attention of many technology leaders, entrepreneurs and those who are interested in the modern technologies and track more than 120,000 visitors from GCC and all over the world.
