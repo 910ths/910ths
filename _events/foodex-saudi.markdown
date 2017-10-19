@@ -15,4 +15,4 @@ arabic_content_md: معرض فوديكس السعودية هو المعرض ال
 arabic_info_text: 'رابط المعرض: [](http://www.foodexsaudi.com/)'
 ---
 
-Foodex Saudi is the first Saudi International Trade exhibition that is 100% dedicated to the food and drink industry. By attending the Foodex will have the opportunity to source products from over 35 countries.
+Foodex Saudi is the first Saudi International Trade exhibition that is 100% dedicated to the food and drink industry. By attending the Foodex will have the opportunity to source products from over 30 countries.
