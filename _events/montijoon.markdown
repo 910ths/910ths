@@ -7,7 +7,7 @@ location:
   lat: 24.7513952
   lng: 46.72377
 address: Riyadh International Convention & Exhibition Center - Riyadh
-info_text: Website [](http://montijoon.sa/Arabic/Pages/default.aspx)
+info_text: "[Website](http://montijoon.sa/Arabic/Pages/default.aspx)"
 arabic_title: معرض منتجون
 arabic_content_md: "\nمعرض منتجون هو أكبر تجمع على مستوى المملكة والشرق الأوسط لدعم
   المستثمرين و المستثمرات من المنزل ورائدات الاعمال الناشئات لدعم مسيرة التنمية الوطنية.
