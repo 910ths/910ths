@@ -60,11 +60,17 @@ images:
 ---
 
 The Startup Accelerator of the Nine Tenth program is participating in the 37th round of GITEX to be held in Dubai of the United Arab of Emirates starting from 8th to 10th of October 2017. GITEX is an annual event that attracts the attention of many technology leaders, entrepreneurs and those who are interested in the modern technologies and track more than 120,000 visitors from GCC and all over the world.
+
 Due to the importance and the volume of the event in expanding small projects and based on the role of the Nine Tenth Startup Accelerator which is considered a comprehensive program to support its teams, Startup Accelerator shared some of its projects in GITEX based on its conceptual trends and compatibility.
+
 One of the teams who participated in GITEX, there is the team of Saydl app which is interested in providing an easy and fast way for customer service through enabling customers to request all the pharmaceutical products and deliver them to any location in one hour only. Saydl provides more than 15000 pharmaceutical products available on the platform for customers to pick what they need.
+
 The team of Cura will also participate in GITEX, which aims at changing the conventional ways of medical visits through providing a service that enables reaching to doctors via smart phones and communicating with medical specialists and consultants directly in order to seek their medical advices by direct sound and picture in smart phones without the need to book time for visits.
+
 In admittance to the importance of personal consultations, Labayh app also participated, which is an electronic platform that is based on the idea of connecting the advice requestor with a consultant who is specialized in the personal topics via messages and voice calls within the app.
+
 Away from the health teams, there are also other teams that are interested in facilitating the business scale like the team of Ajeer app which is interested in linking the owners of houses and establishments with service providers of different professions to offer household maintenance services on high level of quality in competitive prices.
+
 Also, the team of Munjz app is also participated where the app is specialized in various services of printing, offering a feature that enables customers to compare between prices offered with service of delivering the publications to the buyer.
 And the last team participated is the team of Service app which is interested in services marketing in the kingdom through providing the customer with 5 price quotations from the different service providers in minutes after submitting the request knowing that the service is being provided to customers at no charge.
 
