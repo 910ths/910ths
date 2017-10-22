@@ -13,7 +13,7 @@ arabic_content_md: "\nمعرض منتجون هو أكبر تجمع على مست
   المستثمرين و المستثمرات من المنزل ورائدات الاعمال الناشئات لدعم مسيرة التنمية الوطنية.
   \n"
 arabic_address: مركز الرياض الدولي للمؤتمرات والمعارض، الرياض
-arabic_info_text: رابط المعرض [](http://montijoon.sa/Arabic/Pages/default.aspx)
+arabic_info_text: "[رابط المعرض](http://montijoon.sa/Arabic/Pages/default.aspx)"
 ---
 
 
