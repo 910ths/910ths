@@ -14,7 +14,7 @@ GlobalLogin.prototype = {
   _setEvents: function() {
     var o = this;
     o._readToken();
-    o._getUserData();
+    o._getUserDataUsingCookie();
   },
   _readToken: function() {
     var o = this;
@@ -38,27 +38,22 @@ GlobalLogin.prototype = {
   },
   _getUserData: function() {
     var o = this;
-    if (localStorage.user910accessToken) {
-      $.ajax({
-        url: o._apiUrl + '/user/info',
-        method: 'GET',
-        dataType: 'json',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-          Authorization: 'Bearer ' + localStorage.user910accessToken
-        },
-        error: function(e) {
-          o._onLoginFail();
-          o._getUserDataUsingCookie();
-        },
-        success: function(userData) {
-          o._onLoginSuccess(userData);
-        }
-      });
-    } else {
-      o._getUserDataUsingCookie();
-    }
+    $.ajax({
+      url: o._apiUrl + '/user/info',
+      method: 'GET',
+      dataType: 'json',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+        Authorization: 'Bearer ' + localStorage.user910accessToken
+      },
+      error: function(e) {
+        o._onLoginFail();
+      },
+      success: function(userData) {
+        o._onLoginSuccess(userData);
+      }
+    });
   },
   _getUserDataUsingCookie: function() {
     var o = this;
