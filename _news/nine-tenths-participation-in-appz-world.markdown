@@ -22,7 +22,7 @@ images:
 - "/uploads/app-world2.jpg"
 ---
 
- Nine Tenth participating in Apps World Exhibition in Jeddah
+
 Apps have great effective on the business field and individuals and the competitiveness between them in order to achieve the 2030 vision, Due to that Nine Tenth has contributed by participating in the 1st round of the Apps World exhibition which was held under auspices of HRH Prince Khalid El-Feisal bin Abdul-Aziz, Consultant to the Custodian of the Two Holy Mosques and Prince of Makah province, and the attendance of HRH Prince Abdullah bin Bandar bin Abdul-Aziz, Deputy of the Prince of Makah province, on 28th and 29th of September 2017.
 The exhibition is titled with Apps World as it aims at connecting ideas and active minds of concerned specialized companies and its workers in this field, with the local investors and working on creation of stimulating environment for small and emerging businesses and paving the way for investing opportunities and partnerships.
  Nine Tenth had the Golden patronage of this exhibition as it is compatible with the program's vision towards development and support for the Medium and small enterprises.
