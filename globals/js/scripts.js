@@ -1,5 +1,6 @@
-var GlobalLogin = function(apiUrl, essoClientId, onLoginSuccess) {
+var GlobalLogin = function(apiUrl, essoClientId, onLoginSuccess, onLoginFail) {
   this._onLoginSuccess = onLoginSuccess;
+  this._onLoginFail = onLoginFail;
   this._apiUrl = apiUrl;
   this._essoClientId = essoClientId;
   this.init();
@@ -48,6 +49,7 @@ GlobalLogin.prototype = {
           Authorization: 'Bearer ' + localStorage.user910accessToken
         },
         error: function(e) {
+          o._onLoginFail();
           o._getUserDataUsingCookie();
         },
         success: function(userData) {
