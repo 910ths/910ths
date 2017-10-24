@@ -9,7 +9,7 @@ location:
 address: The Ritz-Carlton - Jeddah
 info_text: "[Website](http://startupsaudiarabia.org/)"
 arabic_title: الملتقى السعودي للشركات الناشئة
-arabic_content_md: 'مبادرة أطلقتها شركة #وادي_مكة، بهدف ربط رواد الأعمال بالمستثمرين،واستقطاب
+arabic_content_md: 'مبادرة أطلقتها #وادي_مكة، بهدف ربط رواد الأعمال بالمستثمرين،واستقطاب
   الخبراء والمختصين لمناقشة أهم القضايا المتعلقة بمنظومة ريادة الأعمال في المملكة.'
 arabic_address: فندق ريتز كارلتون - جدة
 arabic_info_text: "[رابط المبادرة](http://startupsaudiarabia.org/AR/)"
