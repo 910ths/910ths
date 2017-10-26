@@ -36,6 +36,26 @@ GlobalLogin.prototype = {
     var o = window.location.pathname;
     history.pushState('', document.title, o);
   },
+  revokeToken: function() {
+    return new Promise(resolve => {
+      $.ajax({
+        url: o._apiUrl + '/user/logout',
+        method: 'POST',
+        dataType: 'json',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+          Authorization: 'Bearer ' + localStorage.user910accessToken
+        },
+        error: function(e) {
+          resolve(e);
+        },
+        success: function() {
+          resolve(false);
+        }
+      });
+    });
+  },
   _getUserData: function() {
     var o = this;
     if (localStorage.user910accessToken) {

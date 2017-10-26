@@ -59,6 +59,11 @@ document.zendeskLang = '{{ site.lang }}';
 
 		<script type="text/javascript">
 			var currentUrl = '{{ page.url | remove: 'index.html' }}';
+			const auth = new GlobalLogin('{{ esso_api_base_url }}', '{{ esso_client_id }}', function(userData) {
+					header.update({ loggedInUserInfo: userData });
+				}, function() {
+					header.update({loggedInUserInfo: null});
+			});
 
 			const header = new nine10ths.components.Header(document.querySelector('.globHeader'), {
 				lang: '{{ site.lang }}',
@@ -76,16 +81,14 @@ document.zendeskLang = '{{ site.lang }}';
 					window.location = '{{ esso_base_url }}' + '/login-from-service?client_id=' + '{{ esso_client_id }}' + "&redirect_uri=" + window.location.href;
 				},
 				onClickLogout: function(event, logoutURL, origin) {
-					delete localStorage.user910accessToken;
-					window.location = `${logoutURL}?redirect_uri=${encodeURIComponent(origin)}`;
+					auth.revokeToken().then(() => {
+						delete localStorage.user910accessToken;
+						window.location = `${logoutURL}?redirect_uri=${encodeURIComponent(origin)}`;
+					})
 				}
 			});
 
-			new GlobalLogin('{{ esso_api_base_url }}', '{{ esso_client_id }}', function(userData) {
-				header.update({ loggedInUserInfo: userData });
-			}, function() {
-				header.update({loggedInUserInfo: null});
-			});
+
 
 			const footer = new nine10ths.components.Footer(document.querySelector('.globFooter'), {
 				lang: '{{ site.lang }}',
