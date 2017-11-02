@@ -71,15 +71,16 @@
 	}
 
 	&.button--solidLightest{
-		background-color: $c-lightest;
+		background-color: transparent;
+		color: $c-lightest;
 		border-color: $c-lightest;
-		color: $c-mainDark;
 
 		&.hover,
 		&:focus,
 		&:hover{
-			background-color: transparent;
-			color: $c-lightest;
+			background-color: $c-lightest;
+			border-color: $c-lightest;
+			color: $c-mainDark;
 		}
 	}
 
