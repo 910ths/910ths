@@ -10,8 +10,8 @@ arabic_description: هل لديك خدمة أو تطبيق لإدارة وتطو
   في المملكة؟  بإمكانك تقديم طلب انضمام إلى منصة تطبيقاتي تسعة أعشار.
 button_url: https://apps.910ths.sa
 arabic_button_url: https://apps.910ths.sa
-button_uat_url: https://uat-store.910ths.sa
-arabic_button_uat_url: https://uat-store.910ths.sa
+button_uat_url: http://uat-apps.910ths.sa/
+arabic_button_uat_url: http://uat-apps.910ths.sa/
 background_asset: "/uploads/apps-bg.jpg"
 products_layout: Horizontal
 products_aligment: None
