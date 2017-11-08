@@ -1,6 +1,7 @@
 ---
 title: StartUp Saudi Arabia
 date: 2017-10-24 12:25:00 +03:00
+published: false
 start_at: 2017-11-04 08:30:00 +03:00
 end_at: 2017-11-06 18:00:00 +03:00
 location:
