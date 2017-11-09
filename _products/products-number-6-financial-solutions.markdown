@@ -9,8 +9,8 @@ description: A suite of financial support services targeting High-Potential busi
 arabic_description: مجموعة حلول تمويلية تخدم المنشآت القابلة للنمو في جميع مراحلها.
 button_url: https://a2f.910ths.sa/lang/en
 arabic_button_url: https://a2f.910ths.sa/lang/ar
-button_uat_url: http://uat-a2f.910ths.sa/landing
-arabic_button_uat_url: http://uat-a2f.910ths.sa/landing
+button_uat_url: http://uat-a2f.910ths.sa/lang/ar
+arabic_button_uat_url: http://uat-a2f.910ths.sa/lang/ar
 background_asset: "/uploads/access-to-finance.jpg"
 products_layout: Default
 products_aligment: None
