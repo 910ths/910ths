@@ -1,6 +1,7 @@
 ---
 title: Small and Medium Enterprises Forum (SMEF)
 date: 2017-10-24 12:10:00 +03:00
+published: false
 start_at: 2017-11-17 16:00:00 +03:00
 end_at: 2017-11-18 22:00:00 +03:00
 location:
