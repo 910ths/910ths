@@ -1,6 +1,7 @@
 ---
 title: Foodex Saudi
 date: 2017-10-16 14:48:00 +03:00
+published: false
 start_at: 2017-11-12 15:00:00 +03:00
 end_at: 2017-11-15 22:00:00 +03:00
 location:
