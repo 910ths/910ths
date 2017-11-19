@@ -1,6 +1,7 @@
 ---
 title: Sougram 3
 date: 2017-11-15 15:13:00 +03:00
+published: false
 start_at: 2017-11-15 16:00:00 +03:00
 end_at: 2017-11-18 22:00:00 +03:00
 location:
