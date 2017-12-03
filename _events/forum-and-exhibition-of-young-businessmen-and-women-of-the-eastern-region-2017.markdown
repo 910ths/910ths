@@ -1,6 +1,7 @@
 ---
 title: Forum and Exhibition of young businessmen and women of the Eastern Region 2017
 date: 2017-10-16 13:58:00 +03:00
+published: false
 start_at: 2017-11-27 16:00:00 +03:00
 end_at: 2017-11-29 22:00:00 +03:00
 location:
