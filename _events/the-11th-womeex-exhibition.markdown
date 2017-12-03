@@ -1,6 +1,7 @@
 ---
 title: The 11th Womeex Exhibition
 date: 2017-10-16 14:31:00 +03:00
+published: false
 start_at: 2017-11-29 16:00:00 +03:00
 end_at: 2017-12-02 23:00:00 +03:00
 location:
