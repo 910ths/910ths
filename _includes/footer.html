@@ -52,9 +52,9 @@ document.zendeskLang = '{{ site.lang }}';
 		{% endif %}
 
 		{% if jekyll.environment == 'production' %}
-			<script src="https://cdn.910ths.sa/js/nine10ths-components.min.js"></script>
+			<script src="https://cdn.910ths.sa/js/nine10ths-components.min.js?_={{ site.version }}"></script>
 		{% else %}
-			<script src="https://s3.eu-central-1.amazonaws.com/nine10ths-cdn-uat/js/nine10ths-components.js"></script>
+			<script src="https://s3.eu-central-1.amazonaws.com/nine10ths-cdn-uat/js/nine10ths-components.js?_={{ site.version }}"></script>
 		{% endif %}
 
 		<script type="text/javascript">
@@ -127,7 +127,7 @@ document.zendeskLang = '{{ site.lang }}';
 
   var ll = document.createElement('link');
   ll.rel = 'stylesheet';
-  ll.href = 'https://cdn.910ths.sa/css/bundle.min.css';
+  ll.href = 'https://cdn.910ths.sa/css/bundle.min.css?_={{ site.version }}';
   var hh = document.getElementsByTagName('head')[0];
   hh.parentNode.insertBefore(ll, hh);
 };
