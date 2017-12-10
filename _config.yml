@@ -1,7 +1,6 @@
 ---
 title: 910ths
 timezone: Asia/Riyadh
-version: Hi9yPAU3TF
 collections:
   events:
     title: 00_Events
@@ -306,6 +305,7 @@ defaults:
   values:
     value: ''
     arabic_value: ''
+version: Hi9yPAU3TF
 title_suffix: Nine Tenths
 arabic_title_suffix: تسعة أعشار
 esso:
