@@ -101,7 +101,7 @@ document.zendeskLang = '{{ site.lang }}';
 	<!-- ▼ Hotjar ▼ -->
 		{% assign hotjar_id              = site.hotjar_id | strip %}
 		{% assign hotjar_snippet_version = site.hotjar_snippet_version | strip %}
-		{% if hotjar_id != empty and hotjar_snippet_version != empty %}
+		{% if jekyll.environment == 'production' and hotjar_id != empty and hotjar_snippet_version != empty %}
 
 			<script>
 				(function(h,o,t,j,a,r){
