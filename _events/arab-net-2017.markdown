@@ -1,6 +1,7 @@
 ---
 title: Arab Net 2017
 date: 2017-10-15 16:09:00 +03:00
+published: false
 start_at: 2017-12-11 16:00:00 +03:00
 end_at: 2017-12-13 23:00:00 +03:00
 location:
