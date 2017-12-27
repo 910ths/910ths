@@ -15,3 +15,8 @@ images:
 - "/uploads/unnamed%20(6).jpg"
 ---
 
+Nine Tenths Program has sponsored the Startup Accelerator Challenge at the ArabNet 2017 Forum – Riyadh and participated in the exhibition as well, as it’s the largest digital gathering in the Kingdom of Saudi Arabia where it tackles the latest specialized topics for business development in the Kingdom. The Vise President of Nine Tenths Program Eng. Amjad Idris talked about the services provided by the program and how it’s important for anyone who is interested in establishing his own business.
+
+ArabNet Forum is held on four business development forums: Digital Transformation Forum, Adtech Forum, Innovation and Investment Forum and Digital Commerce Forum, On the basis of that objective, Nine Tenths team hosted a workshop about Nine Tenths services Mr. Zuhair Sagga gave a brief of the services and Eng. Abdullah AlWassil spoke in detail about Forsa portal and the bidding system and finally Mr.AbdulAziz Al-Madani talked about Tojjar which is an eCommerce platform, each service was clarified separately and answered all the attendees' questions.
+
+Regarding the Startup Accelerator Challenge, it occurs by nominating 3 startups from Riyadh and participate in Dubai championship in May 2018, where the winner will get 20K dollars and scholarship to Silicon Valley. Labeeh team which is one of Nine Tenths Startups Accelerator graduates was awarded second place and got nominated in Dubai Startup Accelerator Challenge.
