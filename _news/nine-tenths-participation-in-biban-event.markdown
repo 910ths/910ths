@@ -32,3 +32,13 @@ images:
 - "/uploads/DKGTpt0XcAE5za8.jpg"
 ---
 
+Nine Tenths is one of Human Resources Development Fund have participated in Biban event which aims in helping startup businesses, the event is arranged by Small and Medium Enterprises General Authority Monsha'at, starting from 17 until 20 September.
+
+Nine Tenths has 3 booths in Biban in order to explain the services for the visitors, the main booth was dedicated to all the services provided by Nine Tenths and the second booth was dedicated to Startup Accelerator due to its cases and lastly a booth for Tojjar which is an eCommerce platform that allows people to sell their products online for free of charge, each one had enormous visitors who are willing to beneficial from Nine Tenths provided services. 
+
+Nine Tenths team responded to queries for more than 15,000 visitors in 4 days, also participated in a workshop hosted by Startup Accelerator graduates in the second batch. Fix tag and Ajeer teams have presented their experience to other startups and gave advices to those who would like to go in a similar experience.
+Biban had a large number of visitor that exceeds 53K from investors or people who are willing to get advises and be lead to the success of their ideas.
+
+In order to support and develop small and medium enterprises in the Kingdom of Saudi Arabia and to achieve the needed goals, an agreement was signed between Nine Tenths program and Ryadah at Biban 2017 in its third day.
+
+The signing ceremony was held on behalf of Eng. Amjad Idris, Vice President of the Business Unit, Eng, Muhab Bintin on the third day of the Baban Exhibition on 19 September 2017 and, Mr. Ahmed Bin Ali Al Suwailem from Ryadah, Hoping the success of the two parties and expand the service of those interested in the field of entrepreneurship and business.
