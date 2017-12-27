@@ -1,6 +1,7 @@
 ---
 title: Montijoon Exhibition
 date: 2017-10-15 17:06:00 +03:00
+published: false
 start_at: 2017-12-21 16:00:00 +03:00
 end_at: 2017-12-26 23:00:00 +03:00
 location:
