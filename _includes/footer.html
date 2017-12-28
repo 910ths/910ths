@@ -59,17 +59,17 @@ document.zendeskLang = '{{ site.lang }}';
 
 		<script type="text/javascript">
 			var currentUrl = '{{ page.url | remove: 'index.html' }}';
-			const auth = new GlobalLogin('{{ esso_api_base_url }}', '{{ esso_client_id }}', function(userData) {
+			var auth = new GlobalLogin('{{ esso_api_base_url }}', '{{ esso_client_id }}', function(userData) {
 					header.update({ loggedInUserInfo: userData });
 				}, function() {
 					header.update({loggedInUserInfo: null});
 			});
 
-			const header = new nine10ths.components.Header(document.querySelector('.globHeader'), {
+			var header = new nine10ths.components.Header(document.querySelector('.globHeader'), {
 				lang: '{{ site.lang }}',
 				env: '{% if jekyll.environment == 'production' %}prod{% else %}uat{% endif %}',
 				onChangeLanguage: function(callback) {
-
+					console.log('language changed : ', callback);
 					if (callback.lang == 'ar')
 						window.location.href = currentUrl;
 
@@ -77,21 +77,21 @@ document.zendeskLang = '{{ site.lang }}';
 						window.location.href = '/' + callback.lang + currentUrl;
 
 				},
-				
+
 				onClickLogin: function(event, loginURL) {
 					window.location = '{{ esso_base_url }}' + '/login-from-service?client_id=' + '{{ esso_client_id }}' + "&redirect_uri=" + window.location.href;
 				},
 				onClickLogout: function(event, logoutURL, origin) {
-					auth.revokeToken().then(() => {
+					auth.revokeToken().then(function () {
 						delete localStorage.user910accessToken;
-						window.location = `${logoutURL}?redirect_uri=${encodeURIComponent(origin)}`;
+						window.location = logoutURL + '?redirect_uri=' + encodeURIComponent(origin);
 					})
 				}
 			});
 
 
 
-			const footer = new nine10ths.components.Footer(document.querySelector('.globFooter'), {
+			var footer = new nine10ths.components.Footer(document.querySelector('.globFooter'), {
 				lang: '{{ site.lang }}',
 				env: '{% if jekyll.environment == 'production' %}prod{% else %}uat{% endif %}'
 			});

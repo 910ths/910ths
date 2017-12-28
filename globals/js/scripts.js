@@ -38,7 +38,7 @@ GlobalLogin.prototype = {
   },
   revokeToken: function() {
     var o = this;
-    return new Promise(resolve => {
+    return new Promise(function(resolve) {
       $.ajax({
         url: o._apiUrl + '/user/logout',
         method: 'POST',
