@@ -16,10 +16,4 @@ images:
 - "/uploads/DRLGtZBWsAIO9sY.jpg"
 ---
 
-Nine tenths have participated in the First Saudi Applications Exhibition under the patronage of His Excellency the Minister of Communications and Information Technology Eng. Abdullah bin Abdullah bin Amer Al-Sawaha.
-
- The exhibition aims to provide the opportunity for the creative appearance in the field of applications by providing the appropriate environment for publishing the investment culture in the field of applications in the form that promotes this sector in the Kingdom of Saudi Arabia.
-
-In view of the compatibility of the objectives, Nine Tenths has participated in 2 services, Nine Tenths Apps and Tojjar, where the Nine Tenths Apps services works in order to enable publishing applications and website online, and Tojjar is an ecommerce platform that provide sellers with all needed services in order to empower them and let sellers have a professional platform to work on. 
-
-The exhibition was the first of its kind in the region in terms of embracing specialized talent in the electronic applications sector and focus on innovation.
+ 
