@@ -1,5 +1,5 @@
 ---
-title: Nine tenths is the strategic partner for Chance Forum
+title: Nine tenths is the Strategic Partner for Chance Forum
 date: 2017-05-15 10:44:00 +03:00
 excerpt: |-
   Chance Forum is an initiative aimed to help the entrepreneurs to find investment opportunities for their businesses, by gather all entrepreneurs with investors. This will save time and effort in the search for the perfect partner.
