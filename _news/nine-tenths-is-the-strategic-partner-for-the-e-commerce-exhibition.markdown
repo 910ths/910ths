@@ -1,5 +1,5 @@
 ---
-title: Nine-tenths is the strategic partner for the e-commerce exhibition
+title: Nine-tenths is the Strategic Partner for E-commerce Exhibition
 date: 2017-04-03 14:46:00 +03:00
 excerpt: Nine tenths participated as a strategic partner of the exhibition, where
   the services of Nine Tenths was introduce to more than 50.000 visitors.
