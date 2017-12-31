@@ -1,5 +1,5 @@
 ---
-title: 9/10ths participated in “Startups Saudi Arabia”
+title: 910ths participated in “Startups Saudi Arabia”
 date: 2017-11-08 10:26:00 +03:00
 arabic_title: تسعة أعشار تشارك في الملتقى السعودي للشركات الناشئة
 arabic_content_md: |
