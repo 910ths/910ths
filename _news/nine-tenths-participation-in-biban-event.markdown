@@ -41,4 +41,4 @@ Biban had a large number of visitor that exceeds 53K from investors or people wh
 
 In order to support and develop small and medium enterprises in the Kingdom of Saudi Arabia and to achieve the needed goals, an agreement was signed between Nine Tenths program and Ryadah at Biban 2017 in its third day.
 
-The signing ceremony was held on behalf of Eng. Amjad Idris, Vice President of the Business Unit, Eng, Muhab Bintin on the third day of the Baban Exhibition on 19 September 2017 and, Mr. Ahmed Bin Ali Al Suwailem from Ryadah, Hoping the success of the two parties and expand the service of those interested in the field of entrepreneurship and business.
+The signing ceremony was held on behalf of Eng. Amjad Idris, Vice President of the Business Unit, Eng, Muhab Bintin on the third day of the Biban Exhibition on 19 September 2017 and, Mr. Ahmed Bin Ali Al Suwailem from Ryadah, Hoping the success of the two parties and expand the service of those interested in the field of entrepreneurship and business.
