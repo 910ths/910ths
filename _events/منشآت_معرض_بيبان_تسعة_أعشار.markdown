@@ -1,5 +1,5 @@
 ---
-title: Beban Expo 2017
+title: Biban Expo 2017
 date: 2017-08-22 14:14:00 +03:00
 published: false
 position: 0
