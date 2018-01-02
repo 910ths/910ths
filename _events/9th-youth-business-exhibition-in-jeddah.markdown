@@ -18,7 +18,7 @@ arabic_content_md: |
 
   يذكر أن معرض شباب الأعمال التاسع بجدة تحت شعار "بشبابنا نحقق رؤيتنا"، يهدف المعرض لتوفير بيئة تواصل فضلاً عن إتاحة الفرصة لعرض المشاريع الشبابيَّة الناشئة وإبرازها للمجتمع وتبادل ونقل التجارب الناجحة، لرواد الأعمال التي نجحوا من خلالها في أن يصبحوا روادا للأعمال.
 arabic_address: مركز جدة للمعارض، جدة
-arabic_info_text: https://goo.gl/f2JmCY
+arabic_info_text: "[رابط المعرض](https://goo.gl/f2JmCY)"
 ---
 
 The Jeddah Chamber of Commerce and Industry has announced the launch of the Ninth Business Youth Exhibition in Jeddah under the patronage of Prince Khalid Al Faisal, Advisor to the Governor of the Makkah Region, and will continue for four days to achieve 2030 vision and vision of the Kingdom.
