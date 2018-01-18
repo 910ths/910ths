@@ -1,3 +1,15 @@
+// Polyfill for IE compatibility
+if (!('remove' in Element.prototype)) {
+    console.log('...You are using internet expoler. Please use another browser');
+    Element.prototype.remove = function() {
+        if (this.parentNode && this.parentNode.removeChild) {
+            this.parentNode.removeChild(this);
+        }
+    };
+}
+
+// Global JS
+
 var currentScroll = function() {
 
   var scroll = window.scrollY || window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop || 0;
@@ -85,7 +97,7 @@ function addJS(src, id, onload){
 	document.head.appendChild( el );
 }
 
-function getStyle(el, prop){      
+function getStyle(el, prop){
   return window.document.defaultView.getComputedStyle(el).getPropertyValue(prop);
 }
 
@@ -135,7 +147,7 @@ function debug(str){
 	var debugLog = document.createElement('div');
 	debugLog.style.padding = '2px 10px';
 	debugLog.innerText = str;
-	
+
 	debugBox.appendChild( debugLog );
 	debugBox.scrollTop = debugBox.scrollHeight;
 }
