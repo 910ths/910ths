@@ -1,5 +1,5 @@
 // Polyfill for IE compatibility
-if (!('remove' in Element.prototype)) {
+if (!('remove' in HTMLDivElement.prototype)) {
     console.log('...You are using internet expoler. Please use another browser');
     Element.prototype.remove = function() {
         if (this.parentNode && this.parentNode.removeChild) {
