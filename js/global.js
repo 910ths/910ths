@@ -8,6 +8,7 @@ if (!('remove' in HTMLDivElement.prototype)) {
     };
 }
 
+
 // Global JS
 
 var currentScroll = function() {
