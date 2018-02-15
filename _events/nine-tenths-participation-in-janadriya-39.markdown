@@ -1,8 +1,8 @@
 ---
 title: Nine Tenths Participation in Janadriya 39
 date: 2018-02-15 11:45:00 +03:00
-start_at: 2018-02-07 00:00:00 +03:00
-end_at: 2018-02-24 00:00:00 +03:00
+start_at: 2018-02-07 11:00:00 +03:00
+end_at: 2018-02-24 23:00:00 +03:00
 location:
   lat: 24.962092
   lng: 46.792451
