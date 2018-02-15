@@ -1,6 +1,7 @@
 ---
 title: Saudi International Exhibition for Internet of Things
 date: 2018-01-22 12:34:00 +03:00
+published: false
 start_at: 2018-01-28 00:00:00 +03:00
 end_at: 2018-01-30 00:00:00 +03:00
 location:
