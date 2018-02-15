@@ -20,6 +20,6 @@ arabic_info_text: "[رابط المهرجان](http://www.janadria.org.sa/Pages/
 Key: 
 ---
 
-On 7th of Feb, 2018, Nine tenths participated in the Janadriya National Festival for Heritage and Culture, Where visitors of the festival (Janadriya 39) is expected to reach tow million visitors.
+On 7th of Feb, 2018, Nine tenths participating in the Janadriya National Festival for Heritage and Culture, Where visitors of the festival (Janadriya 39) is expected to reach tow million visitors.
 
 Nine tenths is introducing its services to the visitors, in a section held in the Ministry of Labor and Social Development pavilion, where the staff worked on introducing all nine tenths services, which was launched by the Human Resources Development Fund (HRDF) to support and develop business enterprises at all stages.
