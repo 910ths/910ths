@@ -1,6 +1,7 @@
 ---
 title: Nine Tenths Participation in Janadriya 39
 date: 2018-02-15 11:45:00 +03:00
+published: false
 start_at: 2018-02-07 11:00:00 +03:00
 end_at: 2018-02-24 23:00:00 +03:00
 location:
