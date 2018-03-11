@@ -7,8 +7,8 @@ text: "**Entrepreneur’s** journey "
 arabic_text: رحلة **رواد الأعمال**
 description: "An interactive guide contains information and tips to help you \nthroughout
   your business from ideation to launch"
-arabic_description: دليل تفاعليّ يحتوي على معلومات ونصائح لكل مراحل مشروعك من الفكرة
-  الى الاطلاق
+arabic_description: "دليل تفاعليّ يحتوي على معلومات ونصائح لكل مراحل مشروعك من الفكرة
+  \nإلى الاطلاق"
 button: See Details
 arabic_button: معرفة المزيد
 button_url: https://roadmap.910ths.sa/en/
