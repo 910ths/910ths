@@ -1,6 +1,6 @@
 ---
 title: 7 ways to start working as a writer
-date: 2017-11-04 13:10:00 Z
+date: 2017-11-04 16:10:00 +03:00
 categories:
 - skills
 tags:
