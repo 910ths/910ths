@@ -7,7 +7,7 @@ layout: index
 
 {% include head.html %}
 
-	<div id="siteRoot" class="siteRoot">
+	<div id="siteRoot" class="siteRoot" data-x="{{ page.is_events_news_visible }}">
 
 		{% include sections/slider.html %}
 
@@ -17,11 +17,17 @@ layout: index
 
 		{% include sections/video-banner.html %}
 
-		{% include sections/events-and-news.html %}
+    {% if page.is_events_news_visible %}
+		  {% include sections/events-and-news.html %}
+    {% endif %}
 
-		{% include sections/steps.html %}
+    {% if page.is_steps_visible %}
+		  {% include sections/steps.html %}
+    {% endif %}
 
-		{% include sections/partners.html %}
+    {% if page.is_partners_visible %}
+		  {% include sections/partners.html %}
+    {% endif %}
 
 	</div>
 
