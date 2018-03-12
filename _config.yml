@@ -177,7 +177,7 @@ defaults:
     arabic_text: ''
     description: ''
     arabic_description: ''
-    video_image: ''
+    video_image: img/video-mask.png
     background_asset: ''
     video_asset: ''
     arabic_video_asset: ''
