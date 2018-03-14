@@ -1,6 +1,7 @@
 ---
 title: Mzwalah city
 date: 2018-02-25 09:32:00 +03:00
+published: false
 start_at: 2018-03-01 16:00:00 +03:00
 end_at: 2018-03-03 23:00:00 +03:00
 location:
