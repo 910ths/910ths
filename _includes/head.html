@@ -12,6 +12,7 @@
 	{% capture description %}{% value site.description %}{% endcapture %}
 	<meta name="description" content="{{ description | strip_html | strip_newlines | truncate: 160 }}">
 	<meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="https://cdn.910ths.sa/css/bundle.min.css?_={{ site.version }}">
 	<link rel="icon" type="image/png" href="/img/favicon.png">
 	<!-- ▼ Check language ▼ -->
 	<script>
