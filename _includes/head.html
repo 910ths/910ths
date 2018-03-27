@@ -13,55 +13,53 @@
 	<meta name="description" content="{{ description | strip_html | strip_newlines | truncate: 160 }}">
 	<meta name="robots" content="index,follow">
 	<link rel="icon" type="image/png" href="/img/favicon.png">
+
 	<!-- ▼ Check language ▼ -->
-	<script>
-		function getCookie(cname) {
-			var name = cname + "=";
-			var decodedCookie = decodeURIComponent(document.cookie);
-			var ca = decodedCookie.split(';');
-			for (var i=0; i<ca.length; i++) {
-				var c = ca[i];
-				while (c.charAt(0) == ' ') {
-				  c = c.substring(1);
-				}
-				if (c.indexOf(name) == 0) {
-				  return c.substring(name.length, c.length);
-				}
-			}
-			return null;
-		}
+  	<script>
+  		function getCookie(cname) {
+  			var name = cname + "=";
+  			var decodedCookie = decodeURIComponent(document.cookie);
+  			var ca = decodedCookie.split(';');
+  			for (var i=0; i<ca.length; i++) {
+  				var c = ca[i];
+  				while (c.charAt(0) == ' ') {
+  				  c = c.substring(1);
+  				}
+  				if (c.indexOf(name) == 0) {
+  				  return c.substring(name.length, c.length);
+  				}
+  			}
+  			return null;
+  		}
 
-		function getCookieLanguage() {
-			var cookieLanguage = getCookie('Language');
-			return cookieLanguage === null ? 'ar' : cookieLanguage;
-		}
+  		function getCookieLanguage() {
+  			var cookieLanguage = getCookie('Language');
+  			return cookieLanguage === null ? 'ar' : cookieLanguage;
+  		}
 
-		function getLocationLanguage() {
-			return window.location.pathname.indexOf('/en/') === 0 ? 'en' : 'ar';
-		}
+  		function getLocationLanguage() {
+  			return window.location.pathname.indexOf('/en/') === 0 ? 'en' : 'ar';
+  		}
 
-		function changeLanguage(to) {
-			var currentUrl = '{{ page.url | remove: 'index.html' }}';
-			if (to === 'ar')
-				return window.location.href = currentUrl;
-			if (to === 'en')
-				return window.location.href = '/' + to + currentUrl;
-		}
+  		function changeLanguage(to) {
+  			var currentUrl = '{{ page.url | remove: 'index.html' }}';
+  			if (to === 'ar')
+  				return window.location.href = currentUrl;
+  			if (to === 'en')
+  				return window.location.href = '/' + to + currentUrl;
+  		}
 
-		var cookieLanguage = getCookieLanguage();
-		var locationLanguage = getLocationLanguage();
-		if ({% if jekyll.environment == 'production' %}true{% else %}false{% endif %} && cookieLanguage != locationLanguage) {
-			changeLanguage(cookieLanguage);
-		}
-	</script>
+  		var cookieLanguage = getCookieLanguage();
+  		var locationLanguage = getLocationLanguage();
+  		if ({% if jekyll.environment == 'production' %}true{% else %}false{% endif %} && cookieLanguage != locationLanguage) {
+  			changeLanguage(cookieLanguage);
+  		}
+  	</script>
 	<!-- ▲ Check language ▲ -->
 
 	<!-- ▼ Global components ▼ -->
-		{% if jekyll.environment == 'production' %}
-			<!-- <link href="https://cdn.910ths.sa/css/bundle.min.css" rel="stylesheet" /> -->
-		{% else %}
-			<link href="https://s3.eu-central-1.amazonaws.com/nine10ths-cdn-uat/css/bundle.css?_={{ site.version }}" rel="stylesheet" />
-		{% endif %}
+    <link href="/css/main.css" rel="stylesheet" />
+    <link href="https://cdn.910ths.sa/css/bundle.min.css?_={{ site.version }}" rel="stylesheet" />
 
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
