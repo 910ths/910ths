@@ -25,8 +25,8 @@
 
       <script>
       document.zendeskHost = '{{ zendesk_subdomain }}.zendesk.com';
-document.zendeskLang = '{{ site.lang }}';
-</script>
+      document.zendeskLang = '{{ site.lang }}';
+      </script>
 
     {% endif %}
   <!-- ▲ Zendesk ▲ -->
@@ -34,14 +34,11 @@ document.zendeskLang = '{{ site.lang }}';
   <!-- ▼ JavaScript ▼ -->
     <script type="text/javascript" src="/js/main.js"></script>
     <script type="text/javascript">
-    new Core();
-</script>
-
+      new Core();
+    </script>
   <!-- ▲ JavaScript ▲ -->
 
 	<!-- ▼ Global components ▼ -->
-
-
 		<script type="text/javascript" src="/globals/js/scripts.js"></script>
 
 		{% if jekyll.environment == 'production' %}
@@ -91,9 +88,6 @@ document.zendeskLang = '{{ site.lang }}';
 					})
 				}
 			});
-
-
-
 			var footer = new nine10ths.components.Footer(document.querySelector('.globFooter'), {
 				lang: '{{ site.lang }}',
 				env: '{% if jekyll.environment == 'production' %}prod{% else %}uat{% endif %}'
@@ -121,27 +115,13 @@ document.zendeskLang = '{{ site.lang }}';
 	<!-- ▲ Hotjar ▲ -->
 
   <script>
-  var cb = function() {
-  var l = document.createElement('link');
-  l.rel = 'stylesheet';
-  l.href = '/css/main.css';
-  var h = document.getElementsByTagName('head')[0];
-  h.parentNode.insertBefore(l, h);
-
-  var ll = document.createElement('link');
-  ll.rel = 'stylesheet';
-  ll.href = 'https://cdn.910ths.sa/css/bundle.min.css?_={{ site.version }}';
-  var hh = document.getElementsByTagName('head')[0];
-  hh.parentNode.insertBefore(ll, hh);
-};
-
-var raf =
-  requestAnimationFrame ||
-  mozRequestAnimationFrame ||
-  webkitRequestAnimationFrame ||
-  msRequestAnimationFrame;
-if (raf) raf(cb);
-else window.addEventListener('load', cb);
-</script>
+    var raf =
+      requestAnimationFrame ||
+      mozRequestAnimationFrame ||
+      webkitRequestAnimationFrame ||
+      msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+  </script>
 </body>
 </html>
