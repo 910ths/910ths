@@ -32,6 +32,9 @@ collections:
   partners-section:
     title: 06_Partners_section
     output: false
+  newsletter-section:
+    title: 07_Newsletter_section
+    output: false
   quote:
     title: 10_Quote
     output: false
@@ -224,6 +227,18 @@ defaults:
     - 
     background_asset: ''
     background_hex: ''
+- scope:
+    path: ''
+    type: newsletter-section
+  values:
+    header: ''
+    arabic_header: ''
+    form_url: ''
+    group_id: ''
+    group_list:
+      - group_id: ''
+        group_name: ''
+        arabic_group_name: ''
 - scope:
     path: ''
     type: products-layouts

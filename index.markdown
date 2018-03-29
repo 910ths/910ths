@@ -8,9 +8,11 @@ arabic_title: 'اصنع شيئًا مميزًا معنا '
 03_banner: Default
 04_video_banner: Default
 05_steps_section: Default
+07_newsletter_section: Default
 is_events_news_visible: true
 is_steps_visible: true
 is_partners_visible: true
+is_newsletter_visible: true
 layout: index
 ---
 

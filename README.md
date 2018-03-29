@@ -1,6 +1,6 @@
 ## What you'll need?
 
-- [Ruby](https://www.ruby-lang.org/en/downloads/)
+- [Ruby](https://www.ruby-lang.org/en/downloads/) *(version 2.3.3)*
 - [NodeJS](https://nodejs.org/)
 - [Global header & footer](https://github.com/910ths/global-header-footer)
 
