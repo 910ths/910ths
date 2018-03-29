@@ -15,4 +15,3 @@ images:
 - "/uploads/unnamed%20(6).jpg"
 ---
 
- 

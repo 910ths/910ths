@@ -236,9 +236,9 @@ defaults:
     form_url: ''
     group_id: ''
     group_list:
-      - item_id: ''
-        item_name: ''
-        arabic_item_name: ''
+    - item_id: ''
+      item_name: ''
+      arabic_item_name: ''
 - scope:
     path: ''
     type: products-layouts

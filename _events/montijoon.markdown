@@ -17,5 +17,4 @@ arabic_address: مركز الرياض الدولي للمؤتمرات والمع
 arabic_info_text: "[رابط المعرض](http://montijoon.sa/Arabic/Pages/default.aspx)"
 ---
 
-
 Montijoon Exhibition is the largest gathering in the Kingdom and the Middle East that supports investors from home and emerging business leaders to support the national development process.
