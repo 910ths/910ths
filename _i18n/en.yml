@@ -115,3 +115,6 @@ work_offers:
     deadline: Deadline
     apply: Apply now
     back_button: Back to open positions
+
+newsleter:
+    subscribe: Subscribe

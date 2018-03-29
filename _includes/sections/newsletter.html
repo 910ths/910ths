@@ -1,44 +1,45 @@
-<section class="newsletter stdBg">
-  <div class="wrapper wrapper--inside">
-    <div class="stdCols__col">
-      <img src="/img/newsletter-image.png" class="newsletter__image" alt="">
-    </div>
-    <div class="stdCols__col">
-      <form action="https://127.us16.list-manage.com/subscribe/post?u=2e99de5a5a99183d5d361a0a7&id=0e487a5007" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter__form validate" target="_blank" novalidate>
-        <h2 class="newsletter__title"><strong>Subscribe</strong> to our newsletter</h2>
-        <ul class="newsletter__groups">
-          <li class="newsletter__group">
-            <input type="checkbox" value="1" name="group[4807][1]" id="group-1">
-            <label for="group-1">Media</label>
-          </li>
-          <li class="newsletter__group">
-            <input type="checkbox" value="2" name="group[4807][2]" id="group-2">
-            <label for="group-2">Research</label>
-          </li>
-          <li class="newsletter__group">
-            <input type="checkbox" value="4" name="group[4807][4]" id="group-3">
-            <label for="group-3">Communities</label>
-          </li>
-          <li class="newsletter__group">
-            <input type="checkbox" value="8" name="group[4807][8]" id="group-4">
-            <label for="group-4">Events</label>
-          </li>
-        </ul>
-        <div class="newsletter__columns mc-field-group clear">
-          <input type="email" placeholder="example@mail.com" value="" name="EMAIL" class="newsletter__email required email" id="mce-EMAIL">
-          <button type="submit" class="newsletter__submit button button--green">
-            <span class="button__text">Subscribe</span>
-          </button>
+{% for section in site.newsletter-section %}
+  +{{ section.title }} - {{ 07_newsletter_section }}+
+  <br><br><br>
+  {% if section.title contains site.07_newsletter_section %}
+
+    <section class="newsletter stdBg">
+      <div class="wrapper wrapper--inside">
+        <div class="stdCols__col">
+          <img src="/img/newsletter-image.png" class="newsletter__image" alt="">
         </div>
-        <div id="mce-responses" class="clear">
-          <div class="response" id="mce-error-response" style="display:none"></div>
-          <div class="response" id="mce-success-response" style="display:none"></div>
+        <div class="stdCols__col">
+          <form action="{{ section.form_url }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter__form validate" target="_blank" novalidate>
+            {% capture title %}{% value section.header %}{% endcapture %}
+            <h2 class="newsletter__title">{{ title | markdownify | remove: '<p>' | remove: '</p>' }}</h2>
+            <ul class="newsletter__groups">
+              {% assign index = 1 %}
+              {% for group in section.group_list %}
+                <li class="newsletter__group">
+                  <input type="checkbox" value="{{ group.item_id }}" name="group[{{ section.group_id }}][{{ group.item_id }}]" id="group-{{ index }}">
+                  <label for="group-{{ index }}">{% value group.item_name %}</label>
+                </li>
+                {% assign index = index | plus: 1 %}
+              {% endfor %}
+            </ul>
+            <div class="newsletter__columns mc-field-group clear">
+              <input type="email" placeholder="example@mail.com" value="" name="EMAIL" class="newsletter__email required email" id="mce-EMAIL">
+              <button type="submit" class="newsletter__submit button button--green">
+                <span class="button__text">{% t newsletter.subscribe %}</span>
+              </button>
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+          </form>
         </div>
-      </form>
-    </div>
-  </div>
-  <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-  <script>
-    (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='BIRTHDAY';ftypes[3]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);
-  </script>
-</section>
+      </div>
+      <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+      <script>
+        (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='BIRTHDAY';ftypes[3]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);
+      </script>
+    </section>
+
+  {% endif %}
+{% endfor %}
