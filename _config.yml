@@ -231,8 +231,8 @@ defaults:
     path: ''
     type: newsletter-section
   values:
-    header: ''
-    arabic_header: ''
+    header_md: ''
+    arabic_header_md: ''
     form_url: ''
     group_id: ''
     group_list:
