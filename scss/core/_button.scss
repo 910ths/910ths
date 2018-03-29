@@ -84,6 +84,19 @@
 		}
 	}
 
+  &.button--green{
+    background-color: $c-main;
+    border-color: $c-main;
+    color: rgb(255, 255, 255);
+
+    &.hover,
+    &:focus,
+    &:hover{
+      background-color: transparent;
+      color: $c-main;
+    }
+  }
+
 	&__text{
 		display: inline-block;
 		vertical-align: middle;

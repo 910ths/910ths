@@ -1,0 +1,54 @@
+@media screen and (max-width: 1259px) {
+
+  .newsletter {
+
+    &__email {
+      height: 39px;
+      line-height: 37px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  .newsletter {
+
+    .stdCols__col {
+      width: 100%;
+    }
+
+    &__image {
+      float: none !important;
+      display: block;
+      margin: 0 auto 65px auto;
+    }
+
+    &__form {
+      text-align: center;
+    }
+
+    &__columns {
+      display: inline-block;
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .newsletter {
+
+    &__email {
+      float: none !important;
+      display: block;
+      margin: 5px auto;
+    }
+
+    &__submit {
+      float: none !important;
+      display: inline-block;
+    }
+  }
+
+}
