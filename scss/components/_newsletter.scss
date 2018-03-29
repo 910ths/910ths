@@ -8,6 +8,10 @@
     margin-top: 5px;
     max-width: 100%;
     height: auto;
+
+    @include parent('body', '[dir=rtl]') {
+      float: left;
+    }
   }
 
   &__title {
@@ -102,12 +106,20 @@
     background-color: #ffffff;
     box-sizing: border-box;
     border-radius: 3px;
+
+    @include parent('body', '[dir=rtl]') {
+      float: right;
+    }
   }
 
   &__submit {
     float: left;
     margin: 5px;
     cursor: pointer;
+
+    @include parent('body', '[dir=rtl]') {
+      float: right;
+    }
   }
 
   div.mce_inline_error,

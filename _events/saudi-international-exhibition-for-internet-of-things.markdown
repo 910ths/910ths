@@ -21,6 +21,7 @@ arabic_address: 'مركز الرياض الدولي للمعارض والمؤت�
 arabic_info_text: "[رابط المعرض](http://www.saudiiot.com/about.php)"
 ---
 
+
 Saudi IoT is an initiative to create a platform focusing on the enormous potential of the IoT revolution.seeks to address challenges and identify real opportunities within the IoT landscape. Saudi International Exhibition for Internet of Things will be a pivotal event for the Kingdom’s future in IoT.
 This year’s exhibition will focus on cutting-edge IoT solutiuons such as electronics design, embedded systems, software development, product-enclosure design, analytics, systems integration, and more..
 

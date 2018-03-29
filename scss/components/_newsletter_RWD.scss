@@ -19,7 +19,7 @@
     }
 
     &__image {
-      float: none;
+      float: none !important;
       display: block;
       margin: 0 auto 65px auto;
     }
@@ -40,13 +40,13 @@
   .newsletter {
 
     &__email {
-      float: none;
+      float: none !important;
       display: block;
       margin: 5px auto;
     }
 
     &__submit {
-      float: none;
+      float: none !important;
       display: inline-block;
     }
   }

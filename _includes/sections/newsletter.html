@@ -1,7 +1,5 @@
 {% for section in site.newsletter-section %}
-  +{{ section.title }} - {{ 07_newsletter_section }}+
-  <br><br><br>
-  {% if section.title contains site.07_newsletter_section %}
+  {% if section.title contains page.07_newsletter_section %}
 
     <section class="newsletter stdBg">
       <div class="wrapper wrapper--inside">
@@ -10,7 +8,7 @@
         </div>
         <div class="stdCols__col">
           <form action="{{ section.form_url }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter__form validate" target="_blank" novalidate>
-            {% capture title %}{% value section.header %}{% endcapture %}
+            {% capture title %}{% value section.header_md %}{% endcapture %}
             <h2 class="newsletter__title">{{ title | markdownify | remove: '<p>' | remove: '</p>' }}</h2>
             <ul class="newsletter__groups">
               {% assign index = 1 %}
