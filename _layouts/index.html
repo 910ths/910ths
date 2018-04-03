@@ -24,13 +24,13 @@ layout: index
     {% if page.is_steps_visible %}
 		  {% include sections/steps.html %}
     {% endif %}
-
-    {% if page.is_partners_visible %}
-		  {% include sections/partners.html %}
-    {% endif %}
     
     {% if page.is_newsletter_visible %}
       {% include sections/newsletter.html %}
+    {% endif %}
+
+    {% if page.is_partners_visible %}
+      {% include sections/partners.html %}
     {% endif %}
 
 	</div>

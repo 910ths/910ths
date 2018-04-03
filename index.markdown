@@ -11,8 +11,8 @@ arabic_title: 'اصنع شيئًا مميزًا معنا '
 07_newsletter_section: Default
 is_events_news_visible: true
 is_steps_visible: true
-is_partners_visible: true
 is_newsletter_visible: true
+is_partners_visible: true
 layout: index
 ---
 
