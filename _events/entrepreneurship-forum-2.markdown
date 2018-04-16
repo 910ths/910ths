@@ -1,6 +1,7 @@
 ---
 title: Entrepreneurship Forum 2
 date: 2018-03-07 11:18:00 +03:00
+published: false
 start_at: 2018-03-19 09:00:00 +03:00
 end_at: 2018-03-21 21:00:00 +03:00
 location:
