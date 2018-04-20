@@ -78,6 +78,7 @@ gulp.task('js', function() {
     minifyJS : true
   }))
 	.pipe( gulp.dest('./js') )
+  .pipe( gulp.dest('./_site/js') )
 	.pipe( notify({ message: 'JS done!' }) );
 });
 

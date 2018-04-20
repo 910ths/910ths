@@ -7,30 +7,23 @@
           <img src="/img/newsletter-image.png" class="newsletter__image" alt="">
         </div>
         <div class="stdCols__col">
-          <form action="{{ section.form_url }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter__form validate" target="_blank" novalidate>
+          <div class="newsletter__wrapper">
             {% capture title %}{% value section.header_md %}{% endcapture %}
             <h2 class="newsletter__title">{{ title | markdownify | remove: '<p>' | remove: '</p>' }}</h2>
-            <ul class="newsletter__groups">
-              {% assign index = 1 %}
-              {% for group in section.group_list %}
-                <li class="newsletter__group">
-                  <input type="checkbox" value="{{ group.item_id }}" name="group[{{ section.group_id }}][{{ group.item_id }}]" id="group-{{ index }}">
-                  <label for="group-{{ index }}">{% value group.item_name %}</label>
-                </li>
-                {% assign index = index | plus: 1 %}
-              {% endfor %}
-            </ul>
-            <div class="newsletter__columns mc-field-group clear">
-              <input type="email" placeholder="example@mail.com" value="" name="EMAIL" class="newsletter__email required email" id="mce-EMAIL">
-              <button type="submit" class="newsletter__submit button button--green">
-                <span class="button__text">{% t newsletter.subscribe %}</span>
-              </button>
-            </div>
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>
-          </form>
+            {% capture url %}https://{{ section.form_domain }}/subscribe/post?u={{ section.form_user }}&amp;id={% endcapture %}
+            <form action="{{ url }}{{ section.list_id }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter__form validate" data-index="{{ index }}" target="_blank" novalidate>
+              <div class="newsletter__columns mc-field-group clear">
+                <input type="email" placeholder="example@mail.com" value="" name="EMAIL" class="newsletter__email required email" id="mce-EMAIL">
+                <button type="submit" class="newsletter__submit button button--green">
+                  <span class="button__text">{% t newsletter.subscribe %}</span>
+                </button>
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
       <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>

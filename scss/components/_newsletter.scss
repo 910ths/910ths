@@ -3,6 +3,16 @@
   padding: 65px 0;
   overflow: hidden;
 
+ .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .stdCols__col {
+    display: flex;
+    align-items: center;
+  }
+
   &__image {
     float: right;
     margin-top: 5px;

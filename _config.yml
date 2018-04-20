@@ -233,12 +233,9 @@ defaults:
   values:
     header_md: ''
     arabic_header_md: ''
-    form_url: ''
-    group_id: ''
-    group_list:
-    - item_id: ''
-      item_name: ''
-      arabic_item_name: ''
+    form_domain: 910ths.us15.list-manage.com
+    form_user: a82bb52189a0415fbc904c4f4
+    list_id: ''
 - scope:
     path: ''
     type: products-layouts
