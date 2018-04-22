@@ -3,6 +3,9 @@ title: Shaghaf 2
 date: 2018-04-22 11:24:00 +03:00
 start_at: 2018-04-23 00:00:00 +03:00
 end_at: 2018-04-27 00:00:00 +03:00
+location:
+  lat: 21.38753
+  lng: 39.703444
 address: 'Makkah Jeddah Expy, Al Hamra and Umm Al Jud, Mecca '
 info_text: "[Website] (https://shaghaf.makkahcci.org.sa/index.php)"
 arabic_title: ملتقى شغف 2
