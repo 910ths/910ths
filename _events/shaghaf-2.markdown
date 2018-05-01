@@ -1,6 +1,7 @@
 ---
 title: Shaghaf 2
 date: 2018-04-22 11:24:00 +03:00
+published: false
 start_at: 2018-04-23 00:00:00 +03:00
 end_at: 2018-04-27 00:00:00 +03:00
 location:
