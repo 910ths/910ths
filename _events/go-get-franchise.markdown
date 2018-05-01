@@ -4,8 +4,8 @@ date: 2018-05-01 14:36:00 +03:00
 start_at: 2018-05-09 16:00:00 +03:00
 end_at: 2018-05-11 23:00:00 +03:00
 location:
-  lat: 26°22'52.3
-  lng: 50°12'46.0
+  lat: 26.3808645
+  lng: 50.2107617
 address: Dhahran International Exhibition Center
 info_text: "[Website] (https://www.instagram.com/3dimensionsme)"
 arabic_title: معرض انطلاق وجذب الإمتيازات التجاري (الفرنشايز)
