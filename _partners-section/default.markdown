@@ -17,3 +17,4 @@ arabic_button_uat_url: https://uat-esso.910ths.sa/register?redirect_uri=http%3A%
 background_asset: "/uploads/bg.jpg"
 background_hex: "#71b400"
 ---
+
