@@ -1,6 +1,7 @@
 ---
 title: Go Get Franchise Event
 date: 2018-05-01 14:36:00 +03:00
+published: false
 start_at: 2018-05-09 16:00:00 +03:00
 end_at: 2018-05-11 23:00:00 +03:00
 location:
