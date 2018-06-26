@@ -9,4 +9,4 @@ images:
 - "/uploads/DbAZIf2WAAABoCq.jpg"
 ---
 
-910ths family congratulate Forsa Vendors on being honored by Riyadh Chamber As an initiative from Riyadh Chamber to motivate small and medium-sized companies in Forsa  platform.
+910ths family congratulate Forsa Vendors on being honored by Riyadh Chamber As an initiative from Riyadh Chamber to motivate small and medium-sized enterprise in Forsa  platform. SMEs play an important role in increasing seals and operations between different entities. 
