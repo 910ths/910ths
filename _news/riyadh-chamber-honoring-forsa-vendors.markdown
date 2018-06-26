@@ -9,4 +9,4 @@ images:
 - "/uploads/DbAZIf2WAAABoCq.jpg"
 ---
 
-910ths family congratulate Forsa Vendors on being honored by Riyadh Chamber.
+910ths family congratulate Forsa Vendors on being honored by Riyadh Chamber As an initiative from Riyadh Chamber to motivate small and medium-sized companies in Forsa  platform.
