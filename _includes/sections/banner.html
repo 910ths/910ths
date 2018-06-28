@@ -22,7 +22,7 @@
 							</div>
 						{% else %}
 							<div class="stdBanner__imageBox">
-								<img src="{{ section.poster_asset | imgix_url: auto: format, q: 50, w: 600, h: 450 }}" alt="" class="stdBanner__img" />
+								<img src="{{ section.poster_asset | imgix_url: q: 50, w: 600, h: 450 }}" alt="" class="stdBanner__img" />
 							</div>
 						{% endif %}
 					</div>
@@ -32,7 +32,7 @@
 
 								<div class="stdCols__col stdCols__col--mid stdCols__col--stdBanner">
 									<div class="stdBanner__imgBox">
-										<img src="{{ section.poster_asset | imgix_url: auto: format, q: 50, w: 600, h: 450 }}" alt="" class="stdBanner__img" />
+										<img src="{{ section.poster_asset | imgix_url: q: 50, w: 600, h: 450 }}" alt="" class="stdBanner__img" />
 									</div>
 								</div>
 

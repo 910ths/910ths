@@ -37,17 +37,17 @@ layout: career
 
 											<div class="careerContent__doublePhotoBox">
 												<div class="careerContent__halfPhoto">
-													<div class="careerContent__photo" style="background-image: url({{ item.images[0] | imgix_url: auto: format, q: 50, w: 300, h: 350 }});"></div>
+													<div class="careerContent__photo" style="background-image: url({{ item.images[0] | imgix_url: q: 50, w: 300, h: 350 }});"></div>
 												</div>
 												<div class="careerContent__halfPhoto">
-													<div class="careerContent__photo" style="background-image: url({{ item.images[1] | imgix_url: auto: format, q: 50, w: 300, h: 350 }});"></div>
+													<div class="careerContent__photo" style="background-image: url({{ item.images[1] | imgix_url: q: 50, w: 300, h: 350 }});"></div>
 												</div>
 											</div>
 
 										{% else %}
 
 											<div class="careerContent__singlePhotoBox">
-												<div class="careerContent__photo" style="background-image: url({{ item.images[0] | imgix_url: auto: format, q: 50, w: 600, h: 350 }});"></div>
+												<div class="careerContent__photo" style="background-image: url({{ item.images[0] | imgix_url: q: 50, w: 600, h: 350 }});"></div>
 											</div>
 
 										{% endif %}
@@ -63,7 +63,7 @@ layout: career
 										{% endif %}
 
 										<div class="careerContent__videoBox">
-											<div class="careerContent__photo" style="background-image: url({{ item.video.video_image | imgix_url: auto: format, q: 50, w: 600, h: 350 }});"></div>
+											<div class="careerContent__photo" style="background-image: url({{ item.video.video_image | imgix_url: q: 50, w: 600, h: 350 }});"></div>
 											<a href="#" class="careerContent__play jsPopup {{ video_type }}" data-popup="videoPopup-{{ index }}"></a>
 										</div>
 

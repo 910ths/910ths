@@ -20,7 +20,7 @@
 
 							<div class="valuesBox__item">
 								<div class="valuesBox__imgBox">
-									<img src="{{ value.image | imgix_url: auto: format, q: 50, w: 100, h: 100 }}" alt="" class="valuesBox__img" />
+									<img src="{{ value.image | imgix_url: q: 50, w: 100, h: 100 }}" alt="" class="valuesBox__img" />
 								</div>
 								<div class="valuesBox__text">
 									<h3>{% value value.title %}</h3>

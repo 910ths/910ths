@@ -9,7 +9,7 @@
 
 		{% assign background = section.background_asset | strip %}
 		{% if background != empty %}
-			{% capture background %}background-image: url({{ background | imgix_url: auto: format, q: 50, w: 1200, h: 800 }});{% endcapture %}
+			{% capture background %}background-image: url({{ background | imgix_url: q: 50, w: 1200, h: 800 }});{% endcapture %}
 		{% endif %}
 
 		<section class="videoBanner stdBg">
@@ -42,7 +42,7 @@
 							<div class="videoBanner__videoBox">
 								<div class="videoBanner__videoImg videoBanner__videoImg--bg" style="{{ background }}"></div>
 								<a href="#" class="videoBanner__videoFrame jsMultiHover jsPopup {{ video_type }}" data-popup="videoPopup">
-									<div class="videoBanner__videoImg" style="background-image: url({{ section.video_image | imgix_url: auto: format, q: 50, w: 1200, h: 800 }});">
+									<div class="videoBanner__videoImg" style="background-image: url({{ section.video_image | imgix_url: q: 50, w: 1200, h: 800 }});">
 										<span class="videoBanner__play"></span>
 									</div>
 								</a>
