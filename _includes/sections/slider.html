@@ -14,14 +14,14 @@
 		<section class="homeBanner">
 			{% if section.is_bg_image_active %}
 
-				<div class="homeBanner__bgImage" style="background-image: url({{ section.bg_image_asset | imgix_url: q: 50, w: 1920, h: 1080 }}); {{ offset_x }} {{ offset_y }}"></div>
+				<div class="homeBanner__bgImage" style="background-image: url({{ section.bg_image_asset | imgix_url: w: 1920, h: 1080 }}); {{ offset_x }} {{ offset_y }}"></div>
 
 			{% else %}
 
-				<video class="homeBanner__bgVideo" poster="{{ section.bg_video_poster_asset | imgix_url: q: 50, w: 1920, h: 1080 }}" loop>
+				<video class="homeBanner__bgVideo" poster="{{ section.bg_video_poster_asset | imgix_url: w: 1920, h: 1080 }}" loop>
 					<source src="{{ section.bg_video_asset | imgix_url: auto: format }}" type="video/mp4">
 				</video>
-				<div class="homeBanner__bgMobile" style="background-image: url({{ section.bg_video_poster_asset | imgix_url: q: 50, w: 1024, h: 1024 }}); {{ offset_x }} {{ offset_y }}"></div>
+				<div class="homeBanner__bgMobile" style="background-image: url({{ section.bg_video_poster_asset | imgix_url: w: 1024, h: 1024 }}); {{ offset_x }} {{ offset_y }}"></div>
 
 			{% endif %}
 			<div class="homeBanner__masks">
