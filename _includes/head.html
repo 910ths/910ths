@@ -59,7 +59,12 @@
 
 	<!-- ▼ Global components ▼ -->
     <link href="/css/main.css" rel="stylesheet" />
-    <link href="https://cdn.910ths.sa/css/bundle.min.css?_={{ site.version }}" rel="stylesheet" />
+
+    {% if jekyll.environment == 'production' %}
+      <link href="https://cdn.910ths.sa/css/bundle.min.css?_={{ site.version }}" rel="stylesheet" />
+    {% else %}
+      <link href="https://uat-cdn.910ths.sa/css/bundle.min.css?_={{ site.version }}" rel="stylesheet" />
+    {% endif %}
 
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
