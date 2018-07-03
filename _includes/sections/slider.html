@@ -3,7 +3,7 @@
 
 		{% assign offset_x = section.image_offset_x | strip %}
 		{% assign offset_y = section.image_offset_y | strip %}
-		
+
 		{% if offset_x != empty %}
 			{% capture offset_x %}background-position-x: {{ offset_x }}%;{% endcapture %}
 		{% endif %}
@@ -18,7 +18,7 @@
 
 			{% else %}
 
-				<video class="homeBanner__bgVideo" poster="{{ section.bg_video_poster_asset | imgix_url: w: 1920, h: 1080 }}" loop>
+				<video class="homeBanner__bgVideo" poster="{{ section.bg_video_poster_asset | imgix_url: w: 1920, h: 1080 }}" loop muted>
 					<source src="{{ section.bg_video_asset | imgix_url: auto: format }}" type="video/mp4">
 				</video>
 				<div class="homeBanner__bgMobile" style="background-image: url({{ section.bg_video_poster_asset | imgix_url: w: 1024, h: 1024 }}); {{ offset_x }} {{ offset_y }}"></div>
