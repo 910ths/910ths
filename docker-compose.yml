@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  jekyll:
+    image: jekyll/jekyll:latest
+    command: tail -f /dev/null #bash -c "npm install && node_modules/.bin/gulp watch
+    ports:
+      - 4000:4000
+    volumes:
+      - .:/srv/jekyll
