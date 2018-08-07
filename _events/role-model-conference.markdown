@@ -1,6 +1,7 @@
 ---
 title: Role model Conference
 date: 2018-05-01 14:50:00 +03:00
+published: false
 start_at: 2018-06-02 16:10:00 +03:00
 end_at: 2018-06-03 04:10:00 +03:00
 location:
