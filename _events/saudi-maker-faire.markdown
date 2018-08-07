@@ -4,8 +4,8 @@ date: 2018-08-07 12:33:00 +03:00
 start_at: 2018-11-15 16:00:00 +03:00
 end_at: 2018-11-16 23:00:00 +03:00
 location:
-  lat: 24.45053
-  lng: 46.43316
+  lat: 24°45'05.3"
+  lng: 46°43'31.6"
 address: Riyadh International Convention and Exhibition Center
 info_text: "[Website](http://makerfairesa.com/)"
 arabic_title: معرض صُناع السعودية
