@@ -9,7 +9,7 @@
   <!-- ▲ Google Maps API ▲ -->
 
   <!-- ▼ Zendesk ▼ -->
-    {% assign zendesk_subdomain = site.zendesk_subdomain | strip %}
+    <!-- {% assign zendesk_subdomain = site.zendesk_subdomain | strip %}
     {% if zendesk_subdomain != empty %}
 
       <div class="zendeskButton">
@@ -28,8 +28,13 @@
       document.zendeskLang = '{{ site.lang }}';
       </script>
 
-    {% endif %}
+    {% endif %} -->
   <!-- ▲ Zendesk ▲ -->
+
+  <script type="text/javascript" src="/globals/js/zendesk.min.js"></script>
+  <script type="text/javascript">
+    window.zE(() => zE.setLocale('{{ site.lang }}'));
+  </script>
 
   <!-- ▼ JavaScript ▼ -->
     <script type="text/javascript" src="/js/main.js"></script>
@@ -114,7 +119,7 @@
 		{% endif %}
 	<!-- ▲ Hotjar ▲ -->
 
-  <script>
+  <!-- <script>
     var raf =
       requestAnimationFrame ||
       mozRequestAnimationFrame ||
@@ -122,7 +127,7 @@
       msRequestAnimationFrame;
     if (raf) raf(cb);
     else window.addEventListener('load', cb);
-  </script>
+  </script> -->
   <!-- Linkedin Ads-->
 	<script type="text/javascript">
 	var _linkedin_data_partner_id = "304841";
