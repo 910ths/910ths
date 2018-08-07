@@ -4,8 +4,8 @@ date: 2018-08-02 13:45:00 +03:00
 start_at: 2018-08-05 17:00:00 +03:00
 end_at: 2018-08-09 23:00:00 +03:00
 location:
-  lat: 21.37.01.6
-  lng: 39.09.23.3
+  lat: 21.617087
+  lng: 39.156288
 address: 'Jeddah chamber '
 info_text: "[Website](https://twitter.com/JeddahChamber)"
 arabic_title: معرض لقاءات الألكتروني للتوظيف
