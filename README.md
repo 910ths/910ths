@@ -37,13 +37,14 @@ Portal is the homepage of 910ths.
 ### Deployment
 
 #### UAT
-- Locally, run the command `make gulp-build`.
-- Push the changes into `master` branch.
-- Click on "Generate preview" on [Siteleaf][siteleaf].
-- Enjoy.
+1. Locally, run the command `make gulp-build`.
+2. Push the changes into `master` branch.
+3. Click on "Generate preview" on [Siteleaf][siteleaf].
+4. Enjoy.
 
 [siteleaf]: https://www.siteleaf.com/
 
 #### Production
-- Click on "Publish changes" on [Siteleaf][siteleaf].
-- In AWS, CloudFront, create invalidation for [Production][production] distribution.
+1. Click on "Publish changes" on [Siteleaf][siteleaf].
+2. In AWS, CloudFront, create invalidation for [Production][production] distribution.
+3. Enjoy.
