@@ -1,43 +1,49 @@
-## What you'll need?
+Portal
+===
+Portal is the homepage of 910ths.
 
-- [Ruby](https://www.ruby-lang.org/en/downloads/) *(version 2.3.3)*
-- [NodeJS](https://nodejs.org/)
-- [Global header & footer](https://github.com/910ths/global-header-footer)
+## Live demos
 
-## Jekyll installation:
+- [UAT][uat].
+- [Production][production].
 
-1. Clone this repository or download it into a directory of your choice.
-2. Open Ruby console.
-3. Run command `gem install jekyll bundler`.
-4. Go to root directory of your project.
-5. Run command `bundle install` *(reference: Gemfile)*.
+[uat]: https://uat.910ths.sa
+[production]: https://910ths.sa
 
-## How to locally running project?
+### Prerequisites
 
-1. Open Ruby console.
-2. Go to root directory of your project.
-3. Run command `bundle exec jekyll serve`.
-4. Open in your browser: `http://localhost:4000`.
+- [Docker][docker].
+- [Docker Compose][docker-compose].
+- [Make][make].
+- Have port 4000 available and not used.
 
-## Gulp installation:
+[docker]: https://www.docker.com/
+[docker-compose]: https://docs.docker.com/compose/
+[make]: https://www.gnu.org/software/make/
 
-1. Open Node.js console.
-2. Go to root directory of your project.
-3. Run command `npm install` *(reference: package.json)*.
+### Development
 
-## How to edit project?
+1. Run the command `make space`.
+2. Run the command  `make install`.
+3. Run the command `make serve`.
+3. (To watch the changes) Run the command `make gulp-watch`.
+4. Navigate to http://localhost:4000.
+5. Enjoy.
 
-1. Open Node.js console.
-2. Go to root directory of your project.
-3. Run command `gulp watch` *(reference: gulpfile.js)*.
-4. Edit files:
+### Branches
 
-	* `.scss` in `/scss` directory
-	* `.js` in `/js` directory
+- Production, master.
 
-5. Output files will be saved in below files:
+### Deployment
 
-	* `/css/main.css`
-	* `/js/main.js`
+#### UAT
+- Locally, run the command `make gulp-build`.
+- Push the changes into `master` branch.
+- Click on "Generate preview" on [Siteleaf][siteleaf].
+- Enjoy.
 
+[siteleaf]: https://www.siteleaf.com/
 
+#### Production
+- Click on "Publish changes" on [Siteleaf][siteleaf].
+- In AWS, CloudFront, create invalidation for [Production][production] distribution.
