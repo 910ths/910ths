@@ -1,7 +1,6 @@
 ---
 title: Saudi Mobile Show Exhibition
 date: 2018-10-14 14:53:00 +03:00
-published: false
 start_at: 2018-10-29 16:00:00 +03:00
 end_at: 2018-10-31 22:00:00 +03:00
 location:
