@@ -1,6 +1,7 @@
 ---
 title: WADAEF JOB FAIR
 date: 2018-08-07 12:43:00 +03:00
+published: false
 start_at: 2018-10-22 16:00:00 +03:00
 end_at: 2018-10-25 23:00:00 +03:00
 location:
