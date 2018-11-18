@@ -1,6 +1,7 @@
 ---
 title: Saudi Maker Faire
 date: 2018-08-07 12:33:00 +03:00
+published: false
 start_at: 2018-11-15 16:00:00 +03:00
 end_at: 2018-11-16 23:00:00 +03:00
 location:
